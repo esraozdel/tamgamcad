@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TamgamCAD | Advanced 2D Drawing Tool</title>
+    <meta name="description" content="TamgamCAD: Fast and native 2D CAD software for professionals. High-resolution SVG/PDF export, Boolean operations, and Isometric drawing tools.">
+    <meta name="keywords" content="2D CAD, technical drawing software, vector drawing, pdf export, boolean operations, polyline, isometric grid, tamgamcad">
+    <meta name="author" content="TamgamCAD">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
+           
+        </a>
+        
+        <nav class="main-nav">
+                <ul>
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="index-en.html#ozellikler">Features</a></li>
+                    <li><a href="guide.html">User Guide</a></li>
+                    <li><a href="index-en.html#iletisim">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch">
+                 <a href="kilavuz.html">TR</a> <span>|</span> <a href="guide.html" class="active">EN</a>
+            </div>
+            
+            <a href="index-en.html#indir" class="btn-primary">Coming Soon</a>
+        </div>
+    </header>
+
+<section class="docs-page">
+        <div class="container docs-container">
+            
+            <aside class="docs-sidebar">
+                <h3>Table of Contents</h3>
+                <ul class="docs-nav">
+                    <li><a href="#baslangic" class="active">🚀 Getting Started & Interface</a></li>
+                    <li><a href="#dosya">📁 File Operations</a></li>
+                    <li><a href="#cizim">✏️ Drawing Tools</a></li>
+                    <li><a href="#duzenleme">⚙️ Modification</a></li>
+                    <li><a href="#boolean">🧩 Boolean Operations</a></li>
+                    <li><a href="#olculendirme">📐 Dimensioning & Hatching</a></li>
+                    <li><a href="#katmanlar">🎯 Layers & Blocks</a></li>
+                    <li><a href="#izometrik">🧊 View & Grid</a></li>
+                </ul>
+            </aside>
+
+            <div class="docs-content">
+                
+                <div class="docs-section" id="baslangic">
+                    <h2>Getting Started and Interface</h2>
+                    <p>Welcome to TamgamCAD's modern and user-friendly interface. The application allows you to use the drawing area (Canvas) with maximum efficiency.</p>
+                    
+                    <img src="resimler/arayuz-genel.png" alt="TamgamCAD Interface" class="docs-img" onerror="this.style.display='none'">
+                    
+                    <ul>
+                        
+                        <li><strong>Theme:</strong> You can switch between Dark and Light interface themes from the top menu to reduce eye strain or suit your personal preference.</li>
+                        <li><strong>Grid:</strong> You can toggle the grid view on and off from the top menu to create a visual reference or align objects in the workspace (Canvas).</li>
+                        <li><strong>Object Snap (Osnap):</strong> To snap precisely to the Endpoints, Midpoints, Intersections, and Centers of objects during the drafting process, use the "Snap" settings located under the 'Settings' tab in the top menu.</li>
+                        <li><strong>Scale:</strong> Use the scale settings in the top menu to determine the real-world size equivalent (mm, cm, m, etc.) of your drawing.</li>
+                        <li><strong>Dimension Input:</strong> While you can enter length values directly from your keyboard during drafting, you can also use the dedicated dimension input panel in the top menu, specifically designed for touch screens and tablets.</li>
+                        <li><strong>Language:</strong> To personalize your workspace, you can change the interface language to Turkish (TR) or English (EN) from the top menu.</li>                       
+                        <li><strong>Navigation (Pan & Zoom):</strong> You can zoom in and out by scrolling the mouse wheel, and pan the screen by clicking and holding the mouse wheel or using two fingers on a touch screen.</li>
+                        <li><strong>Orthogonal Mode (Ortho):</strong> To restrict your lines to strictly horizontal (0°, 180°) and vertical (90°, 270°) axes, press <strong>F8</strong> on your keyboard.</li>
+                    </ul>
+                </div>
+
+              <div class="docs-section" id="dosya">
+                <h2>File Operations and Export</h2>
+                <p>Safely store your projects and share them with other software in industry-standard formats.</p>
+                <ul>
+                    <li><strong>Open File:</strong> Import your previously saved TamgamCAD project files in <code>.json</code> format into your workspace to continue working on your incomplete projects.</li>
+                    <li><strong>Save / Save As:</strong> Save your drawings locally to your computer in <code>.json</code> format so you can later edit them with all their layers, blocks, and properties intact.</li>
+                  <li><strong>Export:</strong> You can export your drawings as <code>.SVG</code> and <code>.PDF</code> for vector presentations and high-resolution prints, and as <code>.PNG</code> for quick sharing.</li>
+                    <li><strong>Insert Image:</strong> Add reference images (JPG, PNG) to your workspace to trace over them.</li>
+                </ul>
+            </div>
+
+                        <div class="docs-section" id="cizim">
+                <h2>Basic and Advanced Drawing Tools</h2>
+                <p>Whether you are drawing straight lines or organic curves, you can start your project by selecting the desired tool from the top menu:</p>
+                
+                <img src="img/line.png" alt="Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+
+                <ul>
+                    <li><strong>Line and Polyline:</strong> Create independent line segments using a start and end point, or draw a continuous sequence of connected polylines.</li>
+                    <li><strong>Circle:</strong> First specify the center point, then define the radius (or drag with your mouse) to create your circle.</li>
+                    <li><strong>Arc:</strong> First specify the chord length (start and end points), then set the bulge (bow) height to complete the arc.</li>
+                    <li><strong>Rectangle:</strong> Draw by dragging and dropping with the mouse, or by entering precise dimensions using the keyboard in the <code>Width X Height</code> (or <code>Width * Height</code>) format.</li>
+                    <li><strong>Ellipse:</strong> Create free-form ellipses by specifying the axis widths using the drag-and-drop method.</li>
+                    <li><strong>Polygon:</strong> Draw regular polygons by entering the desired number of sides via the keyboard.</li>
+                    <li><strong>Donut:</strong> Specify the center point first, then sequentially define the radii of the inner and outer circles to create a thick-walled ring.</li>
+                    <li><strong>Tan-Tan-Radius (TTR):</strong> Use this to draw a circle with a specified radius tangent to two objects. <em>(Note: The radius value you enter must be geometrically appropriate for the distance between the two objects. You can easily trim TTR circles later to create smooth corner transitions.)</em></li>
+                    <li><strong>Tangent Line:</strong> Use this to draw straight lines perfectly tangent to the outer boundaries of two different circles.</li>
+                    <li><strong>Freehand:</strong> Create organic forms with your mouse or stylus that give a hand-drawn feel, automatically converted into mathematical curves in the background.</li>
+                </ul>
+                <div class="info-box">
+            <strong>Tip:</strong> You can gain speed in complex projects by using the "Filter" feature for all selection operations (Select Only Text, Select Only Circles, etc.).
+                </div>
+            </div>
+
+                            <div class="docs-section" id="duzenleme">
+                <h2>Modification</h2>
+                <p>Manipulate your drawn geometries with precision.</p>
+                <ul>
+                    <li>
+                        <strong>Trim & Extend:</strong> Used to cut away intersecting excess lines or extend the endpoint of a line to meet another object.
+                        <div class="info-box" style="margin-top: 10px;">
+                            <strong>Tip:</strong> When using the Trim or Extend commands, ensure that the objects physically intersect or align in the same path.
+                        </div>
+                    </li>
+                    <li><strong>Offset:</strong> Creates a parallel copy of a selected object (e.g., a wall line) at a specified distance inside or outside.</li>
+                    <li><strong>Rotate:</strong> Rotate selected objects around a specified base point by entering a precise angle value directly from your keyboard.</li>
+                    <li><strong>Mirror:</strong> Creates a mirrored symmetry of selected objects across a reference line (axis of reflection) that you define.</li>
+                    <li><strong>Scale:</strong> Use this to proportionally enlarge or reduce objects based on a specific base point.</li>
+                    <li><strong>Array:</strong> Duplicates a selected object at specified intervals and quantities in a horizontal and vertical grid (Rectangular) or around a circular center (Polar).</li>
+                    <li><strong>Chamfer & Fillet:</strong> Modifies sharp corners formed by two intersecting lines by cutting them flat at a specified distance (Chamfer) or rounding them with a smooth radius (Fillet).</li>
+                    <li><strong>Resize:</strong> Allows you to revise the overall aspect ratios and dimensions of your drawn objects.</li>
+                </ul>
+            </div>
+
+           <div class="docs-section" id="boolean">
+    <h2>Grouping, Exploding, and Boolean Operations</h2>
+    <p>One of TamgamCAD's most powerful features is its ability to group objects on the fly and mathematically process overlapping closed shapes.</p>
+    <img src="resimler/boolean-ornek.png" alt="Boolean Operations" class="docs-img" onerror="this.style.display='none'">
+    <ul>
+        <li><strong>Group & Ungroup:</strong> Select multiple objects and group them on the fly to act as a single unit, or ungroup an existing group to make its components independent again.</li>
+        <li><strong>Explode & Join:</strong> Break down a unified polyline or polygon into independent line segments (Explode), or connect open-ended lines that touch each other into a single continuous object (Join).</li>
+        <li><strong>Wrap (Boundary):</strong> Extracts only the outermost boundaries (contours) of overlapping complex objects, removing internal details to create a new, single closed perimeter geometry.</li>
+        <li><strong>Boolean Operations:</strong> Mathematical solid modeling operations between closed shapes:
+            <ul style="margin-top: 10px; margin-bottom: 10px;">
+                <li><em>Union:</em> Fuses overlapping shapes into a single geometric entity.</li>
+                <li><em>Difference:</em> Subtracts the overlapping area of the second shape from the main shape.</li>
+                <li><em>Intersection:</em> Keeps only the common overlapping area of the shapes and deletes the rest.</li>
+                <li><em>Exclusion (XOR):</em> The exact opposite of intersection; it deletes the overlapping common area and leaves only the non-intersecting parts of the shapes.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+                <div class="docs-section" id="olculendirme">
+            <h2>Dimensioning, Hatching, and Annotation</h2>
+            <p>Add details in compliance with technical drawing standards.</p>
+            <ul>
+                <li><strong>Dimensioning:</strong> Technically annotate your project with Linear, Angular, Diameter, Radius, and automatic Area Calculation tools.</li>
+                <li><strong>Hatching (Hatch):</strong> Fill closed geometric areas with various material patterns that suit the technical requirements of your project. Supported patterns include: Solid Fill, Vertical Lines, Diagonal, Cross, Dotted, Brick, Checker, Honeycomb, and Concrete.</li>
+                <li><strong>Text and Leader:</strong> Add descriptive plain text or use leader lines (arrows with text) to point out and annotate specific details in your project.</li>
+                <li><strong>Table and Settings:</strong> Insert property and detail tables into the workspace. Use the table settings to customize the number of rows/columns, dimensions, and cell contents according to your project's needs.</li>
+            </ul>
+        </div>
+
+            <div class="docs-section" id="katmanlar">
+                <h2>Layers, Library, and Object Properties</h2>
+                <p>Prevent clutter in large projects and professionally manage the visual attributes of your objects.</p>
+                <ul>
+                    <li><strong>Layer Panel:</strong> Name your layers and assign specific colors to each. You can toggle layer visibility on and off during drafting, or lock them (Lock/Freeze) to prevent unintended modifications.</li>
+                    <li><strong>Object Properties:</strong> Easily change the color, linetype (continuous, dashed, dotted, etc.), and lineweight of selected objects in the workspace from the properties panel in the top menu.</li>
+                    <li><strong>Match Properties:</strong> Copy the color, linetype, and lineweight of one object and flawlessly apply them to other objects with a single click.</li>
+                    <li><strong>Block Creation:</strong> Turn frequently used objects (e.g., a standard window drawing) into Blocks so they act as a single unit.</li>
+                    <li><strong>Project and Global Library:</strong> Save your blocks to the library to reuse them with a single click in both your current project and all future projects (Global Library).</li>
+                </ul>
+            </div>
+
+            <div class="docs-section" id="izometrik">
+    <h2>Isometric View</h2>
+    <p>Specialized tools for creating technical drawings that provide a 3D illusion within a 2D space.</p>
+    <img src="resimler/izometrik-izgara.png" alt="Isometric Grid" class="docs-img" onerror="this.style.display='none'">
+    <ul>
+        <li><strong>Isometric Grid:</strong> When activated from the top menu, your workspace grid, cursor, and lines automatically snap to 30° and 150° isometric axes. This allows you to easily draft complex isometric perspectives.</li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Kullanıcı sayfayı kaydırdıkça sol menüdeki aktif linki değiştirir
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.docs-section');
+            const navLinks = document.querySelectorAll('.docs-nav a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (scrollY >= sectionTop - 150) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+ <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index-en.html" class="logo">
+                <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
+                </a>
+                <p>An optimized, fast, and secure 2D CAD solution for professionals.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index-en.html#ozellikler">Features</a></li>
+                    <li><a href="guide.html">User Guide</a></li>
+                    <li><a href="index-en.html#iletisim">Contact</a></li>
+                </ul>
+            </div>
+          <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="licence.html">Terms of Use (EULA)</a></li>
+                    <li><a href="licence.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>tamgamcad@hotmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TamgamCAD. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
