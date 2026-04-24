@@ -18,6 +18,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
     color: var(--text-dark);
     background-color: var(--white);
     line-height: 1.6;
@@ -456,7 +457,7 @@ footer {
     color: var(--white);
     padding: 6px 16px;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -708,7 +709,7 @@ footer {
     padding: 0 15px;
     color: #94a3b8;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     position: relative;
     top: -9px;
@@ -851,7 +852,7 @@ footer {
 }
 
 .platform-card .note {
-    font-size: 0.85em;
+    font-size: 14px;
     color: #94a3b8;
     margin-top: 15px;
 }
