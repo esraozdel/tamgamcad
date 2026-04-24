@@ -1,0 +1,22 @@
+# TamgamCAD
+
+Professional 2D CAD drafting and modeling solution for engineers and architects.
+
+## Overview
+TamgamCAD provides advanced technical drawing, modification, and Boolean-based drafting tools on a single platform. It offers a cross-platform experience with specialized versions for desktop and mobile users.
+
+## Versions
+- **Desktop (Free)**: Essential 2D drafting environment, SVG/PNG export, and command-line support.
+- **Mobile (Pro)**: Advanced drafting, full Boolean operations (Union, Difference, etc.), DXF/PDF export, and isometric grid support.
+
+## Key Features
+- **Boolean Operations**: Advanced solid modeling logic (Union, Difference, Intersection, XOR).
+- **Export Options**: PNG, SVG, PDF, and industry-standard DXF.
+- **Precision Tools**: Ortho mode, Osnap (Endpoint, Midpoint, Center), and Tan-Tan-Radius.
+- **Organization**: Unlimited layers (Pro), Global Block Library, and Property Tables.
+
+## Important Links
+- [Features](https://tamgamcad.com/features.html): Detailed comparison of Desktop and Pro features.
+- [User Guide](https://tamgamcad.com/guide.html): Official documentation and technical tutorials.
+- [License](https://tamgamcad.com/licence.html): EULA and Privacy Policy information.
+- [Contact](https://tamgamcad.com/index-en.html#contact): Official support via EmailJS-integrated form.
