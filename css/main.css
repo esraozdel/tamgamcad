@@ -7,9 +7,9 @@
 
 /* RENK PALETİ VE DEĞİŞKENLER */
 :root {
-    --primary-color: #2563eb; /* Mavi (Uygulamanızdaki gibi) */
+    --primary-color: #2563eb;
     --primary-hover: #1d4ed8;
-    --dark-bg: #0f172a; /* Koyu Lacivert/Gri (CAD Editör rengi) */
+    --dark-bg: #0f172a; 
     --text-dark: #1e293b;
     --text-light: #64748b;
     --white: #ffffff;
@@ -58,15 +58,15 @@ header {
 
 .logo {
     display: flex;
-    align-items: center; /* Resim ve yazıyı dikeyde ortalar */
-    gap: 10px; /* Resim ile yazı arasındaki boşluk */
+    align-items: center; 
+    gap: 10px;
     font-size: 24px;
     font-weight: 900;
     letter-spacing: -0.5px;
 }
 
 .logo-img {
-    height: 70px; /* Logonun yüksekliği.  */
+    height: 70px; 
     width: auto;
 }
 
@@ -326,10 +326,10 @@ footer {
     max-width: 800px; /* Çok büyük ekranlarda devasa olmasını engeller */
     height: auto; /* En/boy oranını bozmaz */
     border-radius: 12px; /* Köşeleri modern şekilde yuvarlatır */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* Derinlik katan şık gölge */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* Derinlik katan gölge */
     display: block;
     margin: 0 auto; /* Resmi ortalar */
-    border: 1px solid #e2e8f0; /* Çok ince zarif bir çerçeve */
+    border: 1px solid #e2e8f0; /* Çok ince bir çerçeve */
 }
 
 /* --- İLETİŞİM BÖLÜMÜ --- */
@@ -853,11 +853,7 @@ footer {
     line-height: 1.6;
 }
 
-.platform-card .note {
-    font-size: 14px;
-    color: #94a3b8;
-    margin-top: 15px;
-}
+
 
 .platform-card .play-soon {
     font-weight: bold;
