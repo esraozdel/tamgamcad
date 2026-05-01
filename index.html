@@ -37,28 +37,38 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "TamgamCAD",
-        "operatingSystem": "Android, Windows 10, Windows 11",
-        "applicationCategory": "DesignApplication",
-        "image": "https://tamgamcad.com/img/logotransparan.png",
-        "description": "Profesyoneller için optimize edilmiş mobil odaklı, gelişmiş 2D CAD ve katı modelleme çözümü.",
-        "offers": {
-        "@type": "Offer",
-        "price": "299.99",
-        "priceCurrency": "TRY",
-        "description": "TamgamCAD Pro - Google Play Aylık Abonelik"
-                },
-        "author": {
-            "@type": "Organization",
-            "name": "TamgamCAD",
-            "url": "https://tamgamcad.com"
-        }
-        }
-    </script>
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TamgamCAD",
+  "url": "https://tamgamcad.com",
+  "image": "https://tamgamcad.com/img/logotransparan.png",
+  "description": "Profesyoneller için optimize edilmiş mobil odaklı, gelişmiş 2D CAD çözümü.",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Android, Windows 10, Windows 11",
+  "author": {
+    "@type": "Person",
+    "name": "TAMGAM",
+    "url": "https://tamgamcad.com"
+  },
+"offers": [
+  {
+    "@type": "Offer",
+    "price": "299.99",
+    "priceCurrency": "TRY",
+    "eligibleRegion": "TR",
+    "description": "Türkiye için aylık abonelik fiyatı"
+  },
+  {
+    "@type": "Offer",
+    "price": "7.49",
+    "priceCurrency": "USD",
+    "description": "Monthly subscription price for the United States."
+  }
+]
+}
+</script>
 </head>
 
 <body>
@@ -72,7 +82,7 @@
         <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="index.html#ozellikler">Özellikler</a></li>
+                    <li><a href="index.html#tablo">Özellikler</a></li>
                     <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
                     <li><a href="index.html#iletisim">İletişim</a></li>
                 </ul>
@@ -81,114 +91,298 @@
                 <a href="#" class="active">TR</a> <span>|</span> <a href="index-en.html">EN</a>
             </div>
             
-           <a href="#platformlar" class="btn-primary">Sürümler / İndir</a>
+           <a href="#platformlar" class="btn-primary">TamgamCAD Sürümler</a>
         </div>
     </header>
     <main>
 
- <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-text">
-                <h1>2D CAD Yazılımı ve Teknik Çizim Programı</h1>
-               <p>Masaüstünde temel tasarımlarınızı ücretsiz oluşturun, mobil Pro sürüm ile <strong>gelişmiş vektörel çizim</strong>, Boolean işlemleri ve profesyonel <strong>2D CAD</strong> detaylandırmanın gücünü her yere taşıyın.</p>
-                <div class="hero-buttons">
-                    <a href="#platformlar" class="btn-primary">Platformunu Seç</a>
-                    <a href="ozellikler.html" class="btn-secondary">Sürümleri Karşılaştır</a>
-                </div>
+<section class="hero hero-dark-fullscreen">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <h1>2D CAD Yazılımı ve Teknik Çizim Programı</h1>
+            <p>TamgamCAD deneyimini ister masaüstünde, ister mobilde hareket halindeyken özgürce kullanın.</p>
+            <div class="hero-buttons">
+                <a href="#tablo" class="btn-secondary btn-white">Sürümleri Karşılaştır</a>
+                <a href="#platformlar" class="btn-primary">TamgamCAD'i Ücretsiz Deneyin</a>
             </div>
-       <picture>
-        
-        <source srcset="img/hero_img.webp" type="image/webp">
-        <img src="img/hero_img.webp" alt="TamgamCAD Çizim Ekranı" class="app-screenshot" width="654" height="454" fetchpriority="high">
-    </picture>
         </div>
-    </section>
+        
+        <div class="hero-image-wrapper">
+            <picture>
+                <source srcset="img/hero_img.webp" type="image/webp">
+                <img src="img/hero_img.webp" alt="TamgamCAD Çizim Ekranı" class="hero-img-cover" fetchpriority="high">
+            </picture>
+        </div>
+    </div>
+</section>
 
- <section id="ozellikler" class="features">
+     <section id="ozellikler" class="features">
         <div class="container">
-            <div class="section-title">
-                <h2>Neden TamgamCAD 2D Çizim Programını Seçmelisiniz?</h2>
-                <div class="divider"></div>
-            </div>
+        
             
-           
+              <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">📐</div>
+                    <h3>Hassas Çizim</h3>
+                    <p>TTamgamCAD, akıllı hizalama ve ızgara altyapısıyla hassas çizimler oluşturmanıza yardımcı olur. Sektör standardı düzenleme komutlarını kullanarak projelerinizi kusursuz bir şekilde tasarlamanızı sağlar.</p>
+                </div>
+
                 <div class="feature-card">
                     <div class="icon">🔒</div>
-                    <h3>Yerel Çalışma Alanı ve Veri Güvenliği</h3>
+                    <h3>Yerel Çalışma Alanı</h3>
                     <p>Fikri mülkiyetinize değer veriyoruz. Çizim dosyalarınız ve projeleriniz, harici bulut senkronizasyonunu tercih etmediğiniz sürece doğrudan cihazınızda yerel olarak saklanır. Tamamen kontrol sizde.</p>
                 </div>
+
                 <div class="feature-card">
                     <div class="icon">🖨️</div>
                     <h3>Evrensel Formatlarda Dışa Aktarım</h3>
-                    <p>Ölçülendirme ve özel semboller içeren teknik çizimlerinizi yüksek çözünürlüklü DXF, PDF, SVG ve PNG formatlarında dışa aktarın. 2D CAD projelerinizi profesyonel sunumlar ve detaylı baskılar için kayıpsız vektör kalitesiyle kolayca paylaşın.</p>
+                    <p>Ölçülendirme ve özel semboller içeren teknik çizimlerinizi yüksek çözünürlüklü DXF, PDF, SVG ve PNG formatlarında dışa aktarır. 2D CAD projelerinizi profesyonel sunumlar ve detaylı baskılar için vektör kalitesiyle kolayca paylaşmanızı sağlar.</p>
                 </div>
+
                 <div class="feature-card">
                     <div class="icon">👆</div>
                     <h3>Dokunmatik ve Kalem Desteği</h3>
-                    <p>TamgamCAD, dokunmatik ekranlar ve tabletler için optimize edilmiştir. Tuvali iki parmağınızla yakınlaştırıp kaydırabilir veya kaleminizle doğrudan ekranda milimetre hassasiyetinde çizimler yapabilirsiniz.</p>
+                    <p>TamgamCAD, dokunmatik ekranlar ve tabletler için optimize edilmiştir. Tuvali iki parmağınızla yakınlaştırıp kaydırabilir veya kaleminizle doğrudan ekranda milimetre hassasiyetinde çizimler yapabilirsiniz. </p>
                 </div>
             </div>
         </div>
-        <div style="text-align: center; margin-top: 50px;">
-                <a href="ozellikler.html" class="btn-secondary" style="font-size: 16px; padding: 12px 30px;">Tüm Özellikleri Gör ➔</a>
-            </div>
-       
-    
     </section>
-  
-    
+
     <section id="platformlar" class="platforms-section">
         <div class="container">
             <div class="section-title">
-                <h2>Platformunu Seç ve Çizmeye Başla</h2>
+                <h2>İş Modelinize Uygun TamgamCAD'i Deneyin</h2>
                 <div class="divider"></div>
-                <p>TamgamCAD deneyimini ister masaüstünde profesyonelce, ister mobilde hareket halindeyken özgürce yaşayın.</p>
             </div>
             
             <div class="platforms-wrapper">
-                
                 <div class="platform-card">
                     <div class="icon">💻</div>
                     <h3>Masaüstü Sürümü</h3>
-                    <p>Windows 10 ve 11 cihazlarınızda geniş ekran, klavye kısayolları ve yüksek performans ile karmaşık CAD projelerine hakim olun.</p>
-                    
+                    <p>Windows 10 ve 11 cihazlarınızda geniş ekran, klavye kısayolları ve yüksek performans ile karmaşık CAD projelerine hakim olun. </p>
+                     <p class="note">
+                      Masaüstü sürümümüz temel araçları içerir.
+                     </p>
                     <a href="https://apps.microsoft.com/store/detail/9NKZJR6L9L7C?cid=DevShareMCLPCS" class="store-badge" target="_blank" rel="noopener noreferrer">
                         <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Microsoft Store'dan İndir">
                     </a>
-                 <p class="note">
-                * Masaüstü sürümümüz temel çizim araçlarını içerir.
-            </p>
                 </div>
 
                <div class="platform-card">
                     <div class="icon">📱</div>
                     <h3>Mobil Sürüm</h3>
-                    <p>Dokunmatik ekranlar için özel olarak optimize edilmiş arayüz ile fikirlerinizi her yere taşıyın ve hareket halindeyken çizin.</p>
-                     <a href="https://play.google.com/store/apps/details?id=com.tamgam.cizimaraci">
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play'den Alın">
-                    </a>
-                    <p class="note play-soon">
-
+                    <p>Dokunmatik ekranlar için özel olarak tasarlanan kullanıcı dostu arayüzü ile profesyonel 2D CAD  gücünü her yere taşıyın.</p>
+                    <p class="note">
+                        Harici klavye kullanarak klavye kısayollarını kullanabilirsiniz.
                     </p>
+                    <p class="note">
+                    Mobil sürüm, tüm gelişmiş özellikleri ile TamgamCAD’in en güçlü versiyonudur.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.tamgam.cizimaraci">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play'den Alın">
+                    </a>   
                 </div>
-
             </div>
-        </div>
+        </div> 
     </section>
-<section class="seo-content" style="padding: 60px 0; background-color: var(--white);">
+  
+    <section class="seo-content" style="padding: 60px 0; background-color: var(--white);">
         <div class="container">
             <div class="section-title">
-                <h2>Kapsamlı ve Hızlı 2D CAD Çözümü</h2>
-                <div class="divider"></div>
+                <h2>TamgamCAD 2D CAD Yazılımı ile Tasarımın Gücünü Hisset</h2>     
             </div>
             <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
-                <p style="margin-bottom: 20px;"><strong>TamgamCAD</strong>, mühendisler, mimarlar, teknikerler ve tasarım tutkunları için geliştirilmiş, yüksek performanslı bir <strong>2D CAD yazılımıdır</strong>. Piyasada bulunan ağır ve pahalı <strong>teknik çizim programlarına</strong> kıyasla, cihazınızı yormayan, hızlı, güvenli ve <strong>yerel çalışma alanı</strong> sunar.</p>
-                <p style="margin-bottom: 20px;">Masaüstü cihazlarınızda temel çizim araçlarını ücretsiz olarak kullanırken, mobil platformlarda sunulan gelişmiş <strong>Boolean işlemleri</strong>, <strong>katman yönetimi</strong> ve profesyonel <strong>ölçülendirme</strong> özellikleriyle projelerinize her an müdahale edebilirsiniz. Üstelik hazırladığınız detaylı <strong>teknik resimleri</strong> DXF, PDF, SVG ve PNG formatlarında dışa aktararak diğer endüstri standardı <strong>CAD programlarıyla</strong> sorunsuz bir şekilde paylaşabilirsiniz.</p>
-                <p>Amacımız, kullanıcı dostu arayüzümüz ve dokunmatik ekran optimizasyonumuz ile karmaşık <strong>mimari planlardan</strong>, hassas <strong>makine parçası çizimlerine</strong> kadar her türlü <strong>2D çizim</strong> ihtiyacınızı en pratik şekilde çözmektir.</p>
+                <p>
+                    TamgamCAD, <strong>teknik çizim</strong> için özel olarak geliştirilmiş yüksek performanslı 2 boyutlu bilgisayar destekli tasarım (CAD) yazılımıdır. <strong>2D CAD yazılımı</strong>, mühendislik ve mimari gibi alanlarda iki boyutlu hassas teknik çizim ile tasarımlar yapıp kat planları oluşturmayı olanak sağlayan vektörel tabanlı bir yazılımdır. <strong>TamgamCAD 2D CAD programı</strong> sade tasarımı ve kullanıcı dostu arayüzü ile verimli çalışma alanı sunar. Program içi yönlendirmeler ve kolay kullanım kılavuzu sayesinde ilk <strong>2d</strong> çiziminizi hızlı bir şekilde oluşturabilirsiniz. TamgamCAD, mimarlar, mühendisler, teknikerler ve tasarım alanında faaliyet gösteren profesyonel veya yeni başlayan kişiler için pratik çözümler sunar.  Hızlı ve yüksek performanslı TamgamCAD yazılımını <strong><a href="#platformlar" style="text-decoration: underline;">ücretsiz denemek için sürümleri inceleyebilirsiniz</a></strong>.
+                </p>
             </div>
+            <br>
+           <div class="section-title">
+                <h2>Kapsamlı ve Hızlı 2D CAD Teknik Çizim İmkanları</h2>   
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
+                <p>
+                    <strong>2D teknik çizim</strong> veya resimlerinizi TamgamCAD’in gelişmiş araçları ile hızlı bir şekilde detaylandırabilirsiniz. Çizimlerinizin rengini, kalınlığını ve çizgi tipini özellikler bölümümden belirleyebilir daha sonra stillerini değiştirebilir veya başka bir nesneye aktarabilirsiniz. Tarama seçenekleri sayesinde detaylı teknik resim çizebilir, hassas ölçüm araçları ile çizimlerinizin gerçek hayattaki karşılığını öğrenebilirsiniz. Özelleştirdiğiniz ve detaylandırdığınız çizimleri daha sonra da kullanmak için <strong>blok oluşturma</strong> ile kütüphaneye hızlı bir şekilde ekleyebilirsiniz.  Oluşturulan bloğu farklı katmanlarda kullanmak için proje kütüphanesini başka projelerde kullanmak için ise global kütüphanesini kullanabilirsiniz. Blok ayarları ve diğer çizim araçları hakkında daha fazla ayrıntı için <a href="kilavuz.html" style="text-decoration: underline;">kullanım kılavuzu</a>na göz atabilirsiniz. TamgamCAD, kullanıcılara teknik çizim/resim için gereken temel özellikleri sunarken hız ve kullanılabilirliği de ön planda tutar. En temel CAD araçlarından biri olan <strong>katman yönetimi</strong>, çizimdeki nesneleri kullanıcının belirlediği özelliklere göre organize etmesini ve yönetmesini sağlar. Karmaşık mühendislik ve mimari çizim için önemli olan bu özellik ile verimlilik artar ve projenin düzenli bir şekilde büyümesini sağlar.
+                </p>
+                <br>
+                <p> * Bazı özellikler kullanılan platforma göre farklılık gösterebilir. Özellik listesi ve karşılaştırma için <a href="#tablo" style="text-decoration: underline;">özellik tablosunu</a> inceleyebilirsiniz.</p>
+            </div>
+            <br>
+            <div class="section-title">
+                     <h2>Neden TamgamCAD 2D Çizim Programını Seçmelisiniz?</h2>  
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
+                <p>TamgamCAD, mobil cihazlar için optimize edilmiş güçlü ve kullanıcı dostu arayüzüyle öne çıkan yeni nesil bir 2D CAD programı olarak, profesyonel çizim deneyimini herkes için erişilebilir hale getirir. İster sahada olun ister ofis dışında, projelerinizi dilediğiniz an oluşturabilir, düzenleyebilir ve paylaşabilirsiniz. 
+
+                    Mobil Pro sürüm, klasik bir <strong>mobil CAD uygulamasının</strong> ötesine geçerek gelişmiş Boolean işlemleri, sınırsız katman yönetimi, hassas çizim araçları ve DXF/PDF dışa aktarma desteği sunar. Bu sayede sadece <strong>DXF görüntüleme</strong> değil, tam anlamıyla profesyonel üretim yapabilirsiniz. 
+
+                    TamgamCAD’i hemen ücretsiz indirerek 2D CAD dünyasına hızlı bir adım atabilirsiniz. Mobil sürümde uygulama içi satın alma ile Pro özellikleri kullanabilir, masaüstü Beta sürümünü ise erken erişim süresince ücretsiz kullanabilirsiniz. 
+
+                    İhtiyacınıza en uygun sürümü şimdi keşfedin, doğru 2D CAD programı ile tasarımlarınızı hızlandırın ve projelerinizi profesyonel seviyeye taşıyın. </p>
+    
+                <div class="cta-highlight-box">
+                    <p>Hayalindeki tasarımı profesyonel deneyim ile çizmeye başla.</p>
+                    <a href="#platformlar" class="btn-primary">Hemen ücretsiz indirin ve çizmeye başlayın</a>
+                </div>
+            </div>
+            
         </div>
     </section>
 
+     <section id="tablo" class="features-page">
+     <div class="container">
+        <div class="section-title">
+                <h2>TamgamCAD Çizim Araçları ve Özellikleri Nelerdir? </h2>   
+            </div> 
+
+        <div class="features-table-container">
+            <table class="features-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Özellikler</th>
+                        <th scope="col">Masaüstü</th>
+                        <th scope="col">Mobil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dosya Dışa Aktarım</th>
+                        <td>PNG / SVG</td>
+                        <td>PNG / SVG / PDF / DXF</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Çizim Araçları</th>
+                        <td>Temel Çizim Araçları</td>
+                        <td>Gelişmiş Çizim Araçları</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tarama (Hatch)</th>
+                        <td>Temel Tarama Seçenekleri</td>
+                        <td>Geniş Desen Kütüphanesi</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Düzenleme (Modifikasyon)</th>
+                        <td>Trim, Rotate, Mirror, Scale, Lengthen</td>
+                        <td>Temel + Extend, Offset, Array, Chamfer, Fillet</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Gelişmiş İşlemler & Boolean</th>
+                        <td>Group / Ungroup, Join, Split</td>
+                        <td>Temel + Block, Wrap, Boolean</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Notlandırma</th>
+                        <td>Düz Metin, Oklu Metin</td>
+                        <td>Temel + Tablo Oluşturma</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nesne Özellikleri</th>
+                        <td>Renk, Kalınlık, Çizgi Tipi</td>
+                        <td>Temel + Özellik Eşleştirme (Match Prop)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Proje Kütüphanesi</th>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Katman (Layer) Yönetimi</th>
+                        <td>Sınırlı</td>
+                        <td>Sınırsız</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Komut Satırı</th>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+
+               <div></div>
+              
+            <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
+                <br>
+                <p>
+                    TamgamCAD, temel ve gelişmiş <strong>çizim araçları</strong> ile 2 boyutlu teknik çizimler yapmanıza yardımcı olur. Düz çizgi, devamlı çizgi, daire, elips, yay ve dikdörtgen temel çizim araçları içinde yer alırken, çokgen, halka, TTR ve teğet çizgisi gelişmiş çizim araçları arasında yer alır. Bunların dışında vektörel tabanlı serbest çizim araçları ve farklı fırça tipleri ile çizimlere detay vermeyi sağlayan geniş bir araç seti sunar. Çizim sırasında pratiklik oldukça önemlidir bunun için düzenle ve işlemler bölümünde yer alan araçlar kullanıcıya hız kazandırır.
+                </p>
+                <br>
+
+                    
+
+
+                    
+                <h3>Düzenleme Bölümü Araçları</h3>
+                <ul style="list-style-type:disc">
+                    <li><strong>Kırp (Trim) & Uzat (Extend): </strong>Kesişen çizgilerin fazlalıklarını budamak veya bir çizginin ucunu başka bir objeye kadar uzatmak için kullanılır.</li>
+                    <li><strong>Ötele (Offset): </strong>Seçili bir objenin (örneğin bir duvar çizgisinin) belirlenen mesafe kadar dışına veya içine paralel kopyasını oluşturur.</li>
+                    <li><strong>Döndür (Rotate): </strong> Seçili nesneleri belirlenen bir merkez noktası etrafında girilen açı değeri kadar döndürülmesini sağlar.</li>
+                    <li><strong>Aynala (Mirror): </strong>Seçilen nesnelerin, belirlenen referans çizgisi etrafında ayna görüntüsünü oluşturur.</li>
+                    <li><strong>Ölçekle (Scale): </strong>Nesneleri başlangıç noktası referans alınarak orantılı bir şekilde büyütmek veya küçültmek için kullanılır.</li>
+                    <li><strong>Çoğalt (Array): </strong>Seçili bir objeyi yatay ve dikey düzlemde (Dikdörtgensel) veya dairesel bir merkez etrafında (Kutupsal) belirli aralıklarla ve sayılarda çoğaltır. </li>
+                    <li><strong>Pah Kır (Chamfer) & Köşe Yuvarla (Fillet): </strong>Kesişen iki çizginin oluşturduğu keskin köşeleri belirli bir mesafe girerek düz keser (Pah) veya belirli bir yarıçapla yumuşak bir kavis oluşturur (Fillet).</li>
+                    <li><strong>Yeniden Boyutlandır (Resize): </strong>Çizilen nesnelerin boyutlarını sonradan değiştirmek için kullanılır. </li>
+                </ul> 
+                <br>
+                <h3>İşlemler Bölümü Araçları</h3>
+                <ul style="list-style-type:disc">
+                    <li><strong>Grupla (Group) & Grubu Çöz (Ungroup): </strong> Birden fazla nesneyi seçip anlık olarak tek bir nesne gibi hareket ettirmek için grupla veya mevcut bir grubun bileşenlerini tekrar bağımsız hale getirmek için grubu çöz kullanılabilir.</li>
+                    <li><strong>Parçala (Explode) & Uç Uca Ekle (Join):</strong>Bütün bir çoklu çizgiyi (Polyline) veya çokgeni bağımsız çizgilere ayırmak için parçala veya ucu açık, birbirine değen bağımsız çizgileri tek bir nesne olarak birleştirme için kullanılır.</li>
+                    <li><strong>Dış Zarf Birleştir (Wrap / Boundary): </strong>Nesnelerin iç detaylarını silip sadece en dış sınırlarını baz alarak yeni, tek parça ve kapalı bir çevre geometrisi oluşturur. </li>
+                    <li><strong>Boolean İşlemleri: </strong>Üst üste binen kapalı şekilleri matematiksel olarak işler.</li>
+                        <ul style="list-style-type:square; margin-left: 40px;">
+                            <li>Birleştir (Union): Üst üste binen şekilleri eriterek tek bir bütün haline getirir.</li>
+                            <li>Çıkar (Difference): Ana şeklin içinden, ikinci şeklin değdiği veya kesiştiği alanları kesip atar. </li>
+                            <li>Kesişim (Intersection): Sadece şekillerin üst üste bindiği ortak (kesişen) alanı bırakır, gerisini siler. </li>
+                            <li>Sadece Farklar (Exclusion / XOR): Kesişim işleminin tam tersidir yalnızca şekillerin birbirine değmeyen farklı kısımlarını bırakıp ortak alanı siler. </li>
+                        </ul>
+                </ul>
+            </div>
+        
+            
+           
+         
+        
+        </div>
+    </div>
+</section>
+
+<section id="sss" class="faq">
+    <div class="container">
+        <div class="section-title">
+            <h2>Sıkça Sorulan Sorular (SSS)</h2>
+        </div>
+        
+        <div class="faq-accordion">
+            <!-- Soru 1 -->
+            <details class="faq-item" open>
+                <summary>TamgamCAD'i kullanmak için internet bağlantısı şart mı?</summary>
+                <p>Hayır, internet bağlantısı zorunlu değildir. TamgamCAD, yerel çalışma alanı özelliği sayesinde tüm proje ve çizimlerinizi cihazınızda saklar ve tamamen çevrimdışı çalışmanıza olanak tanır.</p>
+            </details>
+
+            <!-- Soru 2 -->
+            <details class="faq-item">
+                <summary>Google Play'de satın aldığım pro özellikleri Microsoft Store'da kullanabilir miyim?</summary>
+                <p>Hayır, yazılımın özellikleri yayınladığı platforma göre değişkenlik gösterir. Satın aldığınız abonelik ile gelen özellikler diğer platformda sunulmuyorsa o özelliği kullanamazsınız. Ancak aynı e-posta adresi ile giriş yapabilirsiniz.</p>
+            </details>
+
+            <!-- Soru 3 -->
+            <details class="faq-item">
+                <summary>Tablet ve dokunmatik ekranlarda kullanımı kolay mı?</summary>
+                <p>Kesinlikle! Arayüzümüz dokunmatik ekranlar için özel olarak optimize edilmiştir. İki parmağınızla yakınlaştırma/kaydırma yapabilir ve dokunmatik kaleminizle milimetre hassasiyetinde çizimler oluşturabilirsiniz.</p>
+            </details>
+
+            <!-- Soru 4 -->
+            <details class="faq-item">
+                <summary>Eğitim veya deneme sürümü mevcut mu?</summary>
+                <p>Evet, programı test edebilmeniz için tüm özelliklerin açık olduğu seçilen aboneliğe göre 7 veya 14 günlük ücretsiz bir deneme sürümü sunuyoruz. Google Play üzerinden indirip hemen deneyebilirsiniz. Karmaşık eğitim süreçlerine ihtiyaç duymadan uygulama içi yönlendirmeler ile yazılımı kolayca kullanabilirsiniz.</p>
+            </details>
+        </div>
+    </div>
+</section>
+  
+
+
+  
 
     <section id="iletisim" class="contact">
         <div class="container">
