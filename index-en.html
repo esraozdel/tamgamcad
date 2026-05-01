@@ -37,29 +37,38 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
-    
     <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "TamgamCAD",
-        "operatingSystem": "Android, Windows 10, Windows 11",
-        "applicationCategory": "DesignApplication",
-        "image": "https://tamgamcad.com/img/logotransparan.webp",
-        "description": "Mobile-first, advanced 2D CAD and boolean modeling solution optimized for professionals.",
-        "offers": {
-            "@type": "Offer",
-            "price": "7,49",
-            "priceCurrency": "USD",
-            "description": "Google Play Monthly Subscription"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "TamgamCAD",
-            "url": "TamgamCAD Pro - Google Play Monthly Subscription"
-        }
-        }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TamgamCAD",
+  "url": "https://tamgamcad.com",
+  "image": "https://tamgamcad.com/img/logotransparan.png",
+  "description": "An advanced, mobile-focused 2D CAD solution optimized for professionals.",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Android, Windows 10, Windows 11",
+  "author": {
+    "@type": "Person",
+    "name": "TAMGAM",
+    "url": "https://tamgamcad.com"
+  },
+"offers": [
+  {
+    "@type": "Offer",
+    "price": "299.99",
+    "priceCurrency": "TRY",
+    "eligibleRegion": "TR",
+    "description": "Türkiye için aylık abonelik fiyatı"
+  },
+  {
+    "@type": "Offer",
+    "price": "7.49",
+    "priceCurrency": "USD",
+    "description": "Monthly subscription price for the United States."
+  }
+]
+}
+</script>
 
 </head>
 
@@ -68,7 +77,7 @@
 <header>
     <div class="container header-container">
         <a href="index.html" class="logo">
-            <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
+            <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img" width="423" height="112" fetchpriority="high">
            
         </a>
         
@@ -83,68 +92,67 @@
                 <a href="index.html">TR</a> <span>|</span> <a href="#" class="active">EN</a>
             </div>
             
-           <a href="#platforms" class="btn-primary">Versions / Download</a>
+           <a href="#platforms" class="btn-primary">TamgamCAD Versions</a>
         </div>
     </header>
     <main>
 
-   <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-text">
+   <section class="hero hero-dark-fullscreen">
+    <div class="container hero-container">
+        <div class="hero-text">
                 <h1>2D CAD Software and Technical Drafting Program</h1>
-                <p>Create your basic designs for free on desktop, and take the power of <strong>advanced vector drafting</strong>, Boolean operations, and professional <strong>2D CAD</strong> detailing anywhere with the mobile Pro version.</p>
+                <p>Enjoy the TamgamCAD experience freely, whether on your desktop or on your mobile device, wherever you are.</p>
                 <div class="hero-buttons">
-                    <a href="#platforms" class="btn-primary">Choose Platform</a>
-                    <a href="features.html" class="btn-secondary">Compare Versions</a>
+                    <a href="#tablo" class="btn-secondary btn-white">Compare Versions</a>
+                    <a href="#platforms" class="btn-primary">Try TamgamCAD for Free</a>
                 </div>
             </div>
-          <picture>
-
-           <source srcset="img/hero_img.webp" type="image/webp">
-         <img src="img/hero_img.png" alt="TamgamCAD Drawing Screen" class="app-screenshot" width="654" height="454" fetchpriority="high">
-        </picture>
+            <div class="hero-image-wrapper">
+            <picture>
+                <source srcset="img/hero_img.webp" type="image/webp">
+                <img src="img/hero_img.webp" alt="TamgamCAD Drawing Screen" class="hero-img-cover" fetchpriority="high">
+            </picture>
         </div>
+    </div>
     </section>
 
  <section id="ozellikler" class="features">
         <div class="container">
-            <div class="section-title">
-                <h2>Why Should You Choose TamgamCAD 2D Drafting Program?</h2>
-                <div class="divider"></div>
-            </div>
+
             
-            <div class="feature-card">
-                    <div class="icon">🔒</div>
-                    <h3>Local Workspace and Data Security</h3>
-                    <p>We value your intellectual property. Your drawing files and projects are stored locally on your device, unless you opt for external cloud synchronization. You are completely in control.</p>
-                </div>
-                
-             
+            <div class="features-grid">
                 <div class="feature-card">
-                <div class="icon">🖨️</div>
-                <h3>Export in Universal Formats</h3>
-                <p>Export your technical drawings, complete with precise dimensions and custom symbols, in high-resolution DXF, PDF, SVG, and PNG formats. Easily share your 2D CAD projects with lossless vector quality for professional presentations and detailed prints.</p>
+                    <div class="icon">📐</div>
+                    <h3>Precision Drawing</h3>
+                    <p>TamgamCAD helps you create precise drawings with its intelligent snap and grid infrastructure. It enables you to flawlessly design your projects using industry-standard editing commands.</p>
             </div>
 
-                <div class="feature-card">
+            <div class="feature-card">
+                    <div class="icon">🔒</div>
+                    <h3>Local Work Area</h3>
+                    <p>We value your intellectual property. Your drawing files and projects are stored locally on your device, unless you opt for external cloud synchronization. You are completely in control.</p>
+            </div>
+
+            <div class="feature-card">
+                    <div class="icon">🖨️</div>
+                    <h3>Export in Universal Formats</h3>
+                    <p>It exports your technical drawings, including dimensions and custom symbols, in high-resolution DXF, PDF, SVG, and PNG formats. It allows you to easily share your 2D CAD projects in vector quality for professional presentations and detailed prints.</p>
+            </div>
+                
+            <div class="feature-card">
                     <div class="icon">👆</div>
-                    <h3>Touch and Stylus Support</h3>
+                    <h3>Touch and Pen Support</h3>
                     <p>TamgamCAD is optimized for touch screens and tablets. Zoom and pan the canvas with two fingers, or make millimeter-precise drawings directly on the screen with your stylus.</p>
-                </div>
+            </div>
             </div>
         </div>
-        <div style="text-align: center; margin-top: 50px;">
-                <a href="features.html" class="btn-secondary" style="font-size: 16px; padding: 12px 30px;">See All Features ➔</a>
-            </div>
-        </div>
-    
     </section>
+
     <section id="platforms" class="platforms-section">
         <div class="container">
             <div class="section-title">
-                <h2>Choose Your Platform and Start Drawing</h2>
+                <h2>Try TamgamCAD, the right tool for your business model</h2>
                 <div class="divider"></div>
-                <p>Enjoy the TamgamCAD experience professionally on your desktop or freely on the go with mobile.</p>
             </div>
             
             <div class="platforms-wrapper">
@@ -153,45 +161,218 @@
                     <div class="icon">💻</div>
                     <h3>Desktop Version</h3>
                     <p>Master complex CAD projects on your Windows 10 and 11 devices with a widescreen workspace, keyboard shortcuts, and high performance.</p>
-                    
+                     <p class="note">
+                      Masaüstü sürümümüz temel araçları içerir.
+                     </p>
                     <a href="https://apps.microsoft.com/store/detail/9NKZJR6L9L7C?cid=DevShareMCLPCS" class="store-badge" target="_blank" rel="noopener noreferrer">
                         <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Download from Microsoft Store">
                     </a>
-                       <p class="note">
-                *Our desktop version includes basic drawing tools.
-            </p>
+                 
                 </div>
 
                  <div class="platform-card">
                     <div class="icon">📱</div>
                     <h3>Mobile Version</h3>
-                    <p>Take your ideas anywhere and draw on the go with an interface specifically optimized for touch screens and tablets.</p>
-                    
+                    <p>Bring the power of professional 2D CAD anywhere with its user-friendly interface designed specifically for touchscreens.</p>
+                    <p class="note">
+                        You can use keyboard shortcuts by using an external keyboard.
+                    </p>
+                     <p class="note">
+                   The mobile version, with all its advanced features, is the most powerful version of TamgamCAD.
+                    </p>
                     <a href="https://play.google.com/store/apps/details?id=com.tamgam.cizimaraci">
                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-                </a>
-                    <p class="note play-soon">
-                       
-                    </p>
+                   </a>
                 </div>
-
             </div>
         </div>
     </section>
-    <section class="seo-content" style="padding: 60px 0; background-color: var(--white);">
+
+<section class="seo-content" style="padding: 60px 0; background-color: var(--white);">
         <div class="container">
             <div class="section-title">
-                <h2>Comprehensive and Fast 2D CAD Solution</h2>
-                <div class="divider"></div>
+                <h2>Feel the Power of Design with TamgamCAD 2D CAD Software</h2>     
             </div>
             <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
-                <p style="margin-bottom: 20px;"><strong>TamgamCAD</strong> is a high-performance <strong>2D CAD software</strong> developed for engineers, architects, technicians, and design enthusiasts. Compared to the heavy and expensive <strong>technical drawing programs</strong> on the market, it provides a fast, secure, and <strong>local workspace</strong> that doesn't strain your device.</p>
-                <p style="margin-bottom: 20px;">While using basic drawing tools for free on your desktop devices, you can manage your projects at any time with the advanced <strong>Boolean operations</strong>, <strong>layer management</strong>, and professional <strong>dimensioning</strong> features offered on mobile platforms. Moreover, you can export your detailed <strong>technical drawings</strong> in DXF, PDF, SVG, and PNG formats, allowing you to seamlessly share them with other <strong>CAD programs</strong>.</p>
-                <p>Our goal is to solve all your <strong>2D drafting</strong> needs in the most practical way, from complex <strong>architectural plans</strong> to precise <strong>machine part drawings</strong>, with our user-friendly interface and touch screen optimization.</p>
+                <p>
+                    TamgamCAD is a high-performance 2-dimensional computer-aided design (CAD) software developed specifically for <strong>technical drawing</strong>. The <strong>2D CAD software</strong> is a vector-based software that allows making designs and creating floor plans with precise two-dimensional technical drawing in fields such as engineering and architecture. The <strong>TamgamCAD 2D CAD program</strong> offers an efficient workspace with its simple design and user-friendly interface. Thanks to in-program guides and an easy user manual, you can create your first <strong>2D</strong> drawing quickly. TamgamCAD offers practical solutions for architects, engineers, technicians, and professionals or beginners operating in the design field. You can <strong><a href="#platforms" style="text-decoration: underline;">review the versions to try out</a></strong> the fast and high-performance TamgamCAD software for free.
+                </p>
             </div>
+            <br>
+           <div class="section-title">
+                <h2>Comprehensive and Fast 2D CAD Technical Drawing Capabilities</h2>   
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
+                <p>
+                    You can quickly detail your <strong>2D technical drawings</strong> or illustrations with TamgamCAD's advanced tools. You can set the color, thickness, and line type of your drawings from the properties section, and later change their styles or transfer them to another object. Thanks to hatching options, you can draw detailed technical illustrations, and with precise measurement tools, you can find out the real-life equivalent of your drawings. You can quickly add the drawings you customized and detailed to the library using <strong>block creation</strong> for later use. To use the created block in different layers, you can use the project library; to use it in other projects, you can use the global library. For more details about block settings and other drawing tools, you can check out the <a href="kilavuz.html" style="text-decoration: underline;">user manual</a>. While providing users with the basic features required for technical drawing/illustration, TamgamCAD also prioritizes speed and usability. One of the most basic CAD tools, <strong>layer management</strong>, allows users to organize and manage objects in the drawing according to user-defined properties. This feature, which is important for complex engineering and architectural drawing, increases efficiency and allows the project to grow systematically.
+                </p>
+                <br>
+                <p> * Some features may vary depending on the platform used. For the feature list and comparison, you can review the <a href="#tablo" style="text-decoration: underline;">feature table</a>.</p>
+            </div>
+            <br>
+            <div class="section-title">
+                <h2>Why Should You Choose TamgamCAD 2D Drafting Program?</h2>
+          </div>
+          <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
+               <p>As a next-generation 2D CAD program that stands out with its powerful and user-friendly interface optimized for mobile devices,
+                 TamgamCAD makes the professional drawing experience accessible to everyone. Whether you are in the field or out of the office, you can create, edit, and share your projects whenever you want. 
+                 Going beyond a classic <strong>mobile CAD application</strong>, the Mobile Pro version offers advanced Boolean operations, unlimited layer management, precise drawing tools, and DXF/PDF export support. This way, you can do not only <strong>DXF viewing</strong> but also fully professional production. You can take a quick step into the 2D CAD world by downloading TamgamCAD for free right now. You can use Pro features with in-app purchases in the mobile version, and use the desktop Beta version for free during early access. Discover the version that best suits your needs now, accelerate your designs with the right 2D CAD program, and take your projects to a professional level.</p>
+            
+                <div class="cta-highlight-box">
+                    <p>Start drawing your dream design with professional expertise.</p>
+                    <a href="#platforms" class="btn-primary">Download it for free now and start drawing</a>
+                </div>
+            </div>
+           
         </div>
     </section>
-    
+
+    <section id="tablo" class="features-page">
+    <div class="container">
+        <div class="section-title">
+          <h2>What are the TamgamCAD Drawing Tools and Features?</h2>   
+             <div></div>
+        </div>
+
+        <div class="features-table-container">
+            <table class="features-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Features</th>
+                        <th scope="col">Desktop (Free)</th>
+                        <th scope="col">Mobile (Pro - Google Play)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">File Export</th>
+                        <td>PNG / SVG</td>
+                        <td>PNG / SVG / PDF / DXF</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Drawing Tools</th>
+                        <td>Basic Drawing Tools</td>
+                        <td>Advanced Drawing Tools</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hatching</th>
+                        <td>Basic Hatch Options</td>
+                        <td>Extensive Pattern Library</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Modification</th>
+                        <td>Trim, Rotate, Mirror, Scale, Lengthen</td>
+                        <td>Basic + Extend, Offset, Array, Chamfer, Fillet</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Advanced & Boolean Operations</th>
+                        <td>Group / Ungroup, Join, Split</td>
+                        <td>Basic + Block, Wrap, Boolean</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Annotation</th>
+                        <td>Text, Leader Lines</td>
+                        <td>Basic + Table Creation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Object Properties</th>
+                        <td>Color, Line Weight, Linetype</td>
+                        <td>Basic + Match Properties</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Project Library</th>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Layer Management</th>
+                        <td>Limited</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Command Line</th>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div></div>
+          
+            <div style="max-width: 800px; margin: 0 auto; color: var(--text-dark); font-size: 16px; line-height: 1.8;">
+                <br>
+                <p>
+                    TamgamCAD helps you make 2D technical drawings with basic and advanced <strong>drawing tools</strong>. While straight line, continuous line, circle, ellipse, arc, and rectangle are included in the basic drawing tools, polygon, ring, TTR, and tangent line are among the advanced drawing tools. Apart from these, it offers a wide toolset that allows detailing drawings with vector-based freehand drawing tools and different brush types. Practicality is highly important during drawing; therefore, the tools located in the editing and operations sections bring speed to the user.
+                </p>
+                <br>
+                <h3>Editing Section Tools</h3>
+                <ul style="list-style-type:disc">
+                    <li><strong>Trim & Extend: </strong>Used to prune excess intersecting lines or to extend the end of a line to another object.</li>
+                    <li><strong>Offset: </strong>Creates a parallel copy of a selected object (for example, a wall line) to the outside or inside by a specified distance.</li>
+                    <li><strong>Rotate: </strong>Allows selected objects to be rotated around a specified center point by the entered angle value.</li>
+                    <li><strong>Mirror: </strong>Creates a mirror image of the selected objects around a specified reference line.</li>
+                    <li><strong>Scale: </strong>Used to proportionately enlarge or reduce objects based on a starting reference point.</li>
+                    <li><strong>Array: </strong>Multiplies a selected object at specific intervals and quantities on a horizontal and vertical plane (Rectangular) or around a circular center (Polar). </li>
+                    <li><strong>Chamfer & Fillet: </strong>Cuts the sharp corners formed by two intersecting lines straight by entering a specific distance (Chamfer) or creates a soft curve with a specific radius (Fillet).</li>
+                    <li><strong>Resize: </strong>Used to change the dimensions of drawn objects later. </li>
+                </ul> 
+                <br>
+                <h3>Operations Section Tools</h3>
+                <ul style="list-style-type:disc">
+                    <li><strong>Group & Ungroup: </strong>You can use group to select multiple objects and instantly move them as a single object, or ungroup to make the components of an existing group independent again.</li>
+                    <li><strong>Explode & Join: </strong>Used to explode an entire polyline or polygon into independent lines, or to join open-ended, touching independent lines together as a single object.</li>
+                    <li><strong>Wrap / Boundary: </strong>Deletes the inner details of objects and creates a new, single-piece, and closed boundary geometry based only on their outermost borders. </li>
+                    <li><strong>Boolean Operations: </strong>Mathematically processes overlapping closed shapes.</li>
+                        <ul style="list-style-type:square; margin-left: 40px;">
+                            <li>Union: Melds overlapping shapes into a single whole.</li>
+                            <li>Difference: Cuts and removes the areas from the main shape where the second shape touches or intersects. </li>
+                            <li>Intersection: Leaves only the common (intersecting) area where the shapes overlap, and deletes the rest. </li>
+                            <li>Exclusion / XOR: The exact opposite of the intersection operation; it leaves only the distinct parts of the shapes that do not touch each other and deletes the common area. </li>
+                        </ul>
+                </ul>
+            </div>
+
+
+
+        
+        </div>
+    </div>
+</section>
+
+<section id="sss" class="faq">
+    <div class="container">
+        <div class="section-title">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+        </div>
+        
+        <div class="faq-accordion">
+            <!-- Question 1 -->
+            <details class="faq-item" open>
+                <summary>Is an internet connection required to use TamgamCAD?</summary>
+                <p>No, an internet connection is not mandatory. Thanks to its local workspace feature, TamgamCAD stores all your projects and drawings on your device, allowing you to work completely offline.</p>
+            </details>
+
+            <!-- Question 2 -->
+            <details class="faq-item">
+                <summary>Can I use the Pro features I purchased on Google Play on the Microsoft Store?</summary>
+                <p>No, the software's features vary depending on the platform it is published on. If the features included in your purchased subscription are not offered on the other platform, you cannot use those features. However, you can log in with the same email address.</p>
+            </details>
+
+            <!-- Question 3 -->
+            <details class="faq-item">
+                <summary>Is it easy to use on tablets and touchscreens?</summary>
+                <p>Absolutely! Our interface is specifically optimized for touchscreens. You can zoom/pan with two fingers and create drawings with millimeter precision using your stylus.</p>
+            </details>
+
+            <!-- Question 4 -->
+            <details class="faq-item">
+                <summary>Is there an educational or trial version available?</summary>
+                <p>Yes, we offer a 7 or 14-day free trial version (depending on the selected subscription) where all features are unlocked so you can test the program. You can download it via Google Play and try it immediately. You can easily use the software with in-app guidance without the need for complex training processes.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
     <section id="iletisim" class="contact">
         <div class="container">
             <div class="section-title">
