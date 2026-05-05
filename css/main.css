@@ -1073,3 +1073,59 @@ footer {
     background-color: #aeb1b4; /* Hafif primary-color tonu */
     transition: background-color 0.2s ease;
 }
+.content-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.content-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-row .text-content {
+    flex: 1;
+}
+
+.content-row .image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.content-row .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .content-row, 
+    .content-row.reverse {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .content-row .section-title {
+        text-align: center !important;
+    }
+}
+
+.content-box-style {
+    padding: 40px;
+    background: linear-gradient(135deg, #f8fafc, #eff6ff); 
+    border: 1px solid #bfdbfe; 
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.05); 
+}
+
+
+@media screen and (max-width: 768px) {
+    .content-box-style {
+        padding: 25px;
+    }
+}
