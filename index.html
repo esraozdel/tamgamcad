@@ -429,7 +429,7 @@
             <div class="footer-col">
                 <h4>Hızlı Linkler</h4>
                 <ul>
-                    <li><a href="index.html#ozellikler">Özellikler</a></li>
+                    <li><a href="index.html#tablo">Özellikler</a></li>
                     <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
                     <li><a href="index.html#iletisim">İletişim</a></li>
                 </ul>
@@ -460,9 +460,9 @@
             emailjs.init("Z3CwmpJrBwI4l4wvo");
         })();
 
-        // Form gönderildiğinde çalışacak kod
+        
         document.querySelector('.contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Sayfanın yenilenmesini engeller
+            event.preventDefault(); 
 
             const btn = this.querySelector('button');
             const originalBtnText = btn.innerText;
@@ -472,8 +472,8 @@
             emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
                 .then(function() {
                     btn.innerText = 'Başarıyla Gönderildi! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; // Butonu yeşil yapar
-                    document.querySelector('.contact-form').reset(); // Formu temizler
+                    btn.style.backgroundColor = '#16a34a'; 
+                    document.querySelector('.contact-form').reset(); 
                     
                     // 3 saniye sonra butonu eski haline getir
                     setTimeout(() => {
@@ -482,7 +482,7 @@
                     }, 3000);
                 }, function(error) {
                     btn.innerText = 'Hata Oluştu!';
-                    btn.style.backgroundColor = '#dc2626'; // Butonu kırmızı yapar
+                    btn.style.backgroundColor = '#dc2626'; 
                     console.log('Gönderim Hatası:', error);
                 });
         });
