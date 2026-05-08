@@ -9,7 +9,11 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-7H6342FC7T');
+  gtag('consent', 'default', {
+  'analytics_storage': 'denied'
+});
+
+gtag('config', 'G-7H6342FC7T');
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -186,7 +190,7 @@
         </div> 
     </section>
   
-   <section class="seo-content" style="padding: 60px 0; background-color: var(--white);">
+  <section class="seo-content" style="padding: 60px 0; background-color: var(--white);">
     <div class="container">
         
        
@@ -462,6 +466,7 @@
                 <ul>
                     <li><a href="lisans.html">Kullanım Koşulları (EULA)</a></li>
                     <li><a href="lisans.html">Gizlilik Sözleşmesi</a></li>
+                    <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -483,9 +488,9 @@
             emailjs.init("Z3CwmpJrBwI4l4wvo");
         })();
 
-        
+        // Form gönderildiğinde çalışacak kod
         document.querySelector('.contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); 
+            event.preventDefault(); // Sayfanın yenilenmesini engeller
 
             const btn = this.querySelector('button');
             const originalBtnText = btn.innerText;
@@ -495,8 +500,8 @@
             emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
                 .then(function() {
                     btn.innerText = 'Başarıyla Gönderildi! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; 
-                    document.querySelector('.contact-form').reset(); 
+                    btn.style.backgroundColor = '#16a34a'; // Butonu yeşil yapar
+                    document.querySelector('.contact-form').reset(); // Formu temizler
                     
                     // 3 saniye sonra butonu eski haline getir
                     setTimeout(() => {
@@ -505,11 +510,57 @@
                     }, 3000);
                 }, function(error) {
                     btn.innerText = 'Hata Oluştu!';
-                    btn.style.backgroundColor = '#dc2626'; 
+                    btn.style.backgroundColor = '#dc2626'; // Butonu kırmızı yapar
                     console.log('Gönderim Hatası:', error);
                 });
         });
     </script>
+
+    <div id="cookie-banner" style="
+position: fixed;
+bottom: 20px;
+left: 20px;
+right: 20px;
+background: #111827;
+color: white;
+padding: 16px;
+border-radius: 12px;
+z-index: 9999;
+display: none;
+">
+  Bu web sitesi, deneyimi geliştirmek ve analiz yapmak için çerezler kullanır.
+  <a href="cerez-politikasi.html" style="color:#60a5fa;">
+    Çerez Politikası
+  </a>
+
+  <button id="accept-cookies" style="
+  margin-left:10px;
+  padding:8px 14px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  ">
+    Kabul Et
+  </button>
+</div>
+
+<script>
+const banner = document.getElementById('cookie-banner');
+
+if (!localStorage.getItem('cookieAccepted')) {
+  banner.style.display = 'block';
+}
+
+document.getElementById('accept-cookies').addEventListener('click', () => {
+
+  gtag('consent', 'update', {
+    'analytics_storage': 'granted'
+  });
+
+  localStorage.setItem('cookieAccepted', 'true');
+  banner.style.display = 'none';
+});
+</script>
 
 
 </body>
