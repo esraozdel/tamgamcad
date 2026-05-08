@@ -4,12 +4,23 @@
     <meta charset="utf-8">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-7H6342FC7T');
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('consent', 'default', {
+  'analytics_storage': 'denied'
+});
+
+gtag('config', 'G-7H6342FC7T', {
+  anonymize_ip: true
+});
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kullanım Kılavuzu ve Belgeler | TamgamCAD 2D CAD Yazılımı</title>
@@ -257,6 +268,7 @@
                 <ul>
                     <li><a href="lisans.html">Kullanım Koşulları (EULA)</a></li>
                     <li><a href="lisans.html">Gizlilik Sözleşmesi</a></li>
+                    <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -268,6 +280,95 @@
             <p>&copy; 2026 TamgamCAD. Tüm Hakları Saklıdır.</p>
         </div>
     </footer>
+    <div id="cookie-banner" style="
+position: fixed;
+bottom: 20px;
+left: 20px;
+right: 20px;
+background: #111827;
+color: white;
+padding: 16px;
+border-radius: 12px;
+z-index: 9999;
+display: none;
+box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+">
+
+  <div style="
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  ">
+
+    <div style="flex:1; min-width:240px;">
+      Bu web sitesi, deneyimi geliştirmek ve anonim analiz verileri toplamak için çerezler kullanır.
+      
+      <a href="cerez-politikasi.html"
+         style="color:#60a5fa; text-decoration:underline;">
+         Çerez Politikası
+      </a>
+    </div>
+
+    <div style="display:flex; gap:10px;">
+
+      <button id="reject-cookies" style="
+      padding:8px 14px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      background:#374151;
+      color:white;
+      ">
+        Reddet
+      </button>
+
+      <button id="accept-cookies" style="
+      padding:8px 14px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      background:white;
+      color:black;
+      font-weight:600;
+      ">
+        Kabul Et
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<script>
+const banner = document.getElementById('cookie-banner');
+
+if (!localStorage.getItem('cookieChoice')) {
+  banner.style.display = 'block';
+}
+
+document.getElementById('accept-cookies').addEventListener('click', () => {
+
+  gtag('consent', 'update', {
+    'analytics_storage': 'granted'
+  });
+
+  localStorage.setItem('cookieChoice', 'accepted');
+
+  banner.style.display = 'none';
+});
+
+document.getElementById('reject-cookies').addEventListener('click', () => {
+
+  gtag('consent', 'update', {
+    'analytics_storage': 'denied'
+  });
+
+  localStorage.setItem('cookieChoice', 'rejected');
+
+  banner.style.display = 'none';
+});
+</script>
 
 </body>
 
