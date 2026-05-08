@@ -4,12 +4,23 @@
     <meta charset="utf-8">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-7H6342FC7T');
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('consent', 'default', {
+  'analytics_storage': 'denied'
+});
+
+gtag('config', 'G-7H6342FC7T', {
+  anonymize_ip: true
+});
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features: Advanced Drawing Tools | TamgamCAD 2D CAD Software</title>
@@ -26,9 +37,9 @@
     <meta name="twitter:description" content="Explore TamgamCAD's advanced drafting tools, SVG/PDF export, boolean operations, and isometric grid capabilities for professionals.">
     <meta name="twitter:image" content="https://tamgamcad.com/img/hero_img.png">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://tamgamcad.com/features.html" />
-    <link rel="alternate" hreflang="tr" href="https://tamgamcad.com/ozellikler.html" />
-    <link rel="alternate" hreflang="en" href="https://tamgamcad.com/features.html" />
+    <link rel="canonical" href="https://tamgamcad.com/features.html">
+    <link rel="alternate" hreflang="tr" href="https://tamgamcad.com/ozellikler.html">
+    <link rel="alternate" hreflang="en" href="https://tamgamcad.com/features.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -49,7 +60,7 @@
         <nav class="main-nav">
                 <ul>
                      <li><a href="index-en.html">Home</a></li>
-                    <li><a href="index-en.html#ozellikler">Features</a></li>
+                    <li><a href="index-en.html#tablo">Features</a></li>
                     <li><a href="guide.html">User Guide</a></li>
                     <li><a href="index-en.html#iletisim">Contact</a></li>
                 </ul>
@@ -58,10 +69,10 @@
                  <a href="ozellikler.html">TR</a> <span>|</span> <a href="features.html" class="active">EN</a>
             </div>
             
-                <a href="#platforms" class="btn-primary">Versions / Download</a>
+               <a href="#platforms" class="btn-primary">TamgamCAD Versions</a>
         </div>
     </header>
-
+<main>
 
 <section class="features-page">
     <div class="container">
@@ -136,6 +147,7 @@
         </div>
     </div>
 </section>
+</main>
 <footer>
         <div class="container footer-container">
             <div class="footer-col">
@@ -147,7 +159,7 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index-en.html#ozellikler">Features</a></li>
+                    <li><a href="index-en.html#tablo">Features</a></li>
                     <li><a href="guide.html">User Guide</a></li>
                     <li><a href="index-en.html#iletisim">Contact</a></li>
                 </ul>
@@ -157,6 +169,7 @@
                 <ul>
                     <li><a href="licence.html">Terms of Use (EULA)</a></li>
                     <li><a href="licence.html">Privacy Policy</a></li>
+                    <li><a href="cookies-policy.html">Cookie Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -205,7 +218,96 @@
         });
     </script>
 
+<div id="cookie-banner" style="
+position: fixed;
+bottom: 20px;
+left: 20px;
+right: 20px;
+background: #111827;
+color: white;
+padding: 16px;
+border-radius: 12px;
+z-index: 9999;
+display: none;
+box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+">
 
+  <div style="
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  ">
+
+    <div style="flex:1; min-width:240px;">
+      This website uses cookies to improve user experience
+      and collect anonymous analytics data.
+
+      <a href="cookies-policy.html"
+         style="color:#60a5fa; text-decoration:underline;">
+         Cookie Policy
+      </a>
+    </div>
+
+    <div style="display:flex; gap:10px;">
+
+      <button id="reject-cookies" style="
+      padding:8px 14px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      background:#374151;
+      color:white;
+      ">
+        Reject
+      </button>
+
+      <button id="accept-cookies" style="
+      padding:8px 14px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      background:white;
+      color:black;
+      font-weight:600;
+      ">
+        Accept
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<script>
+const banner = document.getElementById('cookie-banner');
+
+if (!localStorage.getItem('cookieChoice')) {
+  banner.style.display = 'block';
+}
+
+document.getElementById('accept-cookies').addEventListener('click', () => {
+
+  gtag('consent', 'update', {
+    'analytics_storage': 'granted'
+  });
+
+  localStorage.setItem('cookieChoice', 'accepted');
+
+  banner.style.display = 'none';
+});
+
+document.getElementById('reject-cookies').addEventListener('click', () => {
+
+  gtag('consent', 'update', {
+    'analytics_storage': 'denied'
+  });
+
+  localStorage.setItem('cookieChoice', 'rejected');
+
+  banner.style.display = 'none';
+});
+</script>
 
 </body>
 
