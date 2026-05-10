@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tamgam.cizimaraci",
+      "sha256_cert_fingerprints": [
+        "2A:E9:86:8A:7F:7B:87:91:7F:03:5D:88:D7:40:12:B1:60:B3:5B:62:F6:64:DD:E4:38:39:81:B8:21:E9:60:8E"
+      ]
+    }
+  }
+]
