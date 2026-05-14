@@ -47,6 +47,38 @@ gtag('config', 'G-7H6342FC7T', {
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
+     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TamgamCAD",
+  "url": "https://tamgamcad.com",
+  "image": "https://tamgamcad.com/img/logotransparan.png",
+  "description": "Profesyoneller için optimize edilmiş mobil odaklı, gelişmiş 2D CAD çözümü.",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Android, Windows 10, Windows 11",
+  "author": {
+    "@type": "Person",
+    "name": "Esra ÖZDEL",
+    "url": "https://tamgamcad.com"
+  },
+"offers": [
+  {
+    "@type": "Offer",
+    "price": "299.99",
+    "priceCurrency": "TRY",
+    "eligibleRegion": "TR",
+    "description": "Türkiye için aylık abonelik fiyatı"
+  },
+  {
+    "@type": "Offer",
+    "price": "7.49",
+    "priceCurrency": "USD",
+    "description": "Monthly subscription price for the United States."
+  }
+]
+}
+</script>
 </head>
 
 <body>
@@ -60,7 +92,7 @@ gtag('config', 'G-7H6342FC7T', {
         <nav class="main-nav">
                 <ul>
                     <li><a href="index-en.html">Home</a></li>
-                    <li><a href="index-en.html#tablo">Features</a></li>
+                    <li><a href="features.html">Features</a></li>
                     <li><a href="guide.html">User Guide</a></li>
                     <li><a href="index-en.html#iletisim">Contact</a></li>
                 </ul>
@@ -69,156 +101,688 @@ gtag('config', 'G-7H6342FC7T', {
                  <a href="kilavuz.html">TR</a> <span>|</span> <a href="guide.html" class="active">EN</a>
             </div>
             
-           <a href="#platforms" class="btn-primary">TamgamCAD Versions</a>
+           <a href="index-en.html#platforms" class="btn-primary">TamgamCAD Versions</a>
         </div>
     </header>
 <main>
 <section class="docs-page">
-        <div class="container docs-container">
-            
-            <aside class="docs-sidebar">
-                <h3>Table of Contents</h3>
-                <ul class="docs-nav">
-                    <li><a href="#baslangic" class="active">🚀 Getting Started & Interface</a></li>
-                    <li><a href="#dosya">📁 File Operations</a></li>
-                    <li><a href="#cizim">✏️ Drawing Tools</a></li>
-                    <li><a href="#duzenleme">⚙️ Modification</a></li>
-                    <li><a href="#boolean">🧩 Boolean Operations</a></li>
-                    <li><a href="#olculendirme">📐 Dimensioning & Hatching</a></li>
-                    <li><a href="#katmanlar">🎯 Layers & Blocks</a></li>
-                    <li><a href="#izometrik">🧊 View & Grid</a></li>
-                </ul>
-            </aside>
+    <div class="container docs-container">
+        <aside class="docs-sidebar">
+            <h3>Learning Center</h3>
+            <ul class="docs-nav">
+                <li><a href="#baslangic" class="active">🚀 Quick Start Guide</a></li>
+                <li><a href="#dosya">📁 DXF & File Management</a></li>
+                <li><a href="#cizim">✏️ How to Draw 2D?</a></li>
+                <li><a href="#duzenleme">⚙️ Trim, Offset & Modification</a></li>
+                <li><a href="#boolean">🧩 Shape Merging (Boolean)</a></li>
+                <li><a href="#olculendirme">📐 Dimension, Fill & Hatch</a></li>
+                <li><a href="#katmanlar">🎯 Layers & Block System</a></li>
+                <li><a href="#problem-cozme">🛠️ CAD Troubleshooting</a></li>
+                <li><a href="#faq">❓ Frequently Asked Questions</a></li>
+            </ul>
+        </aside>
 
-            <div class="docs-content">
-                
-                <div class="docs-section" id="baslangic">
-                    <h1 style="margin-bottom: 30px; font-size: 32px; color: var(--primary-color);">TamgamCAD User Guide</h1>
-                    <h2>Getting Started and Interface</h2>
-                    <p>Welcome to TamgamCAD's modern and user-friendly interface. The application allows you to use the drawing area (Canvas) with maximum efficiency.</p>
-                    
-                    <img src="resimler/arayuz-genel.png" alt="TamgamCAD Interface" class="docs-img" onerror="this.style.display='none'">
-                    
+        <div class="docs-content">
+            
+           <div class="docs-section" id="giris">
+
+    <h1 style="margin-bottom: 30px; font-size: 32px; color: var(--primary-color);">
+        TamgamCAD 2D CAD Tools Learning Center
+    </h1>
+
+    <p>
+        TamgamCAD is a modern <strong>2D CAD software</strong> and technical drawing application developed for mobile devices, tablets, and desktop systems. 
+        Optimized for architectural drawings, engineering projects, technical detail plans, and daily CAD needs, TamgamCAD makes the professional drafting experience more accessible with its user-friendly interface, precise drawing tools, and touch screen support.
+    </p>
+
+    <p>
+        The application features advanced <strong>2D technical drawing</strong> tools such as line, polyline, circle, arc, dimensioning, hatch, layer management, boolean operations, block system, and isometric drawing tools. 
+        Additionally, with <strong>DXF viewing</strong>, DXF import, and export support, you can seamlessly work with other CAD software.
+    </p>
+
+    <p>
+        TamgamCAD particularly stands out with its <strong>tablet-compatible CAD application</strong> structure. 
+        Thanks to support for Android tablets, touch screen devices, styluses, external keyboards, and mice, you can create precise technical drawings in a mobile environment. 
+        Whether you are in the field or the office; you can quickly work on architectural plans, engineering drawings, mechanical details, and technical projects.
+    </p>
+
+    <p>
+        In this learning center, you can find detailed user guides on using drawing tools, modification operations, dimensioning systems, hatch tools, layer management, DXF operations, boolean tools, and mobile CAD usage. 
+        Beginners can learn basic technical drawing tools, while professional users can utilize advanced CAD features more efficiently.
+    </p>
+
+   <img style="width: 100%; max-width: 800px; height: auto;" src="img/snap_en.webp" alt="TamgamCAD Mobile and Desktop Interface" class="docs-img" onerror="this.style.display='none'">
+
+</div>
+
+            <div class="docs-section" id="baslangic">
+                <h2 style="text-align: center; color: var(--primary-color);">🛠️ CAD Interface and Customization Tips</h2>
+                <p style="text-align: center;">Increase your drafting speed by optimizing the TamgamCAD interface according to your workflow habits through customizable settings that accelerate technical drawing processes. 
+                    You can access these features from the settings menu. On mobile, the settings section is located in the left slide-out menu.</p>
+                    <div class="content-box-style">
                     <ul>
-                        
-                        <li><strong>Theme:</strong> You can switch between Dark and Light interface themes from the top menu to reduce eye strain or suit your personal preference.</li>
-                        <li><strong>Grid:</strong> You can toggle the grid view on and off from the top menu to create a visual reference or align objects in the workspace (Canvas).</li>
-                        <li><strong>Object Snap (Osnap):</strong> To snap precisely to the Endpoints, Midpoints, Intersections, and Centers of objects during the drafting process, use the "Snap" settings located under the 'Settings' tab in the top menu.</li>
-                        <li><strong>Scale:</strong> Use the scale settings in the top menu to determine the real-world size equivalent (mm, cm, m, etc.) of your drawing.</li>
-                        <li><strong>Dimension Input:</strong> While you can enter length values directly from your keyboard during drafting, you can also use the dedicated dimension input panel in the top menu, specifically designed for touch screens and tablets.</li>
-                        <li><strong>Language:</strong> To personalize your workspace, you can change the interface language to Turkish (TR) or English (EN) from the top menu.</li>                       
-                        <li><strong>Navigation (Pan & Zoom):</strong> You can zoom in and out by scrolling the mouse wheel, and pan the screen by clicking and holding the mouse wheel or using two fingers on a touch screen.</li>
-                        <li><strong>Orthogonal Mode (Ortho):</strong> To restrict your lines to strictly horizontal (0°, 180°) and vertical (90°, 270°) axes, press <strong>F8</strong> on your keyboard.</li>
+                    <li>
+                        <strong>Theme Settings:</strong> Dark and light theme options provide a more comfortable experience during long drafting sessions.
+                    </li>
+
+                    <li>
+                        <strong>Grid System:</strong> You can enable or hide the grid in the workspace for alignment and dimension control in technical drawings.
+                    </li>
+                    <li><strong>Isometric Grid:</strong> Locks the workspace to 30° and 150° axes, allowing you to draw perfect isometric perspectives.</li>
+
+
+                    <li>
+                        <strong>Object Snap (Osnap):</strong> Create precise CAD drawings using endpoint, midpoint, intersection, and center snap features.
+                    </li>
+
+                    <li>
+                        <strong>Scale Setting:</strong> You can use the scale setting tool to edit your drawings in mm, cm, or meter scales. <br>
+                       <strong>How to use set scale?</strong>  <br>
+                      <p>  - Select the set scale tool and specify the first point on the screen. Once the point snaps to the grid, specify the second point. In the prompt that appears, enter the real-world equivalent of the length you specified.</p>
+                    </li>
+
+                    <li>
+                        <strong>Dimension Input:</strong> Enter precise values directly during drafting using the dimension input system optimized for mobile devices and tablets. 
+                        <div class="info-box">Tip: The dimension input tool appears at the bottom of the screen when drawing tools are active. If the tool panel is open, the dimension input area may not be visible; therefore, close the tool panel first.</div>
+                    </li>
+
+                    <li>
+                        <strong>Ortho Mode:</strong> Use the F8 shortcut or Ortho mode to restrict line drawing to purely horizontal and vertical axes.
+                    </li>
+
+                    <li>
+                        <strong>Magnifier Tool:</strong> Provides a zoomed-in technical drawing experience when working with small details. When the magnifier is active, you can get a detailed view by dragging your finger across the screen.
+                    </li>
+
+                </ul></div>
+            </div>
+
+            <div class="docs-section" id="dosya">
+                <h2 style="text-align: center; color: var(--primary-color);">📁 Opening DXF on Mobile and Project Management</h2>
+                <p style="text-align: center;">The tools located in the file operations section allow you to manage your projects and export them in various formats.</p>
+                <div class="content-box-style">
+                    <ul>
+                        <li><strong>DXF Import/Export:</strong> Open DXF files compatible with other CAD software on your phone, or save your projects as DXF.</li>
+                        <li><strong>Exporting:</strong> Export your drawings in .SVG and .PDF formats for vector presentations and high-resolution prints, and in .PNG format for quick sharing.</li>
+                        <li><strong>Tracing over Image:</strong> Import technical drawing images in JPG or PNG formats as underlays and trace over them.</li>
+                        <li><strong>Save/Save As (JSON):</strong> Backup your projects in .json format along with all layer data.</li>
+                        <li><strong>Open File:</strong> Reopen previously saved TamgamCAD project files to continue editing.</li>
                     </ul>
                 </div>
-
-              <div class="docs-section" id="dosya">
-                <h2>File Operations and Export</h2>
-                <p>Safely store your projects and share them with other software in industry-standard formats.</p>
-                <ul>
-                    <li><strong>Open File:</strong> Import your previously saved TamgamCAD project files in <code>.json</code> format into your workspace to continue working on your incomplete projects.</li>
-                    <li><strong>Save / Save As:</strong> Save your drawings locally to your computer in <code>.json</code> format so you can later edit them with all their layers, blocks, and properties intact.</li>
-                  <li><strong>Export:</strong> You can export your drawings as <code>.SVG</code> and <code>.PDF</code> for vector presentations and high-resolution prints, and as <code>.PNG</code> for quick sharing.</li>
-                    <li><strong>Insert Image:</strong> Add reference images (JPG, PNG) to your workspace to trace over them.</li>
-                </ul>
             </div>
 
-                        <div class="docs-section" id="cizim">
-                <h2>Basic and Advanced Drawing Tools</h2>
-                <p>Whether you are drawing straight lines or organic curves, you can start your project by selecting the desired tool from the top menu:</p>
+            <div class="docs-section" id="cizim">
+                <h2 style="text-align: center; color: var(--primary-color);">✏️ How to Create 2D Technical Drawings?</h2>
+                <p style="text-align: center;">TamgamCAD offers a professional drawing experience across different devices thanks to touch screen, stylus, mouse, and keyboard support. 
+                     Explore all drawing tools, from basic geometry to complex forms.</p>
+                
+                  <div class="info-box">You can access the drawing tools from the tool panel, the command line, and by typing a single letter key on the keyboard. Keyboard shortcuts can be found in the help menu within the application.
+                   You can use the drawing tools via drag-and-drop or start-end points without specific measurements, or you can use them by entering precise dimensions.</div>
+                  <br> <div class="content-box-style">
+                  <ul>
+                    <img src="img/linecircle.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+               
+                    <li><strong>Line and Polyline:</strong> Specify the start point, then specify the end point to complete the drawing. For dimensioned drawing, specify the first point, move the cursor in the desired direction to set the path, then enter the dimension; the drawing is generated at that length the moment you confirm.
+                         Double-click at the last point for continuous lines.</li>
 
+                    <li><strong>Circle:</strong> First specify the center point, move away from the center to achieve the desired size, and complete the drawing with the second point. For dimensioned drawing, specify the center point and then enter the radius value to create your circle.</li>
 
+                    <li><strong>Arc:</strong> First specify the start point, and without releasing your finger/mouse, drag to determine the chord length. The moment you release your finger/mouse, the chord is formed; then determine the bulge height with a second click. </li>
+
+                    <li><strong>Rectangle:</strong> First specify the initial point, then click a second point to determine the width and height, or create a freehand drawing via drag-and-drop. For precise input, enter the exact dimensions from the keyboard in Width X Height (or Width * Height) format, or use the dimension input.</li>
+
+                    <li><strong>Ellipse:</strong> Create freehand ellipses by defining the axis widths using the drag-and-drop method.</li>
+
+                    <li><strong>Polygon:</strong> First specify the number of sides, then set the center on the screen and finish the drawing when it reaches the desired size.</li>
+
+                    <li><strong>Donut:</strong> First specify the center point, then sequentially enter the radii of the inner circle and the outer circle to create a thick-walled ring.</li>
+                    <img src="img/ttr.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+               
+                    <li><strong>Tan-Tan-Radius (TTR):</strong> Use this to draw a circle that is tangent to two different objects and has a specified radius value. For TTR, click on the first object, then the second object, and enter a radius value in the prompt window. The radius value you enter must be geometrically appropriate for the distance between the two objects. You can trim the circles generated by TTR later using the Trim command to achieve smooth corner transitions.</li>
+                    
+                    <li><strong>Tangent Line:</strong> Use this to draw straight lines perfectly tangent to the outer surfaces of two different circles.</li>
+
+                    <li><strong>Freehand:</strong> Create organic drawings with a stylus or touch screen using the vector-based freehand drawing tool. Due to its underlying mathematical structure, freehand lines can be used in conjunction with modification tools.</li>
+                </ul></div>
+
+            </div>
+
+            <div class="docs-section" id="duzenleme">
+                <h2 style="text-align: center; color: var(--primary-color);">⚙️ Trim, Offset, and Project Modification Guide</h2>
+                <p style="text-align: center;">Modify your existing drawings to add professional details.</p>
+                <div class="content-box-style">
                 <ul>
-                    <li><strong>Line and Polyline:</strong> Create independent line segments using a start and end point, or draw a continuous sequence of connected polylines.</li>
-                    <li><strong>Circle:</strong> First specify the center point, then define the radius (or drag with your mouse) to create your circle.</li>
-                    <li><strong>Arc:</strong> First specify the chord length (start and end points), then set the bulge (bow) height to complete the arc.</li>
-                    <li><strong>Rectangle:</strong> Draw by dragging and dropping with the mouse, or by entering precise dimensions using the keyboard in the <code>Width X Height</code> (or <code>Width * Height</code>) format.</li>
-                    <li><strong>Ellipse:</strong> Create free-form ellipses by specifying the axis widths using the drag-and-drop method.</li>
-                    <li><strong>Polygon:</strong> Draw regular polygons by entering the desired number of sides via the keyboard.</li>
-                    <li><strong>Donut:</strong> Specify the center point first, then sequentially define the radii of the inner and outer circles to create a thick-walled ring.</li>
-                    <li><strong>Tan-Tan-Radius (TTR):</strong> Use this to draw a circle with a specified radius tangent to two objects. <em>(Note: The radius value you enter must be geometrically appropriate for the distance between the two objects. You can easily trim TTR circles later to create smooth corner transitions.)</em></li>
-                    <li><strong>Tangent Line:</strong> Use this to draw straight lines perfectly tangent to the outer boundaries of two different circles.</li>
-                    <li><strong>Freehand:</strong> Create organic forms with your mouse or stylus that give a hand-drawn feel, automatically converted into mathematical curves in the background.</li>
-                </ul>
-                <div class="info-box">
-            <strong>Tip:</strong> You can gain speed in complex projects by using the "Filter" feature for all selection operations (Select Only Text, Select Only Circles, etc.).
+
+    <li>
+        <strong>Trim & Extend:</strong><br><br>
+        <img src="img/trimextend.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+               
+        <strong>How to Use Trim?</strong><br>
+        1. Select the <strong>Trim</strong> tool from the tool menu.<br>
+        2. Tap on the area you want to trim.<br>
+        3. The system will automatically remove the excess part based on the intersection point.<br><br>
+
+        <em>Example:</em> Used to clean up overhanging parts of wall lines or modify intersecting lines.<br><br>
+
+        <strong>How to Use Extend?</strong><br>
+        1. Select the <strong>Extend</strong> tool from the tool panel.<br>
+        2. Tap the reference line you want the target line to reach.<br>
+        3. The line is automatically extended to the target object.<br><br>
+
+        <div class="info-box">
+        <strong>Tip:</strong> For Trim and Extend operations to work, objects must intersect or be aligned in the same path.
+        </div>
+        
+    </li><br>
+
+    <li>
+        <strong>Offset:</strong><br>
+
+        1. Select the object you want to create a parallel copy of.<br>
+        2. Select the <strong>Offset</strong> tool from the tool panel.<br>
+        3. Enter the distance value in the prompt window.<br>
+        4. Use +/- values to determine the inward or outward direction.<br><br>
+
+        <em>Example:</em> Used to create wall thickness in architectural plans or produce parallel technical lines.
+    </li><br>
+
+    <li>
+        <strong>Rotate:</strong><br>
+
+        1. Select the object you want to rotate.<br>
+        2. Select the <strong>Rotate</strong> tool from the tool panel.<br>
+        3. Enter the rotation angle in the prompt window.<br>
+        4. The operation will be applied automatically.<br><br>
+
+        <em>Example:</em> Used to align technical parts at specific angles or rotate layout plans.
+    </li><br>
+
+    <li>
+        <strong>Mirror:</strong><br>
+
+        1. Select the objects you want to mirror.<br>
+        2. Select the <strong>Mirror</strong> tool from the tool panel.<br>
+        3. Specify the start point of the symmetry axis.<br>
+        4. Then select the end point.<br>
+        5. The system will create a symmetrical copy of the selected object.<br><br>
+        <em>Example:</em> Provides fast duplication for symmetrical furniture, mechanical parts, or plan drawings.
+        
+        <div class="info-box">
+            <strong>Tip:</strong> Activate Ortho mode for precise symmetry.
+        </div>
+
+    </li><br>
+
+    <li>
+        <strong>Array:</strong><br><br>
+
+        <strong>Rectangular Array:</strong><br>
+        1. Select the object to be arrayed.<br>
+        2. Open the <strong>Array</strong> tool from the tool panel.<br>
+        3. Choose the rectangular array option from the prompt window.<br>
+        3. Enter the number of rows and columns.<br>
+        4. Set the distance between objects.<br>
+        5. The system will perform the array automatically.<br><br>
+
+        <strong>Polar Array:</strong><br>
+        1. Select the object to be arrayed.<br>
+        2. Open the <strong>Array</strong> tool from the tool panel.<br>
+        3. Choose the polar array option from the prompt window.<br>
+        4. Specify the center point.<br>
+        5. Enter the number of copies.<br>
+        6. Set the angle of rotation.<br>
+        7. Objects will be placed in a circular pattern.<br><br>
+         <em>Example:</em> Used for column layouts, screw holes, or repeating technical details.
+        <div class="info-box">
+            <strong>Tip:</strong> Make sure the "Rotate Items" option is unchecked if you want the items to maintain their original orientation during full rotation.
+        </div>
+          
+    </li><br>
+
+    <li>
+        <strong>Chamfer & Fillet:</strong><br><br>
+        <img src="img/chamfer.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+          
+        <strong>Chamfer:</strong><br>
+        1. First select the two straight lines to be chamfered.<br>
+        1. Select the <strong>Chamfer</strong> tool from the tool panel.<br>
+        3. Enter the chamfer distance.<br>
+        4. The corner will be modified as a flat cut.<br><br>
+
+        <strong>Fillet:</strong><br>
+        1. First select the two straight lines to be rounded.<br>
+        2. Select the <strong>Fillet</strong> tool from the tool panel.<br>
+        3. Enter the fillet radius.<br>
+        4. The system will automatically create an arc.<br>
+
+        <em>Example:</em> Used to soften sharp corners or create technical transitions.
+    </li><br>
+
+    <li>
+        <strong>Scale:</strong><br><br>
+
+        1. Select the object to be scaled.<br>
+        2. Select the <strong>Scale</strong> tool from the tool panel.<br>
+        3. Enter the scale factor in the prompt screen.<br>
+        4. The object will be proportionally enlarged or reduced.<br>
+
+        <em>Example:</em> Ideal for reusing technical details at a different scale.
+    </li><br>
+
+    <li>
+        <strong>Lengthen:</strong><br><br>
+        1. Select the line you want to extend or shorten.<br>
+        2. Select the <strong>Lengthen</strong> tool from the tool panel.<br>
+        3. Enter the new length value.<br>
+        4. The system will update the line automatically.<br>
+
+        <em>Example:</em> Provides quick modification when a dimension change is needed in a technical drawing.
+    </li><br>
+
+                </ul></div>
+            </div>
+
+            <div class="docs-section" id="boolean">
+                <h2 style="text-align: center; color: var(--primary-color);">🧩 Grouping, Exploding, and Boolean Operations</h2>
+                <p style="text-align: center;">Design complex parts by merging closed areas or subtracting them from each other.</p>
+              
+                <div class="content-box-style">
+                <ul>
+
+    <li>
+        <strong>Group & Ungroup:</strong><br><br>
+
+        <strong>How to Use Group?</strong><br>
+        1. Select the objects you want to move together.<br>
+        2. Execute the <strong>Group</strong> command from the tool panel.<br>
+        3. All selected objects will now act as a single unit.<br><br>
+
+        <em>Example:</em> Can be used to move or duplicate door, window, and wall details together.<br><br>
+
+        <strong>How to Use Ungroup?</strong><br>
+        1. Select the previously created group.<br>
+        2. Execute the <strong>Ungroup</strong> command.<br>
+        3. All objects within the group become independent again.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> The group operation does not physically merge the objects. It only makes them easier to select and move together.
+        </div>
+    </li><br>
+
+    <li>
+        <strong>Explode & Join:</strong><br><br>
+
+        <strong>How to Use Explode?</strong><br>
+        1. Select the polyline, polygon, or unified object.<br>
+        2. Select the <strong>Explode</strong> tool from the operations section.<br>
+        3. The system will break down the object into independent lines or sub-components.<br><br>
+
+        <em>Example:</em> Used when you want to modify a single segment within a polyline.<br><br>
+
+        <strong>How to Use Join?</strong><br>
+        1. Select the lines you want to join.<br>
+        2. Ensure the endpoints of the lines touch each other.<br>
+        3. Select the <strong>Join</strong> tool from the operations section.<br>
+        4. The system will convert the lines into a single continuous object.<br><br>
+
+        <em>Example:</em> You can turn open lines into a closed polyline to make them suitable for hatch or boolean operations.
+    </li><br>
+
+    <li>
+        <strong>Wrap (Boundary):</strong><br><br>
+
+        1. Select overlapping or intricately nested objects.<br>
+        2. Select the <strong>Wrap</strong> tool from the operations section.<br>
+        3. The system will analyze internal details and generate only the outer contour.<br>
+        4. The resulting object is created as a closed perimeter geometry.<br><br>
+
+        <em>Example:</em> Used to quickly extract the outer boundary of complex plans composed of multiple shapes.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> Wrap operations are particularly useful for creating clean geometry for hatching, area calculation, and DXF exporting.
+        </div>
+    </li><br>
+
+    <li>
+        <strong>Boolean Operations:</strong><br><br>
+        <img src="img/boolean.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+         
+        Boolean tools only work on <strong>closed geometries</strong>. 
+        You can perform mathematical geometry operations between circles, closed polylines, and unified shapes.
+    </li><br>
+
+    <li>
+        <strong>Union:</strong><br><br>
+
+        1. Select the closed shapes to be merged.<br>
+        2. Select the Boolean Operations tool from the operations section and choose <strong>Union</strong> in the prompt window.<br>
+        3. Overlapping areas are fused into a single unified shape.<br><br>
+
+        <em>Example:</em> Can be used to turn architectural areas consisting of multiple rooms into a single closed plan.
+    </li><br>
+
+    <li>
+        <strong>Difference:</strong><br><br>
+
+        1. Select the main shape.<br>
+        2. Define the second shape to be subtracted.<br>
+        3. Select the Boolean Operations tool from the operations section and choose <strong>Difference</strong> in the prompt window.<br>
+        4. The area covered by the second shape is cut and subtracted from the main geometry.<br><br>
+
+        <em>Example:</em> Can be used to drill a hole in a plate or create a window opening.
+    </li><br>
+
+    <li>
+        <strong>Intersection:</strong><br><br>
+
+        1. Select intersecting closed objects.<br>
+        2. Select the Boolean Operations tool from the operations section and choose <strong>Intersection</strong> in the prompt window.<br>
+        3. The system will retain only the common intersecting area.<br><br>
+
+        <em>Example:</em> Can be used to calculate or analyze the common usage area of two different spaces.
+    </li><br>
+
+    <li>
+        <strong>Exclusion (XOR):</strong><br><br>
+
+        1. Select shapes that touch or overlap each other.<br>
+        2. Select the Boolean Operations tool from the operations section and choose <strong>XOR</strong> in the prompt window.<br>
+        3. The common intersecting area is deleted, and only the differing regions are retained.<br><br>
+
+        <em>Example:</em> Can be used to clean up overlapping technical areas or separate complex geometries.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> The XOR operation is frequently used in technical drawings to create clean and isolated geometry by removing overlapping areas.
+        </div>
+    </li>
+
+                </ul></div>
+            </div>
+
+            <div class="docs-section" id="olculendirme">
+                <h2 style="text-align: center; color: var(--primary-color);">📐 Technical Drawing Dimensioning and Hatching</h2>
+                <p style="text-align: center;">Add technical depth and material information to your projects.</p>
+                <div class="content-box-style">
+                <ul>
+
+    <li>
+        <strong>Dimensioning:</strong><br><br>
+
+        You can use linear, angular, diameter, and radius tools to annotate your technical drawings according to standards.<br><br>
+
+        <strong>How to Add Linear Dimensions?</strong><br>
+        1. Open the Dimension tool from the tool panel, then select the <strong>Linear</strong> dimension.<br>
+        2. Select the start point of the line or area to be dimensioned.<br>
+        3. Then define the end point.<br>
+        4. The system will automatically generate the dimension value.<br><br>
+
+        <strong>How to Add Angular Dimensions?</strong><br>
+        1. Select the Dimension tool from the tool panel, then choose the <strong>Angular</strong> dimension.<br>
+        2. To measure an angle, for example at point A of a triangle, select point B first and then point C.<br>
+        3. The system will automatically calculate the angle value.<br><br>
+
+        <strong>Diameter and Radius Dimensions:</strong><br>
+         1. Select the Dimension tool from the tool panel, then choose either <strong>Diameter</strong> or <strong>Radius</strong> dimension.<br>
+        2. Select the circle or arc object to be dimensioned.<br>
+        3. The diameter or radius value is generated automatically.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> You can later manually edit the contents via the Text Edit tool, and change architectural tick and arrowhead styles.
+        </div>
+        <div class="info-box">
+            <strong>Tip:</strong> To add coordinates, you can use the <strong>Coordinate</strong> option from the dimensioning tool. The coordinate dimension is ideal for displaying the X and Y coordinates of a designated point on the technical drawing.
+        </div>
+    </li>
+
+    <li>
+        <strong>Automatic Area Calculation:</strong><br><br>
+
+        1. Select a closed geometry.<br>
+        2. Open the <strong>Area Calculation</strong> tool from the dimensioning tools.<br>
+        3. The system will automatically calculate the area of the selected geometry.<br><br>
+
+        <em>Example:</em> Can be used for room square footage, enclosed technical spaces, or surface calculations.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> For the area calculation to work correctly, the selected geometry must be completely closed.
+        </div>
+    </li>
+
+    <li>
+        <strong>Hatch Library:</strong><br><br>
+
+        Hatch tools allow you to fill the interiors of closed areas with patterns suitable for technical drawing standards.<br><br>
+
+        <strong>How to Use Hatch?</strong><br>
+        1. Open the <strong>Hatch</strong> tool.<br>
+        2. Choose the pattern you want to use.<br>
+        3. Select the closed area where the hatch will be applied.<br>
+        4. The hatch process will be applied automatically.<br><br>
+         <div class="info-box">
+            <strong>Tip:</strong> You can make your technical drawings more readable and professional by adjusting the fill color and hatch line colors separately.
+        </div>
+        
+
+        <strong>Supported Hatch Patterns:</strong><br>
+        • Solid Fill<br>
+        • Vertical Lines<br>
+        • Diagonal<br>
+        • Crosshatch<br>
+        • Dotted Pattern<br>
+        • Brick<br>
+        • Checker<br>
+        • Honeycomb<br>
+        • Concrete Pattern<br><br>
+
+        <em>Example:</em> Can be used for reinforced concrete areas, wall cross-sections, material representations, or technical section drawings.
+
+        <div class="info-box">
+            <strong>Tip:</strong> When you remove the fill color, the line color becomes transparent; make sure to pick a new line color from the color palette before continuing to draw.
+        </div>
+    </li>
+
+    <li>
+        <strong>Text and Leader:</strong><br><br>
+
+        You can use text and leader (arrow-text) tools to add annotations, point out details, and label objects in technical drawings.<br><br>
+
+        <strong>Adding Plain Text:</strong><br>
+        1. Select the Text tool.<br>
+        2. Specify the point where the text will be placed.<br>
+        3. Enter the text content from the keyboard.<br>
+        4. Double-click on the text to edit its size, font, color, and content.<br><br>
+
+         <div class="info-box">
+            <strong>Tip:</strong> You can easily insert frequently used symbols in technical drawings (like Ø, ±, °, ⌀) from your keyboard in the text editing screen.
+        </div><br>
+
+        <strong>How to Use Leader (Guide Line)?</strong><br>
+        1. Open the Leader tool.<br>
+        2. Select the point to be indicated.<br>
+        3. Determine the arrow direction.<br>
+        4. Enter the annotation text.<br>
+        5. The system will create the arrowed annotation line.<br><br>
+
+        <em>Example:</em> Can be used to add technical detail notes, part names, or production remarks.
+        <div class="info-box">
+            <strong>Tip:</strong> You can double-click on the leader text later to open the text editor and modify its content.
+        </div><br>
+    </li>
+
+    <li>
+        <strong>Table and Settings:</strong><br>
+
+        You can add technical tables, bill of materials, or properties tables to the workspace.<br><br>
+
+        <strong>Creating a Table:</strong><br>
+        1. Select the <strong>Table</strong> tool from the annotation section.<br>
+        2. Select the area where you want to place the table.<br>
+        3. Set the number of rows and columns.<br>
+        4. Once the table is added to the screen, double-click a cell to input data.<br>
+        5. Edit table properties via <strong>Table Settings</strong>.<br><br>
+
+
+        <em>Example:</em> Can be used to create door-window schedules, material tables, or technical specification sections.
+    </li>
+
+                </ul></div>
+            </div>
+
+            <div class="docs-section" id="katmanlar">
+                <h2 style="text-align: center; color: var(--primary-color);">🎯 Professional Layer and Block Management</h2>
+                <p style="text-align: center;">Manage complex projects by splitting them into layers and gain speed with blocks.</p>
+                <div class="content-box-style">
+                <ul>
+
+    <li>
+        <strong>Layers Panel:</strong><br><br>
+
+        The layer system allows you to organize and manage objects neatly in large technical drawings. 
+        You can categorize drawings, control visibility, and prevent accidental modifications.<br><br>
+
+        <strong>Creating a New Layer:</strong><br>
+        1. Open the <strong>Layers</strong> panel from the top menu.<br>
+        2. Tap the <strong>+</strong> icon to create a new layer.<br>
+        3. Open layer properties via the three dots on the right.<br>
+        4. Define the layer name and color.<br><br>
+    
+
+        <strong>Layer Visibility:</strong><br>
+        • You can temporarily remove a layer from the workspace by hiding it.<br>
+        • You can make it visible again to resume working.<br><br>
+
+        <strong>Locking a Layer:</strong><br>
+        • Objects on a locked layer cannot be selected or modified.<br>
+        • Especially useful for protecting reference drawings.<br><br>
+
+        <em>Example:</em> In architectural projects, walls, dimensions, furniture, and electrical layouts can be kept on separate layers.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> Naming layers systematically significantly increases workflow speed in complex projects.
+        </div>
+    </li>
+
+    <li>
+        <strong>Object Properties:</strong><br><br>
+
+        You can quickly modify the visual attributes of selected objects from the properties panel.<br><br>
+
+        <strong>Modifiable Properties:</strong><br>
+        • Line Color<br>
+        • Linetype (Continuous, Dashed, Dotted, etc.)<br>
+        • Lineweight<br><br>
+
+        <strong>How to Use?</strong><br>
+        1. Select the object you want to edit.<br>
+        2. Open the <strong>Properties</strong> panel.<br>
+        3. Change the color, linetype, or lineweight values.<br>
+        4. The selected object will be updated instantly.<br><br>
+
+        <em>Example:</em> Can be used in technical drawing to convert solid lines into dashed lines or highlight important details with different colors.
+    </li>
+
+    <li>
+        <strong>Match Properties:</strong><br><br>
+
+        The Match Properties tool allows you to rapidly transfer the visual attributes of one object to others.<br><br>
+
+        <strong>How to Use?</strong><br>
+        1. Open the <strong>Match Properties</strong> tool.<br>
+        2. Select the source object whose properties will be copied.<br>
+        3. Then tap the target object to apply the properties.<br>
+        4. The system will automatically transfer the color, linetype, and lineweight.<br><br>
+
+        <em>Example:</em> Instead of manually changing all line styles in large projects, you can establish a standard visual appearance with a single click.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> The match properties tool accelerates the creation of visual standards in technical drawings.
+        </div>
+    </li>
+
+    <li>
+        <strong>Block Creation:</strong><br><br>
+
+        By converting frequently used drawings into blocks, you can reuse the same object without having to redraw it constantly.<br><br>
+
+        <strong>How to Create a Block?</strong><br>
+        1. Select the objects to be converted into a block.<br>
+        2. Select the <strong>Create Block</strong> tool from the operations panel.<br>
+        3. Specify a name for the block.<br>
+  
+        4. Choose the block destination.<br>
+              <em>* Project Library is used for the current drawing file you are working on, while Global Library is used for different drawing files.</em><br>
+        5. The system will convert the objects into a single block unit.<br><br>
+
+        <em>Example:</em> Ideal for doors, windows, furniture, or technical symbols.      
+<br><br>
+        <strong>Editing Blocks:</strong><br>
+        • You can double-click a block to edit it or select the relevant field from the library panel.<br>
+         - Use Default Properties for instant and custom edits, or Edit Content to modify all instances of the block across the entire project at once.<br>
+        
+    </li>
+
+    <li>
+       
+        <strong>Using from Library:</strong><br>
+        1. Open the Library panel.<br>
+        2. Select the block to be used.<br>
+        3. The block will be placed in the workspace.<br><br>
+
+        <em>Example:</em> You can reuse standard technical symbols or frequently used architectural details across all projects.<br><br>
+
+        <div class="info-box">
+            <strong>Tip:</strong> Utilizing the Global Library saves a significant amount of time, especially in large projects.
+        </div>
+    </li>
+
+                </ul></div>
+            </div>
+
+           
+
+            <div class="docs-section" id="problem-cozme">
+                <h2 style="text-align: center; color: var(--primary-color);">🛠️ CAD Troubleshooting and Tips</h2>
+                <div class="troubleshoot-grid">
+                    <div class="t-item">
+                        <h3>Why Isn't Trim Working?</h3>
+                        <p>Ensure that the lines physically intersect with each other. For non-intersecting objects, use the <strong>Extend</strong> tool.</p>
+                    </div>
+                    <div class="t-item">
+                        <h3>Why Isn't Hatch Applying?</h3>
+                        <p>The area must be completely closed to apply a hatch. If there is even a tiny gap, the system will throw an "Open Loop" error.</p>
+                    </div>
                 </div>
             </div>
 
-                            <div class="docs-section" id="duzenleme">
-                <h2>Modification</h2>
-                <p>Manipulate your drawn geometries with precision.</p>
-                <ul>
-                    <li>
-                        <strong>Trim & Extend:</strong> Used to cut away intersecting excess lines or extend the endpoint of a line to meet another object.
-                        <div class="info-box" style="margin-top: 10px;">
-                            <strong>Tip:</strong> When using the Trim or Extend commands, ensure that the objects physically intersect or align in the same path.
-                        </div>
-                    </li>
-                    <li><strong>Offset:</strong> Creates a parallel copy of a selected object (e.g., a wall line) at a specified distance inside or outside.</li>
-                    <li><strong>Rotate:</strong> Rotate selected objects around a specified base point by entering a precise angle value directly from your keyboard.</li>
-                    <li><strong>Mirror:</strong> Creates a mirrored symmetry of selected objects across a reference line (axis of reflection) that you define.</li>
-                    <li><strong>Scale:</strong> Use this to proportionally enlarge or reduce objects based on a specific base point.</li>
-                    <li><strong>Array:</strong> Duplicates a selected object at specified intervals and quantities in a horizontal and vertical grid (Rectangular) or around a circular center (Polar).</li>
-                    <li><strong>Chamfer & Fillet:</strong> Modifies sharp corners formed by two intersecting lines by cutting them flat at a specified distance (Chamfer) or rounding them with a smooth radius (Fillet).</li>
-                    <li><strong>Resize:</strong> Allows you to revise the overall aspect ratios and dimensions of your drawn objects.</li>
-                </ul>
+            <div class="docs-section" id="faq">
+                <h2 style="text-align: center; color: var(--primary-color);">❓ Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <details class="faq-item">
+                        <summary>Can I open other DXF files with TamgamCAD?</summary>
+                        <p>Yes, TamgamCAD fully supports the industrial DXF format. You can both import and export your projects.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Does TamgamCAD work offline (without internet)?</summary>
+                        <p>Yes, TamgamCAD is optimized to run entirely on your device. You can draft and save without an internet connection.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is there stylus support on Android tablets?</summary>
+                        <p>Yes, it works compatibly with pen pressure and sensitivity, allowing you to create more detailed technical drawings.</p>
+                    </details>
+                </div>
             </div>
 
-           <div class="docs-section" id="boolean">
-    <h2>Grouping, Exploding, and Boolean Operations</h2>
-    <p>One of TamgamCAD's most powerful features is its ability to group objects on the fly and mathematically process overlapping closed shapes.</p>
-    <img src="resimler/boolean-ornek.png" alt="Boolean Operations" class="docs-img" onerror="this.style.display='none'">
-    <ul>
-        <li><strong>Group & Ungroup:</strong> Select multiple objects and group them on the fly to act as a single unit, or ungroup an existing group to make its components independent again.</li>
-        <li><strong>Explode & Join:</strong> Break down a unified polyline or polygon into independent line segments (Explode), or connect open-ended lines that touch each other into a single continuous object (Join).</li>
-        <li><strong>Wrap (Boundary):</strong> Extracts only the outermost boundaries (contours) of overlapping complex objects, removing internal details to create a new, single closed perimeter geometry.</li>
-        <li><strong>Boolean Operations:</strong> Mathematical solid modeling operations between closed shapes:
-            <ul style="margin-top: 10px; margin-bottom: 10px;">
-                <li><em>Union:</em> Fuses overlapping shapes into a single geometric entity.</li>
-                <li><em>Difference:</em> Subtracts the overlapping area of the second shape from the main shape.</li>
-                <li><em>Intersection:</em> Keeps only the common overlapping area of the shapes and deletes the rest.</li>
-                <li><em>Exclusion (XOR):</em> The exact opposite of intersection; it deletes the overlapping common area and leaves only the non-intersecting parts of the shapes.</li>
-            </ul>
-        </li>
-    </ul>
-</div>
+            <div class="cta-highlight-box">
+                <h3 style="text-align: center;">Start 2D Technical Drawing Now</h3>
+                <p style="text-align: center;">Download TamgamCAD for a professional CAD experience on mobile and tablet.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="index.html#platformlar" class="btn-primary">Download Now</a>
+                </div>
+            </div>
 
-                <div class="docs-section" id="olculendirme">
-            <h2>Dimensioning, Hatching, and Annotation</h2>
-            <p>Add details in compliance with technical drawing standards.</p>
-            <ul>
-                <li><strong>Dimensioning:</strong> Technically annotate your project with Linear, Angular, Diameter, Radius, and automatic Area Calculation tools.</li>
-                <li><strong>Hatching (Hatch):</strong> Fill closed geometric areas with various material patterns that suit the technical requirements of your project. Supported patterns include: Solid Fill, Vertical Lines, Diagonal, Cross, Dotted, Brick, Checker, Honeycomb, and Concrete.</li>
-                <li><strong>Text and Leader:</strong> Add descriptive plain text or use leader lines (arrows with text) to point out and annotate specific details in your project.</li>
-                <li><strong>Table and Settings:</strong> Insert property and detail tables into the workspace. Use the table settings to customize the number of rows/columns, dimensions, and cell contents according to your project's needs.</li>
-            </ul>
         </div>
-
-            <div class="docs-section" id="katmanlar">
-                <h2>Layers, Library, and Object Properties</h2>
-                <p>Prevent clutter in large projects and professionally manage the visual attributes of your objects.</p>
-                <ul>
-                    <li><strong>Layer Panel:</strong> Name your layers and assign specific colors to each. You can toggle layer visibility on and off during drafting, or lock them (Lock/Freeze) to prevent unintended modifications.</li>
-                    <li><strong>Object Properties:</strong> Easily change the color, linetype (continuous, dashed, dotted, etc.), and lineweight of selected objects in the workspace from the properties panel in the top menu.</li>
-                    <li><strong>Match Properties:</strong> Copy the color, linetype, and lineweight of one object and flawlessly apply them to other objects with a single click.</li>
-                    <li><strong>Block Creation:</strong> Turn frequently used objects (e.g., a standard window drawing) into Blocks so they act as a single unit.</li>
-                    <li><strong>Project and Global Library:</strong> Save your blocks to the library to reuse them with a single click in both your current project and all future projects (Global Library).</li>
-                </ul>
-            </div>
-
-            <div class="docs-section" id="izometrik">
-    <h2>Isometric View</h2>
-    <p>Specialized tools for creating technical drawings that provide a 3D illusion within a 2D space.</p>
-    <img src="resimler/izometrik-izgara.png" alt="Isometric Grid" class="docs-img" onerror="this.style.display='none'">
-    <ul>
-        <li><strong>Isometric Grid:</strong> When activated from the top menu, your workspace grid, cursor, and lines automatically snap to 30° and 150° isometric axes. This allows you to easily draft complex isometric perspectives.</li>
-    </ul>
-</div>
-
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <script>
         // Kullanıcı sayfayı kaydırdıkça sol menüdeki aktif linki değiştirir
@@ -256,7 +820,7 @@ gtag('config', 'G-7H6342FC7T', {
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index-en.html#tablo">Features</a></li>
+                    <li><a href="features.html">Features</a></li>
                     <li><a href="guide.html">User Guide</a></li>
                     <li><a href="index-en.html#iletisim">Contact</a></li>
                 </ul>
