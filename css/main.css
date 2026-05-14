@@ -597,16 +597,24 @@ footer {
 }
 
 .docs-sidebar {
-    width: 250px;
-    flex-shrink: 0;
-    background: var(--white);
-    padding: 30px 20px;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    align-self: flex-start;
+    position: -webkit-sticky; 
     position: sticky;
-    top: 100px; /* Sayfa kaydıkça menü ekranda kalır */
+    top: 20px; 
+    max-height: calc(100vh - 40px); 
+    overflow-y: auto; 
+    padding-right: 15px; 
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #f3f4f6;
+}
+
+
+.docs-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.docs-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
 .docs-sidebar h3 {
