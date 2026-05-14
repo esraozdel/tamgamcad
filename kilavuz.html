@@ -23,8 +23,8 @@ gtag('config', 'G-7H6342FC7T', {
 });
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kullanım Kılavuzu ve Belgeler | TamgamCAD 2D CAD Yazılımı</title>
-    <meta name="description" content="TamgamCAD 2D CAD yazılımının arayüzü, çizim araçları, boolean işlemleri ve katman yönetimi hakkında detaylı Türkçe kullanım kılavuzu.">
+    <title>TamgamCAD Öğrenme Merkezi | Mobil CAD, DXF Düzenleme ve Teknik Çizim Rehberi</title>
+    <meta name="description" content="TamgamCAD ile mobilde teknik çizim yapın, DXF dosyalarını düzenleyin, Trim, Offset, Hatch ve Katman araçlarını öğrenin. Android ve Windows için profesyonel 2D CAD rehberi.">
     <meta name="author" content="TamgamCAD">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tamgamcad.com/kilavuz.html">
@@ -46,6 +46,38 @@ gtag('config', 'G-7H6342FC7T', {
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
+       <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TamgamCAD",
+  "url": "https://tamgamcad.com",
+  "image": "https://tamgamcad.com/img/logotransparan.png",
+  "description": "Profesyoneller için optimize edilmiş mobil odaklı, gelişmiş 2D CAD çözümü.",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Android, Windows 10, Windows 11",
+  "author": {
+    "@type": "Person",
+    "name": "Esra ÖZDEL",
+    "url": "https://tamgamcad.com"
+  },
+"offers": [
+  {
+    "@type": "Offer",
+    "price": "299.99",
+    "priceCurrency": "TRY",
+    "eligibleRegion": "TR",
+    "description": "Türkiye için aylık abonelik fiyatı"
+  },
+  {
+    "@type": "Offer",
+    "price": "7.49",
+    "priceCurrency": "USD",
+    "description": "Monthly subscription price for the United States."
+  }
+]
+}
+</script>
 </head>
 
 <body>
@@ -59,7 +91,7 @@ gtag('config', 'G-7H6342FC7T', {
         <nav class="main-nav">
                 <ul>
                        <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="index.html#tablo">Özellikler</a></li>
+                    <li><a href="ozellikler.html">Özellikler</a></li>
                     <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
                     <li><a href="index.html#iletisim">İletişim</a></li>
                 </ul>
@@ -68,159 +100,709 @@ gtag('config', 'G-7H6342FC7T', {
                 <a href="kilavuz.html" class="active">TR</a> <span>|</span> <a href="guide.html" >EN</a>
             </div>
             
-              <a href="#platformlar" class="btn-primary">TamgamCAD Sürümler</a>
+              <a href="index.html#platformlar" class="btn-primary">TamgamCAD Sürümler</a>
         </div>
     </header>
     <main>
+        
 
- <section class="docs-page">
-        <div class="container docs-container">
-            
-            <aside class="docs-sidebar">
-                <h3>İçindekiler</h3>
-                <ul class="docs-nav">
-                    <li><a href="#baslangic" class="active">🚀 Başlangıç & Arayüz</a></li>
-                    <li><a href="#dosya">📁 Dosya İşlemleri</a></li>
-                    <li><a href="#cizim">✏️ Çizim Araçları</a></li>
-                    <li><a href="#duzenleme">⚙️ Düzenleme (Modifikasyon)</a></li>
-                    <li><a href="#boolean">🧩 Boolean İşlemleri</a></li>
-                    <li><a href="#olculendirme">📐 Ölçü & Tarama (Hatch)</a></li>
-                    <li><a href="#katmanlar">🎯 Katmanlar & Bloklar</a></li>
-                    <li><a href="#izometrik">🧊 Görünüm & Izgara</a></li>
-                </ul>
-            </aside>
-
-            <div class="docs-content">
-                
-                
-                <div class="docs-section" id="baslangic">
-                    <h1 style="margin-bottom: 30px; font-size: 32px; color: var(--primary-color);">TamgamCAD Kullanım Kılavuzu</h1>
-                    <h2>Başlangıç ve Arayüz</h2>
-                    <p>TamgamCAD'in modern ve kullanıcı dostu arayüzüne hoş geldiniz. Uygulama, çizim alanını (Canvas) maksimum verimle kullanmanızı sağlar.</p>
-                    
-                    <img src="resimler/arayuz-genel.png" alt="TamgamCAD Arayüzü" class="docs-img" onerror="this.style.display='none'">
-                    
-                    <ul>
-                        <li><strong>Tema (Theme):</strong> Göz yorgunluğunu azaltmak veya kişisel tercihinize göre üst menüden Koyu (Dark) ve Açık (Light) arayüz temaları arasında geçiş yapabilirsiniz.</li>
-                        <li><strong>Izgara (Grid):</strong> Çalışma alanında (Canvas) görsel bir referans oluşturmak veya hizalama yapmak için üst menüden ızgara görünümünü açıp kapatabilirsiniz.</li>
-                        <li><strong>Kenetleme (Snap):</strong> Çizim esnasında nesnelerin Uç Nokta (Endpoint), Orta Nokta (Midpoint), Kesişim (Intersection) ve Merkez koordinatlarına hassas bir şekilde hizalanmak için, üst menüde yer alan 'Ayarlar' sekmesinden "Kenetleme" ayarlarını kullanın.</li>
-                        <li><strong>Ölçek (Scale):</strong> Çiziminizin gerçek dünyadaki boyut karşılığını (mm, cm, m vb.) belirlemek için üst menüdeki ölçek ayarlarını kullanın.</li>
-                       <li><strong>Ölçü Girişi (Dimension Input):</strong> Çizim esnasında uzunluk değerlerini klavyenizden girebileceğiniz gibi; özellikle dokunmatik ekranlar ve tabletler için tasarlanmış üst menüdeki özel ölçü giriş panelini de kullanabilirsiniz.</li>
-                        <li><strong>Dil Seçeneği (Language):</strong> Çalışma ortamınızı kişiselleştirmek için üst menüden arayüz dilini Türkçe (TR) veya İngilizce (EN) olarak değiştirebilirsiniz.</li>
-                        <li><strong>Gezinme (Pan & Zoom):</strong> Fare tekerleğini kaydırarak yakınlaşıp uzaklaşabilir (Zoom), tekerleğe basılı tutarak veya dokunmatik ekranda iki parmağınızla ekranı kaydırabilirsiniz (Pan).</li>
-                        <li><strong>Dik Mod (Orto):</strong> Çizgilerinizi yalnızca yatay (0°, 180°) ve dikey (90°, 270°) eksenlerde çizmeye zorlamak için klavyenizden <strong>F8</strong> tuşunu kullanın.</li>
-                    </ul>
-                </div>
-
-              <div class="docs-section" id="dosya">
-                <h2>Dosya İşlemleri ve Dışa Aktarım</h2>
-                <p>Projelerinizi güvenle saklayın ve endüstri standardı formatlarda diğer yazılımlarla paylaşın.</p>
-                <ul>
-                    <li><strong>Dosya Aç (Open):</strong> Yarım kalan projelerinize devam etmek için daha önceden kaydettiğiniz <code>.json</code> uzantılı TamgamCAD proje dosyalarınızı çalışma alanına aktarabilirsiniz.</li>
-                    <li><strong>Kaydet / Farklı Kaydet (Save):</strong> Çizimlerinizi daha sonra tüm katmanları, blokları ve özellikleriyle yeniden düzenleyebilmek için bilgisayarınıza yerel olarak <code>.json</code> formatında kaydedin.</li>
-                    <li><strong>Çıktı Alma (Export):</strong> Çizimlerinizi vektörel sunumlar ve yüksek çözünürlüklü baskılar için <code>.SVG</code> ve <code>.PDF</code>, hızlı paylaşımlar için ise <code>.PNG</code> formatında dışa aktarabilirsiniz.</li>
-                    <li><strong>Resim Ekleme (Insert Image):</strong> Çalışma alanınıza referans görseller (JPG, PNG) ekleyerek üzerinden çizim (tracing) yapabilirsiniz.</li>
-                </ul>
-            </div>
-
-               <div class="docs-section" id="cizim">
-                    <h2>Temel ve Gelişmiş Çizim Araçları</h2>
-                    <p>İster düz hatlar, ister organik eğriler çizin. Üst menüdeki araç kutusundan dilediğiniz aracı seçerek projenize başlayabilirsiniz:</p>
-                    
-                    
-
-                    <ul>
-                        <li><strong>Düz Çizgi (Line) ve Çoklu Çizgi (Polyline):</strong> Başlangıç ve bitiş noktasıyla bağımsız çizgiler oluşturabilir veya uç uca eklenen kesintisiz çoklu çizgiler çizebilirsiniz.</li>
-                        <li><strong>Daire (Circle):</strong> Önce merkez noktasını belirleyin, ardından yarıçap değerini girerek (veya fareyle sürükleyerek) dairenizi oluşturun.</li>
-                        <li><strong>Yay (Arc):</strong> Önce yayın kiriş uzunluğunu (başlangıç ve bitiş noktalarını) belirleyin, ardından bombe (kavis) yüksekliğini ayarlayarak yay çizimini tamamlayın.</li>
-                        <li><strong>Kare / Dikdörtgen (Rectangle):</strong> Fare ile sürükle-bırak yaparak veya klavyeden doğrudan <code>Genişlik X Yükseklik</code> (veya <code>Genişlik * Yükseklik</code>) formatında net ölçü girerek çizebilirsiniz.</li>
-                        <li><strong>Elips (Ellipse):</strong> Fare ile sürükle-bırak yöntemiyle eksen genişliklerini belirleyerek serbest elipsler oluşturun.</li>
-                        <li><strong>Çokgen (Polygon):</strong> İhtiyacınız olan kenar sayısını klavyeden girerek düzgün çokgenler çizebilirsiniz.</li>
-                        <li><strong>Halka (Donut):</strong> Önce merkez noktasını belirleyin, ardından sırasıyla iç çemberin ve dış çemberin yarıçaplarını girerek kalın cidarlı bir halka oluşturun.</li>
-                        <li><strong>Tan-Tan-Radius (TTR):</strong> İki farklı nesneye teğet olan ve belirlediğiniz yarıçap değerine sahip bir çember çizmek için kullanın. <em>(Not: Girdiğiniz yarıçap değeri, iki nesne arasındaki mesafeye geometrik olarak uygun olmalıdır. TTR ile oluşan çemberleri sonradan Trim komutuyla budayarak yumuşak köşe dönüşleri elde edebilirsiniz.)</em></li>
-                        <li><strong>Teğet Çizgi (Tangent Line):</strong> İki farklı çemberin dış yüzeylerine kusursuz bir şekilde teğet geçen doğrusal çizgiler çizmek için kullanın.</li>
-                        <li><strong>Serbest Çizim (Freehand):</strong> Fare veya stylus kaleminizle el çizimi hissi veren, arka planda otomatik olarak matematiksel eğrilere dönüşen organik formlar oluşturun.</li>
-                    </ul>
-                     <div class="info-box">
-                        <strong>İpucu:</strong> Tüm seçim işlemlerinde "Filtreleme" özelliğini kullanarak (Sadece Metinleri Seç, Sadece Daireleri Seç vb.) karmaşık projelerde hız kazanabilirsiniz.
-                    </div>
-                </div>
-
-           <div class="docs-section" id="duzenleme">
-                <h2>Düzenleme (Modifikasyon)</h2>
-                <p>Çizdiğiniz geometrileri hassas bir şekilde manipüle edin.</p>
-                <ul>
-                    <li>
-                        <strong>Kırp (Trim) & Uzat (Extend):</strong> Kesişen çizgilerin fazlalıklarını budamak veya bir çizginin ucunu başka bir objeye kadar uzatmak için kullanılır.
-                        <div class="info-box" style="margin-top: 10px;">
-                            <strong>İpucu:</strong> Kırp (Trim) veya Uzat (Extend) komutlarını kullanırken objelerin birbirleriyle fiziksel olarak kesiştiğinden veya aynı doğrultuda olduğundan emin olun.
-                        </div>
-                    </li>
-                    <li><strong>Paralel Kopyala (Offset):</strong> Seçili bir objenin (örneğin bir duvar çizgisinin) belirlediğiniz bir mesafe kadar dışına veya içine paralel kopyasını oluşturur.</li>
-                    <li><strong>Döndür (Rotate):</strong> Seçili nesneleri belirlediğiniz bir merkez noktası (referans noktası) etrafında, klavyeden hassas bir açı değeri girerek döndürün.</li>
-                    <li><strong>Aynala (Mirror):</strong> Seçtiğiniz nesnelerin, belirleyeceğiniz bir referans çizgisi (simetri ekseni) etrafında ayna görüntüsünü oluşturur.</li>
-                    <li><strong>Ölçekle (Scale):</strong> Nesneleri bir başlangıç noktası referans alınarak orantılı bir şekilde büyütmek veya küçültmek için kullanın.</li>
-                    <li><strong>Çoğalt (Array):</strong> Seçili bir objeyi yatay ve dikey düzlemde (Dikdörtgensel) veya dairesel bir merkez etrafında (Kutupsal) belirli aralıklarla ve sayılarda çoğaltır.</li>
-                    <li><strong>Pah Kır (Chamfer) & Köşe Yuvarla (Fillet):</strong> Kesişen iki çizginin oluşturduğu keskin köşeleri belirli bir mesafe girerek düz keser (Pah) veya belirli bir yarıçapla yumuşak bir kavis oluşturur (Fillet).</li>
-                    <li><strong>Yeniden Boyutlandır (Resize):</strong> Çizdiğiniz nesnelerin genel en-boy oranlarını ve boyutlarını sonradan düzenleme yapmanızı sağlar.</li>
-                </ul>
-            </div>
-
-              <div class="docs-section" id="boolean">
-    <h2>Gruplama, Parçalama ve Boolean İşlemleri</h2>
-    <p>TamgamCAD'in en güçlü özelliklerinden biri, nesneleri anlık olarak gruplayabilmesi ve üst üste binen kapalı şekilleri matematiksel olarak işleyebilmesidir.</p>
-    <img src="resimler/boolean-ornek.png" alt="Boolean İşlemleri" class="docs-img" onerror="this.style.display='none'">
-    <ul>
-        <li><strong>Grupla (Group) & Grubu Çöz (Ungroup):</strong> Birden fazla nesneyi seçip anlık olarak tek bir nesne gibi hareket ettirmek için gruplayabilir veya mevcut bir grubun bileşenlerini tekrar bağımsız hale getirmek için grubu çözebilirsiniz.</li>
-        <li><strong>Parçala (Explode) & Uç Uca Ekle (Join):</strong> Bütünleşik bir çoklu çizgiyi (Polyline) veya çokgeni bağımsız alt çizgilere ayırmak için parçalayabilir; veya ucu açık, birbirine değen bağımsız çizgileri tek bir sürekli objede birleştirebilirsiniz.</li>
-        <li><strong>Dış Zarf Birleştir (Wrap / Boundary):</strong> Üst üste binen karmaşık nesnelerin iç detaylarını silip sadece en dış sınırlarını (konturlarını) baz alarak yeni, tek parça ve kapalı bir çevre geometrisi oluşturur.</li>
-        <li><strong>Boolean İşlemleri:</strong> Kapalı şekiller arasındaki matematiksel katı modelleme işlemleridir:
-            <ul style="margin-top: 10px; margin-bottom: 10px;">
-                <li><em>Birleştir (Union):</em> Üst üste binen şekilleri eriterek tek bir bütün haline getirir.</li>
-                <li><em>Çıkar (Difference):</em> Ana şeklin içinden, ikinci şeklin değdiği veya kesiştiği alanları kesip atar.</li>
-                <li><em>Kesişim (Intersection):</em> Sadece şekillerin üst üste bindiği ortak (kesişen) alanı bırakır, gerisini siler.</li>
-                <li><em>Sadece Farklar (Exclusion / XOR):</em> Kesişim işleminin tam tersidir; yalnızca şekillerin birbirine değmeyen farklı kısımlarını bırakıp ortak alanı siler.</li>
+<section class="docs-page">
+    <div class="container docs-container">
+        <aside class="docs-sidebar">
+            <h3>Öğrenme Merkezi</h3>
+            <ul class="docs-nav">
+                <li><a href="#baslangic" class="active">🚀 Hızlı Başlangıç Rehberi</a></li>
+                <li><a href="#dosya">📁 DXF & Dosya Yönetimi</a></li>
+                <li><a href="#cizim">✏️ 2D Çizim Nasıl Yapılır?</a></li>
+                <li><a href="#duzenleme">⚙️ Trim, Offset & Düzenleme</a></li>
+                <li><a href="#boolean">🧩 Şekil Birleştirme (Boolean)</a></li>
+                <li><a href="#olculendirme">📐 Ölçü, Tarama & Hatch</a></li>
+                <li><a href="#katmanlar">🎯 Katmanlar & Blok Sistemi</a></li>
+                <li><a href="#problem-cozme">🛠️ CAD Sorun Giderme</a></li>
+                <li><a href="#faq">❓ Sıkça Sorulan Sorular</a></li>
             </ul>
-        </li>
-    </ul>
+        </aside>
+
+        <div class="docs-content">
+            
+           <div class="docs-section" id="giris">
+
+    <h1 style="margin-bottom: 30px; font-size: 32px; color: var(--primary-color);">
+        TamgamCAD 2D CAD Araçları Öğrenme Merkezi
+    </h1>
+
+    <p>
+        TamgamCAD; mobil cihazlar, tabletler ve masaüstü sistemler için geliştirilen modern bir 
+        <strong>2D CAD programı</strong> ve teknik çizim uygulamasıdır. 
+        Mimari çizimler, mühendislik projeleri, teknik detay planları ve günlük CAD ihtiyaçları için 
+        optimize edilen TamgamCAD; kullanıcı dostu arayüzü, hassas çizim araçları ve dokunmatik ekran desteğiyle 
+        profesyonel çizim deneyimini daha erişilebilir hale getirir.
+    </p>
+
+    <p>
+        Uygulama içerisinde; çizgi, polyline, daire, yay, ölçülendirme, hatch (tarama), katman yönetimi, 
+        boolean işlemleri, blok sistemi ve izometrik çizim araçları gibi gelişmiş 
+        <strong>2D teknik çizim</strong> özellikleri bulunmaktadır. 
+        Ayrıca <strong>DXF görüntüleme</strong>, DXF içe aktarma ve dışa aktarma desteği sayesinde 
+        farklı CAD yazılımlarıyla uyumlu şekilde çalışabilirsiniz.
+    </p>
+
+    <p>
+        TamgamCAD özellikle <strong>tablet uyumlu CAD uygulaması</strong> yapısıyla öne çıkar. 
+        Android tabletler, dokunmatik ekranlı cihazlar, stylus kalemler, harici klavye ve fare desteği sayesinde 
+        mobil ortamda hassas teknik çizimler oluşturabilirsiniz. 
+        İster sahada ister ofiste olun; mimari planlar, mühendislik çizimleri, mekanik detaylar ve 
+        teknik projeler üzerinde hızlı şekilde çalışabilirsiniz.
+    </p>
+
+    <p>
+        Bu öğrenme merkezi içerisinde; çizim araçlarının kullanımı, düzenleme işlemleri, ölçülendirme sistemleri, 
+        hatch araçları, katman yönetimi, DXF işlemleri, boolean araçları ve mobil CAD kullanımına dair 
+        detaylı kullanım kılavuzlarını bulabilirsiniz. 
+        Yeni başlayan kullanıcılar temel teknik çizim araçlarını öğrenebilir, profesyonel kullanıcılar ise 
+        gelişmiş CAD özelliklerini daha verimli şekilde kullanabilir.
+    </p>
+
+   <img style="width: 100%; max-width: 800px; height: auto;" src="img/snap_en.webp" alt="TamgamCAD Mobil ve Masaüstü Arayüzü" class="docs-img" onerror="this.style.display='none'">
+
 </div>
+
+            <div class="docs-section" id="baslangic">
+                <h2 style="text-align: center; color: var(--primary-color);">🛠️ CAD Arayüzü ve Kişiselleştirme İpuçları</h2>
+                <p style="text-align: center;">Teknik çizim süreçlerini hızlandıran kişiselleştirilebilir ayarlar sayesinde TamgamCAD arayüzünü kendi çalışma alışkanlıklarınıza göre optimize ederek çizim hızınızı artırın. 
+                    Bu özelliklere ayarlar menüsünden ulaşabilirsiniz. Mobilde ayarlar bölümü sol açılır menü içerisinde yer alır.</p>
+                    <div class="content-box-style">
+                    <ul>
+                    <li>
+                        <strong>Tema Ayarları:</strong> Açık ve koyu tema seçenekleri sayesinde uzun süreli 
+                        çizim çalışmalarında daha konforlu kullanım sağlayabilirsiniz.
+                    </li>
+
+                    <li>
+                        <strong>Izgara Sistemi (Grid):</strong> Teknik çizimlerde hizalama ve ölçü kontrolü için 
+                        çalışma alanındaki ızgarayı aktif edebilir veya gizleyebilirsiniz.
+                    </li>
+                    <li><strong>İzometrik Izgara:</strong> Çalışma alanını 30° ve 150° eksenlerine kilitleyerek kusursuz izometrik perspektifler çizmenize olanak tanır.</li>
+
+
+                    <li>
+                        <strong>Kenetleme (Snap):</strong> Uç nokta, orta nokta, kesişim ve merkez yakalama özellikleri ile 
+                        hassas CAD çizimleri oluşturabilirsiniz.
+                    </li>
+
+                    <li>
+                        <strong>Ölçek Ayarı:</strong> Çizimlerinizi mm, cm veya metre ölçeğinde düzenlemek için 
+                        ölçek belirleme aracını kullanabilirsiniz. <br>
+                       <strong>Ölçek ayarla nasıl kullanılır?</strong>  <br>
+                      <p>  -Ölçek ayarla aracını seçin ve ekran üzerinde ilk noktayı belirleyin nokta gride yapışınca ardından ikinci noktayı belirleyin. Açılan ekranda belirlediğiniz uzunluğun gerçek hayattaki karşılığını girin.</p>
+                    </li>
+
+                    <li>
+                        <strong>Ölçü Girişi:</strong> Mobil cihazlar ve tabletler için optimize edilen ölçü giriş sistemi ile 
+                        çizim sırasında doğrudan hassas değer girebilirsiniz. 
+                        <div class="info-box">İpucu: Ölçü girişi aracı çizim araçları aktif olduğunda ekranın alt kısmında görünür. Araç paneli açık ise ölçü giriş alanı görünmeyebilir bunun için önce araç panelini kapatın.</div>
+                    </li>
+
+                    <li>
+                        <strong>Dik Mod (Orto):</strong> Çizgileri yalnızca yatay ve dikey eksenlerde çizmek için 
+                        F8 kısayolunu veya orto modunu kullanabilirsiniz.
+                    </li>
+
+                    <li>
+                        <strong>Büyüteç Aracı:</strong> Küçük detaylarla çalışırken yakınlaştırılmış teknik çizim deneyimi sağlar. Büyüteç aktif olduğunda parmağınız ile ekran üzerinde hareket ettirerek detaylı bakış imkanı elde edebilirsiniz.
+                    </li>
+
+                    
+
+                </ul></div>
+            </div>
+
+            <div class="docs-section" id="dosya">
+                <h2 style="text-align: center; color: var(--primary-color);">📁 Mobilde DXF Açma ve Proje Yönetimi</h2>
+                <p style="text-align: center;">Dosya işlemleri bölümde yer alan araçlar, projelerinizi yönetmenize ve farklı formatlarda dışa aktarmanıza olanak tanır.</p>
+                <div class="content-box-style">
+                    <ul>
+                        <li><strong>DXF İçe/Dışa Aktar:</strong> Diğer CAD yazılımlarıyla uyumlu DXF dosyalarınızı telefonda açın veya projelerinizi DXF olarak kaydedin.</li>
+                        <li><strong>Çıktı Alma:</strong> Çizimlerinizi vektörel sunumlar ve yüksek çözünürlüklü baskılar için .SVG ve .PDF, hızlı paylaşımlar için ise .PNG formatında dışa aktarın.</li>
+                        <li><strong>Resim Üzerinden Çizim (Tracing):</strong> JPG veya PNG formatındaki teknik resim görsellerini altlık olarak ekleyip üzerlerinden çizim yapın.</li>
+                        <li><strong> Kaydet/Farklı Kaydet (JSON):</strong> Projelerinizi tüm katman verileriyle birlikte .json formatında yedekleyin.</li>
+                        <li><strong>Dosya Aç:</strong> Daha önce kaydedilen TamgamCAD proje dosyalarını tekrar açarak düzenlemeye devam edin.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="docs-section" id="cizim">
+                <h2 style="text-align: center; color: var(--primary-color);">✏️ 2D Teknik Çizim Nasıl Yapılır?</h2>
+                <p style="text-align: center;">TamgamCAD, dokunmatik ekran, stylus kalem, fare ve klavye desteği sayesinde farklı cihazlarda profesyonel çizim deneyimi sunar. 
+                     Temel geometriden karmaşık formlara kadar tüm çizim araçlarını keşfedin.</p>
+                
+                  <div class="info-box">Çizim araçlarına araçlar panelinden, komut satırından ve klavyeden tek harf tuşlayarak  ulaşabilirsiniz. Klavye kısayollarına uygulamadaki yardım menüsünden ulaşabilirsiniz.
+                   Çizim araçlarını hem ölçüsüz sürükle-bırak veya başlangıç-bitiş şeklinde kullanabilir hem de hassas ölçü girerek kullanabilirsiniz.  </div>
+                  <br> <div class="content-box-style">
+                  <ul>
+                    <img src="img/linecircle.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+               
+                    <li><strong>Düz Çizgi (Line) ve Çoklu Çizgi (Polyline):</strong> Başlangıç noktasını belirleyin ardından bitiş noktasını belirleyerek çizimi tamamlayın. Ölçü girişli çizim için ilk noktayı belirleyin ve çizginin yönünü belirlemek için o yönde hareket ettirin ardından ölçüyü girin onayladığınız an çizim o boyutta oluşur.
+                         Devamlı çizgi için son noktada çift tıklama yapın.</li>
+
+                    <li><strong>Daire (Circle):</strong> Önce merkez noktasını belirleyin istediğiniz boyutu elde etmek için merkezden uzaklaşın ve ikinci nokta ile çizimi tamamlayın. Ölçü girişli çizim için merkez noktasını belirledikten sonra yarıçap değerini girerek dairenizi oluşturun.</li>
+
+                    <li><strong>Yay (Arc):</strong> Önce başlangıç noktasını belirleyin ve parmağınızı/fareyi hiç bırakmadan kiriş uzunluğunu belirlemek için sürükleyin parmağınızı/fareyi bıraktığınız an kiriş oluşur ardından ikinci tıklama ile bombe yüksekliğini belirleyin. </li>
+
+                    <li><strong>Kare / Dikdörtgen (Rectangle):</strong> Önce ilk noktayı belirleyin ardından genişlik ve yüksekliği belirlemek için ikinci noktaya tıklayın veya sürükle bırak ile serbest çizim oluşturun. Ölçülü giriş için klavyeden Genişlik X Yükseklik (veya Genişlik * Yükseklik) formatında net ölçü girin ya da ölçü girişini kullanın.</li>
+
+                    <li><strong>Elips (Ellipse):</strong> Sürükle-bırak yöntemiyle eksen genişliklerini belirleyerek serbest elipsler oluşturun.</li>
+
+                    <li><strong>Çokgen (Polygon):</strong> Önce kenar sayısını belirleyin ve ekran üzerinde merkez belirleyin istenilen boyuta geldiğinde çizimi bitirin.</li>
+
+                    <li><strong>Halka (Donut):</strong> Önce merkez noktasını belirleyin, ardından sırasıyla iç çemberin ve dış çemberin yarıçaplarını girerek kalın cidarlı bir halka oluşturun.</li>
+                    <img src="img/ttr.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+               
+                    <li><strong>Tan-Tan-Radius (TTR):</strong> İki farklı nesneye teğet olan ve belirlediğiniz yarıçap değerine sahip bir çember çizmek için kullanın. TTR için önce ilk nesneye ardından ikinci nesneye tıklayın ve açılan pencereden bir yarıçap değeri girin. Girdiğiniz yarıçap değeri, iki nesne arasındaki mesafeye geometrik olarak uygun olmalıdır. TTR ile oluşan çemberleri sonradan Trim komutuyla budayarak yumuşak köşe dönüşleri elde edebilirsiniz.</li>
+                    
+                    <li><strong>Teğet Çizgi (Tangent Line):</strong> : İki farklı çemberin dış yüzeylerine kusursuz bir şekilde teğet geçen doğrusal çizgiler çizmek için kullanın.</li>
+
+                    <li><strong>Serbest Çizim (Freehand):</strong> Vektörel tabanlı serbest çizim aracıyla stylus veya dokunmatik ekran ile organik çizimler yapın. Serbest çizgi matematiksel alt yapısı sayesinde düzenleme araçları ile beraber kullanılabilir.</li>
+                </ul></div>
+
+            </div>
+
+            <div class="docs-section" id="duzenleme">
+                <h2 style="text-align: center; color: var(--primary-color);">⚙️ Trim, Offset ve Proje Düzenleme Rehberi</h2>
+                <p style="text-align: center;">Mevcut çizimlerinizi modifiye ederek profesyonel detaylar ekleyin.</p>
+                <div class="content-box-style">
+                <ul>
+
+    <li>
+        <strong>Kırp & Uzat (Trim & Extend):</strong><br><br>
+        <img src="img/trimextend.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+               
+        <strong>Trim (Kırp) Nasıl Kullanılır?</strong><br>
+        1. Araç menüsünden <strong>Trim</strong> aracını seçin.<br>
+        2. Kırpmak istediğiniz alana dokunun.<br>
+        3. Sistem, kesişim noktasına göre fazla kısmı otomatik olarak kaldıracaktır.<br><br>
+
+        <em>Örnek:</em> Duvar çizgilerinin taşan kısımlarını temizlemek veya kesişen çizgileri düzenlemek için kullanılır.<br><br>
+
+        <strong>Extend (Uzat) Nasıl Kullanılır?</strong><br>
+        1. Araç panelinden <strong>Extend</strong> aracını seçin.<br>
+        2. Çizginin ulaşmasını istediğiniz referans çizgiye dokunun.<br>
+        3. Çizgi otomatik olarak hedef nesneye kadar uzatılır.<br><br>
+
+        <div class="info-box">
+        <strong>İpucu:</strong> Trim ve Extend işlemlerinin çalışabilmesi için nesnelerin kesişmesi veya aynı doğrultuda olması gerekir.
+        </div>
+        
+    </li><br>
+
+    <li>
+        <strong>Ötele (Offset):</strong><br>
+
+        1. Paralel kopyasını oluşturmak istediğiniz nesneyi seçin.<br>
+        2. Araç panelinden <strong>Offset</strong> aracını seçin.<br>
+        3. Açılan pencerede mesafe değerini girin.<br>
+        4. İç veya dış yönü belirlemek için +/- değerlerini kullanın.<br><br>
+
+        <em>Örnek:</em> Mimari planlarda duvar kalınlığı oluşturmak veya paralel teknik çizgiler üretmek için kullanılır.
+    </li><br>
+
+    <li>
+        <strong>Döndür (Rotate):</strong><br>
+
+        1. Döndürmek istediğiniz nesneyi seçin.<br>
+        2. Araç panelinden <strong>Rotate</strong> aracını seçin.<br>
+        3. Açılan pencerede döndürme açısını girin.<br>
+        4. İşlem otomatik uygulanacaktır.<br><br>
+
+        <em>Örnek:</em> Teknik parçaları belirli açılarda hizalamak veya yerleşim planlarını çevirmek için kullanılır.
+    </li><br>
+
+    <li>
+        <strong>Aynala (Mirror):</strong><br>
+
+        1. Aynalamak istediğiniz nesneleri seçin.<br>
+        2. Araç panelinden <strong>Mirror</strong> aracını seçin.<br>
+        3. Simetri ekseninin başlangıç noktasını belirleyin.<br>
+        4. Ardından bitiş noktasını seçin.<br>
+        5. Sistem seçilen nesnenin simetrik kopyasını oluşturacaktır.<br><br>
+        <em>Örnek:</em> Simetrik mobilyalar, mekanik parçalar veya plan çizimlerinde hızlı çoğaltma sağlar.
+        
+        <div class="info-box">
+            <strong>İpucu:</strong> Hassas simetri için dik (orto) modunu aktif edin.
+        </div>
+
+    </li><br>
+
+    <li>
+        <strong>Çoğalt (Array):</strong><br><br>
+
+        <strong>Dikdörtgensel Çoğaltma:</strong><br>
+        1. Çoğaltılacak nesneyi seçin.<br>
+        2. Araç panelinden <strong>Array</strong> aracını açın.<br>
+        3. Açılan pencereden dikdörtgensel çoğaltma seçeneğini belirleyin.<br>
+        3. Satır ve sütun sayılarını girin.<br>
+        4. Nesneler arası mesafeyi belirleyin.<br>
+        5. Sistem otomatik çoğaltma yapacaktır.<br><br>
+
+        <strong>Dairesel Çoğaltma:</strong><br>
+        1. Çoğaltılacak nesneyi seçin.<br>
+        2. Araç panelinden <strong>Array</strong> aracını açın.<br>
+        3. Açılan pencereden dairesel çoğaltma seçeneğini belirleyin.<br>
+        4. Merkez noktayı belirleyin.<br>
+        5. Kopya sayısını girin.<br>
+        6. Dönüş açısını ayarlayın.<br>
+        7. Nesneler dairesel düzende yerleştirilir.<br><br>
+         <em>Örnek:</em> Kolon dizilimi, vida delikleri veya tekrar eden teknik detaylarda kullanılır.
+        <div class="info-box">
+            <strong>İpucu:</strong> Tam dönüş için "Nesneleri Döndür" seçeneğinin seçili olmadığına dikkat edin.
+        </div>
+          
+    </li><br>
+
+    <li>
+        <strong>Pah Kır & Köşe Yuvarla (Chamfer ve Fillet):</strong><br><br>
+        <img src="img/chamfer.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+          
+        <strong>Chamfer (Pah Kırma):</strong><br>
+        1. Önce pah kırılacak iki düz çizgiyi seçin.<br>
+        1. Araç panelinden <strong>Chamfer</strong> aracını seçin.<br>
+        3. Pah mesafesini girin.<br>
+        4. Köşe düz kesim şeklinde düzenlenecektir.<br><br>
+
+        <strong>Fillet (Köşe Yuvarlama):</strong><br>
+        1. Önce köşe yuvarlanacak iki düz çizgiyi seçin.<br>
+        2. Araç panelinden <strong>Fillet</strong> aracını seçin.<br>
+        3. Yuvarlama yarıçapını girin.<br>
+        4. Sistem otomatik yay oluşturacaktır.<br>
+
+        <em>Örnek:</em> Keskin köşeleri yumuşatmak veya teknik geçişler oluşturmak için kullanılır.
+    </li><br>
+
+    <li>
+        <strong>Ölçekle (Scale):</strong><br><br>
+
+        1. Ölçeklenecek nesneyi seçin.<br>
+        2. Araç panelinden <strong>Scale</strong> aracını seçin.<br>
+        3. Açılan ekranda Ölçek oranını girin.<br>
+        4. Nesne orantılı şekilde büyütülür veya küçültülür.<br>
+
+        <em>Örnek:</em> Teknik detayları farklı ölçekte yeniden kullanmak için idealdir.
+    </li><br>
+
+    <li>
+        <strong>Yeniden Boyutlandır (Lengthen):</strong><br><br>
+        1. Uzatmak veya kısaltmak istediğiniz çizgiyi seçin.<br>
+        2. Araç panelinden <strong>Lengthen</strong> aracını seçin.<br>
+        3. Yeni uzunluk değerini girin.<br>
+        4. Sistem çizgiyi otomatik olarak güncelleyecektir.<br>
+
+        <em>Örnek:</em> Teknik çizimde ölçü değişikliği gerektiğinde hızlı düzenleme sağlar.
+    </li><br>
+
+                </ul></div>
+            </div>
+
+            <div class="docs-section" id="boolean">
+                <h2 style="text-align: center; color: var(--primary-color);">🧩 Gruplama, Parçalama ve Boolean İşlemleri</h2>
+                <p style="text-align: center;">Kapalı alanları birleştirerek veya birbirinden çıkararak karmaşık parçalar tasarlayın.</p>
+              
+                <div class="content-box-style">
+                <ul>
+
+    <li>
+        <strong>Grupla (Group) & Grubu Çöz (Ungroup):</strong><br><br>
+
+        <strong>Group Nasıl Kullanılır?</strong><br>
+        1. Birlikte hareket ettirmek istediğiniz nesneleri seçin.<br>
+        2. Araç panelinden <strong>Group</strong> komutunu açın.<br>
+        3. Seçilen tüm nesneler artık tek bir nesne gibi davranacaktır.<br><br>
+
+        <em>Örnek:</em> Kapı, pencere ve duvar detaylarını birlikte taşımak veya çoğaltmak için kullanılabilir.<br><br>
+
+        <strong>Ungroup Nasıl Kullanılır?</strong><br>
+        1. Daha önce oluşturulan grubu seçin.<br>
+        2. <strong>Ungroup</strong> komutunu çalıştırın.<br>
+        3. Grup içerisindeki tüm nesneler tekrar bağımsız hale gelir.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Grup işlemi nesneleri fiziksel olarak birleştirmez. Sadece birlikte seçilmesini ve taşınmasını kolaylaştırır.
+        </div>
+    </li><br>
+
+    <li>
+        <strong>Parçala (Explode) & Uç Uca Ekle (Join):</strong><br><br>
+
+        <strong>Explode (Parçala) Nasıl Kullanılır?</strong><br>
+        1. Polyline, polygon veya birleşik nesneyi seçin.<br>
+        2. İşlemler bölümünden <strong>Explode</strong> aracını seçin.<br>
+        3. Sistem nesneyi bağımsız çizgilere veya alt parçalara ayıracaktır.<br><br>
+
+        <em>Örnek:</em> Bir polyline içerisindeki tek bir segmenti düzenlemek istediğinizde kullanılır.<br><br>
+
+        <strong>Join (Uç Uca Ekle) Nasıl Kullanılır?</strong><br>
+        1. Birleştirmek istediğiniz çizgileri seçin.<br>
+        2. Çizgilerin uç noktalarının birbirine temas ettiğinden emin olun.<br>
+        3. İşlemler bölümünden <strong>Join</strong> aracını seçin.<br>
+        4. Sistem çizgileri tek bir sürekli nesneye dönüştürecektir.<br><br>
+
+        <em>Örnek:</em> Açık çizgileri kapalı polyline haline getirerek hatch veya boolean işlemlerine uygun hale getirebilirsiniz.
+    </li><br>
+
+    <li>
+        <strong>Dış Zarf Birleştir (Wrap):</strong><br><br>
+
+        1. Üst üste binen veya karmaşık şekilde iç içe geçmiş nesneleri seçin.<br>
+        2. İşlemler bölümünden <strong>Wrap</strong> aracını seçin.<br>
+        3. Sistem iç detayları analiz ederek yalnızca dış konturu oluşturacaktır.<br>
+        4. Yeni oluşan nesne kapalı bir çevre geometrisi olarak oluşturulur.<br><br>
+
+        <em>Örnek:</em> Birden fazla şekilden oluşan karmaşık planların dış sınırını hızlıca elde etmek için kullanılır.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Wrap işlemleri özellikle hatch, alan hesabı ve DXF dışa aktarma işlemlerinde temiz geometri oluşturmak için faydalıdır.
+        </div>
+    </li><br>
+
+    <li>
+        <strong>Boolean İşlemleri:</strong><br><br>
+        <img src="img/boolean.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+         
+        Boolean araçları yalnızca <strong>kapalı geometriler</strong> üzerinde çalışır. 
+        Daireler, kapalı polyline nesneleri ve birleşik şekiller arasında matematiksel geometri işlemleri yapabilirsiniz.
+    </li><br>
+
+    <li>
+        <strong>Birleştir (Union):</strong><br><br>
+
+        1. Birleştirilecek kapalı şekilleri seçin.<br>
+        2. işlemler bölümünden Boolean İşlemleri aracını seçin ve açılan pencereden <strong>Union</strong> alanını seçin.<br>
+        3. Üst üste gelen alanlar tek bir bütün haline dönüştürülür.<br><br>
+
+        <em>Örnek:</em> Birden fazla odadan oluşan mimari alanları tek bir kapalı plan haline getirmek için kullanılabilir.
+    </li><br>
+
+    <li>
+        <strong>Çıkar (Difference):</strong><br><br>
+
+        1. Ana şekli seçin.<br>
+        2. Çıkarılacak ikinci şekli belirleyin.<br>
+        3. işlemler bölümünden Boolean İşlemleri aracını seçin ve açılan pencereden <strong>Difference</strong> alanını seçin.<br>
+        4. İkinci şeklin kapladığı alan ana geometriden kesilerek çıkarılır.<br><br>
+
+        <em>Örnek:</em> Bir levha üzerinde delik açmak veya pencere boşluğu oluşturmak için kullanılabilir.
+    </li><br>
+
+    <li>
+        <strong>Kesişim (Intersection):</strong><br><br>
+
+        1. Kesişen kapalı nesneleri seçin.<br>
+        2. işlemler bölümünden Boolean İşlemleri aracını seçin ve açılan pencereden <strong>Intersection</strong> alanını seçin.<br>
+        3. Sistem yalnızca ortak kesişim alanını bırakacaktır.<br><br>
+
+        <em>Örnek:</em> İki farklı alanın ortak kullanım bölgesini hesaplamak veya analiz etmek için kullanılabilir.
+    </li><br>
+
+    <li>
+        <strong>Sadece Farklar (Exclusion / XOR):</strong><br><br>
+
+        1. Birbirine temas eden veya üst üste gelen şekilleri seçin.<br>
+        2. İşlemler bölümünden Boolean İşlemleri aracını seçin ve açılan pencereden <strong>XOR</strong> alanını seçin.<br>
+        3. Ortak kesişim alanı silinir ve yalnızca farklı bölgeler korunur.<br><br>
+
+        <em>Örnek:</em> Çakışan teknik alanları temizlemek veya karmaşık geometrileri ayırmak için kullanılabilir.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> XOR işlemi, kesişen alanları kaldırdığı için teknik çizimlerde temiz ve ayrıştırılmış geometri oluşturmak amacıyla sık kullanılır.
+        </div>
+    </li>
+
+                </ul></div>
+            </div>
 
             <div class="docs-section" id="olculendirme">
-                <h2>Ölçülendirme, Tarama ve Notlandırma</h2>
-                <p>Teknik resim kurallarına uygun detaylandırma yapın.</p>
+                <h2 style="text-align: center; color: var(--primary-color);">📐 Teknik Çizim Ölçülendirme ve Tarama (Hatch)</h2>
+                <p style="text-align: center;">Projelerinize teknik derinlik ve materyal bilgisi ekleyin.</p>
+                <div class="content-box-style">
                 <ul>
-                    <li><strong>Ölçülendirme (Dimension):</strong> Doğrusal, Açısal, Çap, Yarıçap ve otomatik Alan Hesabı araçlarıyla projenizi teknik olarak isimlendirin.</li>
-                    <li><strong>Tarama (Hatch):</strong> Kapalı geometrik alanların içini, projenizin teknik gereksinimlerine uygun farklı materyal desenleriyle doldurun. Desteklenen desenler: Düz Dolgu (Solid Boyama), Dikey Çizgili, Diyagonal, Çapraz, Noktalı, Tuğla, Dama, Petek ve Beton.</li>
-                    <li><strong>Metin ve Kılavuz (Leader):</strong> Projenize açıklayıcı düz metinler veya spesifik detayları işaret etmek için oklu metinler (kılavuz çizgileri) ekleyin.</li>
-                    <li><strong>Tablo ve Ayarları:</strong> Çalışma alanına detay ve özellik tabloları ekleyin. Tablo ayarlarını kullanarak satır/sütun sayılarını, boyutları ve hücre içeriklerini projenize göre özelleştirin.</li>
-                </ul>
-            </div>
 
-                <div class="docs-section" id="katmanlar">
-                <h2>Katmanlar, Kütüphane ve Nesne Özellikleri</h2>
-                <p>Büyük projelerde karmaşayı önleyin ve nesnelerinizin görsel niteliklerini profesyonelce yönetin.</p>
-                <ul>
-                    <li><strong>Katman Paneli (Layers):</strong> Katmanları isimlendirin ve her birine özel renk atayın. Çalışma esnasında katman görünürlüğünü açıp kapatabilir veya üzerinde işlem yapılmasını engellemek için kilitleyebilirsiniz (Lock/Freeze).</li>
-                    <li><strong>Nesne Özellikleri (Properties):</strong> Çalışma alanındaki seçili nesnelerin rengini, çizgi tipini (sürekli, kesik, noktalı vb.) ve çizgi kalınlığını üst menüdeki özellikler panelinden kolayca değiştirebilirsiniz.</li>
-                    <li><strong>Özellik Eşleştir (Match Properties):</strong> Bir nesnenin rengini, çizgi tipini ve kalınlığını kopyalayarak tek tıkla diğer nesnelere kusursuz bir şekilde aktarın.</li>
-                    <li><strong>Blok Oluşturma:</strong> Sık kullandığınız objeleri (örneğin standart bir pencere çizimi) Blok haline getirerek tek bir nesne gibi davranmasını sağlayın.</li>
-                    <li><strong>Proje ve Global Kütüphane:</strong> Bloklarınızı kütüphaneye kaydederek hem üzerinde çalıştığınız mevcut projede hem de gelecekteki diğer projelerinizde (Global Kütüphane) tek tıkla yeniden kullanın.</li>
-                </ul>
-            </div>
+    <li>
+        <strong>Ölçülendirme (Dimension):</strong><br><br>
 
-           <div class="docs-section" id="izometrik">
-    <h2>İzometrik Görünüm (Isometric)</h2>
-    <p>2 Boyutlu uzayda, 3 Boyutlu hissi veren teknik çizimler oluşturmak için özel araçlar.</p>
-    <img src="resimler/izometrik-izgara.png" alt="İzometrik Izgara" class="docs-img" onerror="this.style.display='none'">
-    <ul>
-        <li><strong>İzometrik Izgara (Isometric Grid):</strong> Üst menüden aktif edildiğinde, çalışma alanındaki ızgara yapınız, imleciniz ve çizgileriniz otomatik olarak 30° ve 150°'lik izometrik eksenlere kenetlenir. Bu sayede karmaşık izometrik perspektifleri kolayca çizebilirsiniz.</li>
-    </ul>
-</div>
+        Teknik çizimlerinizi standartlara uygun şekilde ölçülendirmek için doğrusal, açısal, çap ve yarıçap araçlarını kullanabilirsiniz.<br><br>
 
-            </div>
+        <strong>Doğrusal Ölçü Nasıl Eklenir?</strong><br>
+        1. Araç panelinden Dimension aracını açın ardından <strong>doğrusal</strong> ölçümü seçin.<br>
+        2. Ölçülendirilecek çizginin veya alanın başlangıç noktasını seçin.<br>
+        3. Ardından bitiş noktasını belirleyin.<br>
+        4. Sistem ölçü değerini otomatik olarak oluşturacaktır.<br><br>
+
+        <strong>Açısal Ölçü Nasıl Eklenir?</strong><br>
+        1. Araç panelinden Dimension aracını seçin ardından <strong>açısal</strong> ölçümü seçin.<br>
+        2. Ölçülendirilecek alanın örneğin üçgenin A noktası için önce B noktasını ve sonra C noktasını seçin.<br>
+        3. Sistem açı değerini otomatik hesaplayacaktır.<br><br>
+
+        <strong>Çap ve Yarıçap Ölçüsü:</strong><br>
+         1. Araç panelinden Dimension aracını seçin ardından <strong>çap</strong> veya <strong>yarıçap</strong> ölçümü seçin.<br>
+        2. Ölçülendirilecek daire veya yay nesnesini seçin.<br>
+        3. Çap veya yarıçap değeri otomatik oluşturulur.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Ölçüleri daha sonra manuel olarak Metin Düzenleme aracıyla içeriğini düzenleyebilir, mimari çentik ve ok ucu stillerini değiştirebilirsiniz.
         </div>
-    </section>
+        <div class="info-box">
+            <strong>İpucu:</strong> Koordinat eklemek için ölçü aracından <strong>Koordinat</strong> seçeneğini kullanabilirsiniz. Koordinat ölçüsü, belirlediğiniz noktanın X ve Y koordinatlarını teknik çizim üzerinde göstermek için idealdir.
+        </div>
+    </li>
 
+    <li>
+        <strong>Otomatik Alan Hesabı:</strong><br><br>
+
+        1. Kapalı bir geometri seçin.<br>
+        2. Ölçülendirme araçları içerisinden <strong>Alan Hesabı</strong> aracını açın.<br>
+        3. Sistem seçilen alanın ölçüsünü otomatik olarak hesaplayacaktır.<br><br>
+
+        <em>Örnek:</em> Oda metrekaresi, kapalı teknik alanlar veya yüzey hesaplamaları için kullanılabilir.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Alan hesabının doğru çalışabilmesi için seçilen geometrinin tamamen kapalı olması gerekir.
+        </div>
+    </li>
+
+    <li>
+        <strong>Tarama (Hatch) Kütüphanesi:</strong><br><br>
+
+        Hatch araçları, kapalı alanların içini teknik çizim standartlarına uygun desenlerle doldurmanızı sağlar.<br><br>
+
+        <strong>Hatch Nasıl Kullanılır?</strong><br>
+        1. <strong>Hatch</strong> aracını açın.<br>
+        2. Kullanmak istediğiniz deseni belirleyin.<br>
+        3. Tarama uygulanacak kapalı alanı seçin.<br>
+        4. Tarama işlemi otomatik uygulanacaktır.<br><br>
+         <div class="info-box">
+            <strong>İpucu:</strong> Dolgu rengi ve tarama çizgilerinin rengini ayrı ayrı ayarlayarak teknik çizimlerinizi daha okunabilir ve profesyonel hale getirebilirsiniz.
+        </div>
+        
+
+        <strong>Desteklenen Hatch Desenleri:</strong><br>
+        • Solid Dolgu<br>
+        • Dikey Çizgili<br>
+        • Diyagonal<br>
+        • Çapraz Tarama<br>
+        • Noktalı Desen<br>
+        • Tuğla<br>
+        • Dama<br>
+        • Petek<br>
+        • Beton Deseni<br><br>
+
+        <em>Örnek:</em> Betonarme alanlar, duvar taramaları, malzeme gösterimleri veya teknik kesit çizimleri için kullanılabilir.
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Dolgu rengini kaldırdığınızda çizgi rengi transparan hale gelir, çizime devam etmeden önce renk paletinden yeni çizgi rengi seçtiğinizden emin olun.
+        </div>
+    </li>
+
+    <li>
+        <strong>Metin ve Kılavuz (Text / Leader):</strong><br><br>
+
+        Teknik çizimlerde açıklama eklemek, detay göstermek ve nesneleri işaretlemek için metin ve oklu metin araçlarını kullanabilirsiniz.<br><br>
+
+        <strong>Düz Metin Ekleme:</strong><br>
+        1. Metin aracını seçin.<br>
+        2. Yazının yerleşeceği noktayı belirleyin.<br>
+        3. Metin içeriğini klavyeden girin.<br>
+        4. Yazı boyutunu, yazı tipini, rengini ve içeriğini düzenlemek için metnin üzerine çift tıklayın.<br><br>
+
+         <div class="info-box">
+            <strong>İpucu:</strong> Teknik çizimlerde sık kullanılan sembolleri (Ø, ±, °, ⌀ gibi) metin düzenleme ekranında klavyeden kolayca ekleyebilirsiniz.
+        </div><br>
+
+        <strong>Leader (Kılavuz Çizgisi) Nasıl Kullanılır?</strong><br>
+        1. Leader aracını açın.<br>
+        2. İşaretlenecek noktayı seçin.<br>
+        3. Ok yönünü belirleyin.<br>
+        4. Açıklama metnini girin.<br>
+        5. Sistem oklu açıklama çizgisini oluşturacaktır.<br><br>
+
+        <em>Örnek:</em> Teknik detay açıklamaları, parça isimleri veya üretim notları eklemek için kullanılabilir.
+        <div class="info-box">
+            <strong>İpucu:</strong> Oklu metnin içeriğini daha sonra düzenlemek için metnin üzerine çift tıklayarak metin düzenleme ekranını açabilirsiniz.
+        </div><br>
+    </li>
+
+    <li>
+        <strong>Tablo ve Ayarları:</strong><br>
+
+        Çalışma alanına teknik tablolar, malzeme listeleri veya özellik tabloları ekleyebilirsiniz.<br><br>
+
+        <strong>Tablo Oluşturma:</strong><br>
+        1. Notlandırma bölümünden <strong>Tablo</strong> aracını seçin.<br>
+        2. Tabloyu yerleştirmek istediğiniz alanı seçin.<br>
+        3. Satır ve sütun sayılarını belirleyin.<br>
+        4. Tablo ekrana eklenince içeriğine veri eklemek için hücreye çift tıklayın<br>
+        5. <strong>Tablo Ayarları</strong> ile tablo özelliklerini düzenleyin.<br><br>
+
+
+        <em>Örnek:</em> Kapı-pencere listeleri, malzeme tabloları veya teknik açıklama bölümleri oluşturmak için kullanılabilir.
+    </li>
+
+                </ul></div>
+            </div>
+
+            <div class="docs-section" id="katmanlar">
+                <h2 style="text-align: center; color: var(--primary-color);">🎯 Profesyonel Katman (Layer) ve Blok Yönetimi</h2>
+                <p style="text-align: center;">Karmaşık projeleri katmanlara ayırarak yönetin ve bloklarla hız kazanın.</p>
+                <div class="content-box-style">
+                <ul>
+
+    <li>
+        <strong>Katman Paneli (Layers):</strong><br><br>
+
+        Katman sistemi; büyük teknik çizimlerde nesneleri düzenli şekilde yönetmenizi sağlar. 
+        Çizimleri farklı kategorilere ayırabilir, görünürlüğü kontrol edebilir ve yanlış düzenlemeleri önleyebilirsiniz.<br><br>
+
+        <strong>Yeni Katman Oluşturma:</strong><br>
+        1. Üst menüden <strong>Layers</strong> panelini açın.<br>
+        2. Yeni katman oluşturmak için <strong>+</strong> işaretine dokunun.<br>
+        3. Sağ taraftaki üç nokta ile katman özelliklerini açın<br>
+        4. Katman ismini ve rengini belirleyin.<br><br>
+    
+
+        <strong>Katman Görünürlüğü:</strong><br>
+        • Katmanı gizleyerek çalışma alanından geçici olarak kaldırabilirsiniz.<br>
+        • Tekrar görünür yaparak çalışmaya devam edebilirsiniz.<br><br>
+
+        <strong>Katman Kilitleme:</strong><br>
+        • Kilitlenen katman üzerindeki nesneler seçilemez veya düzenlenemez.<br>
+        • Özellikle referans çizimleri korumak için kullanışlıdır.<br><br>
+
+        <em>Örnek:</em> Mimari projelerde duvarlar, ölçüler, mobilyalar ve elektrik çizimleri ayrı katmanlarda tutulabilir.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Katmanları düzenli isimlendirmek karmaşık projelerde çalışma hızını ciddi şekilde artırır.
+        </div>
+    </li>
+
+    <li>
+        <strong>Nesne Özellikleri (Properties):</strong><br><br>
+
+        Seçili nesnelerin görsel özelliklerini özellikler alanından hızlıca değiştirebilirsiniz.<br><br>
+
+        <strong>Değiştirilebilen Özellikler:</strong><br>
+        • Çizgi Rengi<br>
+        • Çizgi Tipi (Sürekli, Kesik, Noktalı vb.)<br>
+        • Çizgi Kalınlığı<br><br>
+
+        <strong>Nasıl Kullanılır?</strong><br>
+        1. Düzenlemek istediğiniz nesneyi seçin.<br>
+        2. <strong>Özellikler</strong> panelini açın.<br>
+        3. Renk, çizgi tipi veya kalınlık değerlerini değiştirin.<br>
+        4. Seçilen nesne anında güncellenecektir.<br><br>
+
+        <em>Örnek:</em> Teknik resimde düz çizgileri kesik çizgiye dönüştürmek veya önemli detayları farklı renklerle göstermek için kullanılabilir.
+    </li>
+
+    <li>
+        <strong>Özellik Eşleştir (Match Properties):</strong><br><br>
+
+        Match Properties aracı; bir nesnenin görsel özelliklerini diğer nesnelere hızlıca aktarmanızı sağlar.<br><br>
+
+        <strong>Nasıl Kullanılır?</strong><br>
+        1. <strong>Özellik Eşleştir</strong> aracını açın.<br>
+        2. Özellikleri kopyalanacak kaynak nesneyi seçin.<br>
+        3. Ardından özellik aktarılacak hedef nesneye dokunun.<br>
+        4. Sistem renk, çizgi tipi ve çizgi kalınlığını otomatik aktaracaktır.<br><br>
+
+        <em>Örnek:</em> Büyük projelerde tüm çizgi stillerini manuel değiştirmek yerine tek tıkla standart görünüm oluşturabilirsiniz.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Özellik eşleştirme aracı, teknik çizimlerde görsel standart oluşturmayı hızlandırır.
+        </div>
+    </li>
+
+    <li>
+        <strong>Blok Oluşturma:</strong><br><br>
+
+        Tekrar kullanılan çizimleri blok haline getirerek aynı nesneyi sürekli yeniden çizmek zorunda kalmadan kullanabilirsiniz.<br><br>
+
+        <strong>Blok Nasıl Oluşturulur?</strong><br>
+        1. Blok haline getirilecek nesneleri seçin.<br>
+        2. İşlemler alanından <strong>Blok Oluştur</strong> aracını seçin.<br>
+        3. Blok için bir isim belirleyin.<br>
+  
+        4. Blok konumunu belirleyin.<br>
+              <em>* Proje Kütüphanesi o an üzerinde çalıştığınız çizim dosyası için, Global Kütüphane farklı çizim dosyaları için kullanılır.</em><br>
+        5. Sistem nesneleri tek bir blok haline dönüştürecektir.<br><br>
+
+        <em>Örnek:</em> Kapılar, pencereler, mobilyalar veya teknik semboller için idealdir.      
+<br><br>
+        <strong>Blok Düzenleme:</strong><br>
+        • Bir bloğu düzenlemek için çift tıklayabilir ya da kütüphane panelinden ilgili alanı seçebilirsiniz<br>
+         -  Anlık ve özel düzenleme için Varsayılan Özellikleri, tüm projedeki blokları tek seferde düzenlemek için İçeriği Düzenleyi kullanabilirsiniz.<br>
+        
+    </li>
+
+    <li>
+       
+        <strong>Kütüphaneden Kullanma:</strong><br>
+        1. Kütüphane panelini açın.<br>
+        2. Kullanılacak bloğu seçin.<br>
+        3. Blok çalışma alanına yerleşecektir.<br><br>
+
+        <em>Örnek:</em> Standart teknik semboller veya sık kullanılan mimari detayları tüm projelerde tekrar kullanabilirsiniz.<br><br>
+
+        <div class="info-box">
+            <strong>İpucu:</strong> Global kütüphane kullanımı özellikle büyük projelerde ciddi zaman kazandırır.
+        </div>
+    </li>
+
+                </ul></div>
+            </div>
+
+           
+
+            <div class="docs-section" id="problem-cozme">
+                <h2 style="text-align: center; color: var(--primary-color);">🛠️ CAD Sorun Giderme ve İpuçları</h2>
+                <div class="troubleshoot-grid">
+                    <div class="t-item">
+                        <h3>Trim (Kırpma) Neden Çalışmıyor?</h3>
+                        <p>Çizgilerin fiziksel olarak birbiriyle kesiştiğinden emin olun. Kesişmeyen objeler için <strong>Extend</strong> aracını kullanın.</p>
+                    </div>
+                    <div class="t-item">
+                        <h3>Hatch (Tarama) Neden Uygulanmıyor?</h3>
+                        <p>Tarama yapabilmek için alanın tamamen kapalı olması gerekir. Eğer küçük bir boşluk bile varsa sistem "Açık Loop" hatası verir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="docs-section" id="faq">
+                <h2 style="text-align: center; color: var(--primary-color);">❓ Sıkça Sorulan Sorular</h2>
+                <div class="faq-accordion">
+                    <details class="faq-item">
+                        <summary>TamgamCAD ile diğer DXF dosyalarını açabilir miyim?</summary>
+                        <p>Evet, TamgamCAD endüstriyel DXF formatını tam destekler. Projelerinizi hem içe aktarabilir hem de dışa aktarabilirsiniz.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>TamgamCAD çevrimdışı (internet olmadan) çalışır mı?</summary>
+                        <p>Evet, TamgamCAD tamamen cihazınızda çalışacak şekilde optimize edilmiştir. İnternet bağlantısı olmadan çizim yapabilir ve kaydedebilirsiniz.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Android tabletlerde kalem (stylus) desteği var mı?</summary>
+                        <p>Evet, kalem basıncı ve hassasiyeti ile uyumlu çalışarak daha detaylı teknik çizimler yapmanıza olanak sağlar.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="cta-highlight-box">
+                <h3 style="text-align: center;">2D Teknik Çizime Hemen Başlayın</h3>
+                <p style="text-align: center;">Mobilde ve tablette profesyonel CAD deneyimi için TamgamCAD'i indirin.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="index.html#platformlar" class="btn-primary">Hemen İndir</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <script>
         // Kullanıcı sayfayı kaydırdıkça sol menüdeki aktif linki değiştirir
         document.addEventListener('DOMContentLoaded', function() {
@@ -258,7 +840,7 @@ gtag('config', 'G-7H6342FC7T', {
             <div class="footer-col">
                 <h4>Hızlı Linkler</h4>
                 <ul>
-                    <li><a href="index.html#tablo">Özellikler</a></li>
+                    <li><a href="ozellikler.html">Özellikler</a></li>
                     <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
                     <li><a href="index.html#iletisim">İletişim</a></li>
                 </ul>
