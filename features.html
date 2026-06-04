@@ -71,7 +71,7 @@ gtag('config', 'G-7H6342FC7T', {
   },
   {
     "@type": "Offer",
-    "price": "7.49",
+    "price": "1.99",
     "priceCurrency": "USD",
     "description": "Monthly subscription price for the United States."
   }
@@ -217,10 +217,10 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </div>
 
-    <div class="cta-highlight-box" style="margin-top: 50px; padding: 40px;">
-        <h3 style="text-align: center; margin-bottom: 30px;">🚀 Professional Modes & Utility Tools</h3>
+    <div class="cta-highlight-box features-cta-box">
+        <h3>🚀 Professional Modes & Utility Tools</h3>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left;">
+       <div class="features-grid-layout">
             <div>
                 <strong>🧊 Isometric Drawing:</strong> Smart grid system locked to 30° and 150° for creating 3D perspectives in a 2D environment.
             </div>
@@ -333,14 +333,14 @@ gtag('config', 'G-7H6342FC7T', {
         <div class="container footer-container">
             <div class="footer-col">
                 <a href="index-en.html" class="logo">
-                     <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
+                     <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img" width="421" height="122" loading="lazy">
                 </a>
                 <p>An optimized, fast, and secure 2D CAD solution for professionals.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="features.html#table">Features</a></li>
+                    <li><a href="features.html">Features</a></li>
                     <li><a href="guide.html">User Guide</a></li>
                     <li><a href="index-en.html#iletisim">Contact</a></li>
                 </ul>
@@ -354,11 +354,11 @@ gtag('config', 'G-7H6342FC7T', {
                     <li><a href="cookies-policy.html">Cookie Policy</a></li>
                 </ul>
             </div>
-                                 <div class="footer-col">
+                     <div class="footer-col">
     <h4>Developer & Contact</h4>
-    <p style="margin-top:0; color: #fff;"><strong>Esra ÖZDEL</strong></p>
-    <p style="margin-top:5px;">Türkiye</p>
-    <p style="margin-top:5px;"><a href="mailto:tamgamcad@hotmail.com">tamgamcad@hotmail.com</a></p>
+    <p class="developer-name"><strong>Esra ÖZDEL</strong></p>
+    <p class="developer-info">Türkiye</p>
+    <p class="developer-info"><a href="mailto:tamgamcad@hotmail.com">tamgamcad@hotmail.com</a></p>
     
     <div class="footer-socials">
       
@@ -373,11 +373,12 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </footer>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
-    <script type="text/javascript">
+    <script>
         (function() {
-            // Buraya  Public Key'ini yazacaksın
+            
             emailjs.init("Z3CwmpJrBwI4l4wvo");
         })();
 
@@ -387,82 +388,45 @@ gtag('config', 'G-7H6342FC7T', {
 
             const btn = this.querySelector('button');
             const originalBtnText = btn.innerText;
-            btn.innerText = 'Sending...'; // Kullanıcıya beklemesini söyler
+            btn.innerText = 'Sending...'; 
 
             // EmailJS ile arka planda gönderim
             emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
                 .then(function() {
                     btn.innerText = 'Successfully Sent! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; // Butonu yeşil yapar
-                    document.querySelector('.contact-form').reset(); // Formu temizler
+                    btn.style.backgroundColor = '#16a34a'; 
+                    document.querySelector('.contact-form').reset(); 
                     
-                    // 3 saniye sonra butonu eski haline getir
                     setTimeout(() => {
                         btn.innerText = originalBtnText;
                         btn.style.backgroundColor = '';
                     }, 3000);
                 }, function(error) {
                     btn.innerText = 'An Error Occurred!';
-                    btn.style.backgroundColor = '#dc2626'; // Butonu kırmızı yapar
+                    btn.style.backgroundColor = '#dc2626'; 
                     console.log('Sending Error:', error);
                 });
         });
     </script>
+    <div id="cookie-banner">
+        <div class="cookie-flex-container">
 
-<div id="cookie-banner" style="
-position: fixed;
-bottom: 20px;
-left: 20px;
-right: 20px;
-background: #111827;
-color: white;
-padding: 16px;
-border-radius: 12px;
-z-index: 9999;
-display: none;
-box-shadow: 0 8px 30px rgba(0,0,0,0.25);
-">
-
-  <div style="
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  ">
-
-    <div style="flex:1; min-width:240px;">
+    <div class="cookie-text">
       This website uses cookies to improve user experience
       and collect anonymous analytics data.
 
-      <a href="cookies-policy.html"
-         style="color:#60a5fa; text-decoration:underline;">
+      <a href="cookies-policy.html" class="cookie-link">
          Cookie Policy
       </a>
     </div>
 
-    <div style="display:flex; gap:10px;">
+    <div class="cookie-btn-group">
 
-      <button id="reject-cookies" style="
-      padding:8px 14px;
-      border:none;
-      border-radius:8px;
-      cursor:pointer;
-      background:#374151;
-      color:white;
-      ">
+      <button id="reject-cookies">
         Reject
       </button>
 
-      <button id="accept-cookies" style="
-      padding:8px 14px;
-      border:none;
-      border-radius:8px;
-      cursor:pointer;
-      background:white;
-      color:black;
-      font-weight:600;
-      ">
+    <button id="accept-cookies">
         Accept
       </button>
 
@@ -501,7 +465,5 @@ document.getElementById('reject-cookies').addEventListener('click', () => {
 </script>
 
 </body>
-
-
 
 </html>
