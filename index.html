@@ -126,38 +126,72 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </div>
 </section>
-
-     <section id="ozellikler" class="features">
-        <div class="container">
+<section class="interactive-showcase">
+    <div class="container">
+        <div class="section-title">
+            <h2>Tasarımlarınızı Anında Görselleştirin</h2>
+            <p>Yeni 3D görüntüleme motorumuz ile planlarınızı tek tıkla inceleyin.</p>
+        </div>
         
-            
-              <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon">📐</div>
-                    <h2>Hassas Çizim</h2>
-                    <p>TamgamCAD, akıllı hizalama ve ızgara altyapısıyla hassas çizimler oluşturmanıza yardımcı olur. Sektör standardı düzenleme komutlarını kullanarak projelerinizi kusursuz bir şekilde tasarlamanızı sağlar.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">🔒</div>
-                    <h2>Yerel Çalışma Alanı</h2>
-                    <p>Fikri mülkiyetinize değer veriyoruz. Çizim dosyalarınız ve projeleriniz, harici bulut senkronizasyonunu tercih etmediğiniz sürece doğrudan cihazınızda yerel olarak saklanır. Tamamen kontrol sizde.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">🖨️</div>
-                    <h2>Evrensel Formatlarda Dışa Aktarım</h2>
-                    <p>Ölçülendirme ve özel semboller içeren teknik çizimlerinizi yüksek çözünürlüklü DXF, PDF, SVG ve PNG formatlarında dışa aktarır. 2D CAD projelerinizi profesyonel sunumlar ve detaylı baskılar için vektör kalitesiyle kolayca paylaşmanızı sağlar.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">👆</div>
-                    <h2>Dokunmatik ve Kalem Desteği</h2>
-                    <p>TamgamCAD, dokunmatik ekranlar ve tabletler için optimize edilmiştir. Tuvali iki parmağınızla yakınlaştırıp kaydırabilir veya kaleminizle doğrudan ekranda milimetre hassasiyetinde çizimler yapabilirsiniz. </p>
-                </div>
+        <div class="toggle-container">
+            <div class="toggle-switch">
+                <input type="checkbox" id="view-toggle" class="toggle-checkbox">
+                <label for="view-toggle" class="toggle-label">
+                    <span class="toggle-text-2d">2D Çizim</span>
+                    <span class="toggle-text-3d">3D Model</span>
+                    <span class="toggle-slider"></span>
+                </label>
             </div>
         </div>
-    </section>
+        
+        <div class="showcase-card">
+            <img id="showcase-img-2d" src="img/home_2d.webp" alt="2D Teknik Plan Çizimi" class="showcase-img active">
+            <img id="showcase-img-3d" src="img/home_3d.webp" alt="3D Model Görüntüleme" class="showcase-img">
+        </div>
+    </div>
+</section>
+
+  <section id="ozellikler" class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">📐</div>
+                <h2>Hassas Çizim & Düzenleme</h2>
+                <p>TamgamCAD, akıllı hizalama ve ızgara altyapısıyla hassas çizimler oluşturmanıza yardımcı olur. Sektör standardı düzenleme komutlarını kullanarak kusursuz tasarımlar yapın.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🛋️</div>
+                <h2>Hazır Tefrişat Kütüphanesi</h2>
+                <p>Zengin hazır tefrişat blokları ve kütüphane içerikleri ile mekanları hızla donatın. Mimari planlarınıza saniyeler içinde detay katın ve kullanıcı deneyimini iyileştirin.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🧊</div>
+                <h2>3D CAD Görüntüleme</h2>
+                <p>Çizdiğiniz 2D planları tek tıkla 3D model olarak görüntüleyin. Mekansal derinliği anında analiz edin ve projelerinizi daha etkili bir şekilde sunun.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h2>Yerel Kaydetme Güvencesi</h2>
+                <p>Verilerinizin gizliliğini önemsiyoruz. Uygulamamız cihazınızda yetkisiz dosya okuma işlemi yapmaz. Çizimleriniz sadece sizin kontrolünüzde, doğrudan cihazınıza yerel olarak kaydedilir.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon">🖨️</div>
+                <h2>Evrensel Formatlarda Dışa Aktarım</h2>
+                <p>Ölçülendirme ve özel semboller içeren teknik çizimlerinizi yüksek çözünürlüklü DXF, PDF, SVG ve PNG formatlarında dışa aktararak kolayca paylaşın.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">👆</div>
+                <h2>Mobil Odaklı Deneyim</h2>
+                <p>Dokunmatik ekranlar ve tabletler için optimize edilen kullanıcı arayüzü sayesinde, kaleminizle veya parmağınızla milimetre hassasiyetinde çizimler yapın.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section id="platformlar" class="platforms-section">
         <div class="container">
@@ -474,6 +508,22 @@ document.getElementById('reject-cookies').addEventListener('click', () => {
 
   banner.style.display = 'none';
 });
+</script>
+
+<script>
+    const toggleInput = document.getElementById('view-toggle');
+    const img2D = document.getElementById('showcase-img-2d');
+    const img3D = document.getElementById('showcase-img-3d');
+
+    toggleInput.addEventListener('change', function() {
+        if(this.checked) {
+            img2D.classList.remove('active');
+            img3D.classList.add('active');
+        } else {
+            img3D.classList.remove('active');
+            img2D.classList.add('active');
+        }
+    });
 </script>
 
 </body>
