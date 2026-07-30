@@ -126,38 +126,73 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </div>
     </section>
-
- <section id="ozellikler" class="features">
-        <div class="container">
-
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon">📐</div>
-                    <h2>Precision Drawing</h2>
-                    <p>TamgamCAD helps you create precise drawings with its intelligent snap and grid infrastructure. It enables you to flawlessly design your projects using industry-standard editing commands.</p>
-            </div>
-
-            <div class="feature-card">
-                    <div class="icon">🔒</div>
-                    <h2>Local Work Area</h2>
-                    <p>We value your intellectual property. Your drawing files and projects are stored locally on your device, unless you opt for external cloud synchronization. You are completely in control.</p>
-            </div>
-
-            <div class="feature-card">
-                    <div class="icon">🖨️</div>
-                    <h2>Export in Universal Formats</h2>
-                    <p>It exports your technical drawings, including dimensions and custom symbols, in high-resolution DXF, PDF, SVG, and PNG formats. It allows you to easily share your 2D CAD projects in vector quality for professional presentations and detailed prints.</p>
-            </div>
-                
-            <div class="feature-card">
-                    <div class="icon">👆</div>
-                    <h2>Touch and Pen Support</h2>
-                    <p>TamgamCAD is optimized for touch screens and tablets. Zoom and pan the canvas with two fingers, or make millimeter-precise drawings directly on the screen with your stylus.</p>
-            </div>
+    <section class="interactive-showcase">
+    <div class="container">
+        <div class="section-title">
+            <h2>Visualize Your Designs Instantly</h2>
+            <p>Inspect your plans with a single click using our new 3D rendering engine.</p>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="toggle-switch">
+                <input type="checkbox" id="view-toggle" class="toggle-checkbox">
+                <label for="view-toggle" class="toggle-label">
+                    <span class="toggle-text-2d">2D Drawing</span>
+                    <span class="toggle-text-3d">3D Model</span>
+                    <span class="toggle-slider"></span>
+                </label>
             </div>
         </div>
-    </section>
+        
+        <div class="showcase-card">
+            <!-- Update image paths as needed -->
+            <img id="showcase-img-2d" src="img/home_2d.webp" alt="2D Technical Plan" class="showcase-img active">
+            <img id="showcase-img-3d" src="img/home_3d.webp" alt="3D Model Viewing" class="showcase-img">
+        </div>
+    </div>
+</section>
+
+ <section id="ozellikler" class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">📐</div>
+                <h2>Precision Drawing & Editing</h2>
+                <p>TamgamCAD helps you create precise drawings with its intelligent snap and grid infrastructure. Flawlessly design your projects using industry-standard editing commands.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🛋️</div>
+                <h2>Ready Furniture Library</h2>
+                <p>Quickly furnish spaces with a rich library of furniture blocks. Add details to your architectural plans in seconds and elevate the user experience.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🧊</div>
+                <h2>3D CAD Viewing</h2>
+                <p>View your 2D plans as a 3D model with a single click. Instantly analyze spatial depth and present your projects more effectively to your clients.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h2>Local Storage Assurance</h2>
+                <p>We value your data privacy. Our application does not request unauthorized file reading permissions. Your drawings are stored locally on your device, completely under your control.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon">🖨️</div>
+                <h2>Export in Universal Formats</h2>
+                <p>Export your technical drawings, including dimensions and custom symbols, in high-resolution DXF, PDF, SVG, and PNG formats for professional presentations.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">👆</div>
+                <h2>Mobile-Focused Experience</h2>
+                <p>Optimized for touch screens and tablets. Zoom and pan with two fingers, or make millimeter-precise drawings directly on the screen with your stylus.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section id="platforms" class="platforms-section">
         <div class="container">
@@ -469,6 +504,22 @@ document.getElementById('reject-cookies').addEventListener('click', () => {
 
   banner.style.display = 'none';
 });
+</script>
+
+<script>
+    const toggleInput = document.getElementById('view-toggle');
+    const img2D = document.getElementById('showcase-img-2d');
+    const img3D = document.getElementById('showcase-img-3d');
+
+    toggleInput.addEventListener('change', function() {
+        if(this.checked) {
+            img2D.classList.remove('active');
+            img3D.classList.add('active');
+        } else {
+            img3D.classList.remove('active');
+            img2D.classList.add('active');
+        }
+    });
 </script>
 
 </body>
