@@ -107,7 +107,7 @@ header {
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-color);
+    background-color: var(--white);
     color: var(--white);
 }
 
@@ -1508,4 +1508,346 @@ footer {
 .showcase-img.active {
     opacity: 1;
     position: relative;
+}
+
+.blog-detail-page {
+    padding: 60px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+.blog-back-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.blog-back-link:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.article-header {
+    margin-bottom: 40px;
+}
+
+.article-header h1 {
+    font-size: 2.8rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.blog-meta {
+    color: #64748b;
+    font-size: 0.95rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.blog-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.blog-content h2 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.blog-content ul {
+    list-style-type: disc;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.blog-content li {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blog-detail-page {
+        padding: 30px 15px;
+    }
+    .article-header h1 {
+        font-size: 2rem;
+    }
+    .blog-content h2 {
+        font-size: 1.4rem;
+    }
+}
+
+.blog-page {
+    padding: 40px 0;
+    min-height: 60vh;
+}
+
+.blog-page h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: var(--text-dark, #333);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.blog-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.blog-date {
+    color: #666;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-dark, #333);
+}
+
+.blog-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.blog-card .btn-secondary {
+    color: var(--primary-color, #0056b3);
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.blog-card .btn-secondary:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blog-page {
+        padding: 30px 15px;
+    }
+    .blog-page h1 {
+        font-size: 2rem;
+    }
+}
+
+.article-main-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+/* Blog Kartları İçin Görsel Desteği (Mevcut .blog-card üzerine eklendi) */
+.blog-card {
+    padding: 0; /* İçeriği sarmalamak için sıfırlandı */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #e2e8f0;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-card-img {
+    transform: scale(1.03);
+}
+
+.blog-card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Makale İçi Internal Link (Doğal SEO bağlantıları için) */
+.internal-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.internal-link:hover {
+    color: var(--primary-hover);
+}
+
+/* Makale Sonu CTA Kutusu */
+.blog-cta-section {
+    background: linear-gradient(135deg, #f8fafc, #eff6ff);
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 60px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.05);
+}
+
+.blog-cta-section h3 {
+    font-size: 24px;
+    color: var(--dark-bg);
+    margin-bottom: 15px;
+}
+
+.blog-cta-section p {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width: 768px) {
+    .article-main-img {
+        max-height: 250px;
+        margin-bottom: 25px;
+    }
+    .blog-cta-section {
+        padding: 30px 20px;
+        margin-top: 40px;
+    }
+    .blog-cta-section h3 {
+        font-size: 20px;
+    }
+}
+
+.featured-article {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.featured-article:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.featured-img-container {
+    width: 50%;
+    min-height: 300px;
+}
+
+.featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-content {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-tag {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+.featured-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.featured-content p {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width: 768px) {
+    .featured-article {
+        flex-direction: column;
+    }
+    .featured-img-container {
+        width: 100%;
+        min-height: 200px;
+    }
+    .featured-content {
+        width: 100%;
+        padding: 25px;
+    }
+    .featured-content h2 {
+        font-size: 24px;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.page-number {
+    padding: 10px 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.page-number.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.page-number:hover:not(.active) {
+    background: #f1f5f9;
 }
