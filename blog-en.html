@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,19 +13,16 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO: New Title and Description for Blog -->
     <title>TamgamCAD Blog & News | Mobile 2D CAD Updates</title>
     <meta name="description" content="Discover the latest updates, new features, and professional tips for improving your technical drawing productivity on mobile and tablet with TamgamCAD.">
     <meta name="author" content="Esra ÖZDEL">
     
-    <!-- SEO: Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://tamgamcad.com/blog-en.html">
     <meta property="og:title" content="TamgamCAD Blog & News">
     <meta property="og:description" content="Discover the latest updates, new features, and professional tips for improving your technical drawing productivity on mobile and tablet.">
     <meta property="og:image" content="https://tamgamcad.com/img/hero_img.png">
     
-    <!-- SEO: Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://tamgamcad.com/blog-en.html">
     <meta name="twitter:title" content="TamgamCAD Blog & News">
@@ -34,7 +30,6 @@
     <meta name="twitter:image" content="https://tamgamcad.com/img/hero_img.png">
     <meta name="robots" content="index, follow">
     
-    <!-- SEO: Canonical and Hreflang Configuration -->
     <link rel="canonical" href="https://tamgamcad.com/blog-en.html">
     <link rel="alternate" hreflang="tr" href="https://tamgamcad.com/blog-tr.html">
     <link rel="alternate" hreflang="en" href="https://tamgamcad.com/blog-en.html">
@@ -42,11 +37,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
     
-    <!-- SEO: Blog Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -72,7 +69,7 @@
 </head>
 
 <body>
-<header>
+<header class="glass-header">
     <div class="container header-container">
         <a href="index-en.html" class="logo">
             <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
@@ -88,7 +85,7 @@
             </ul>
         </nav>
         <div class="lang-switch">
-             <a href="blog-tr.html">TR</a> <span>|</span> <a href="blog-en.html" class="active">EN</a>
+             <a href="blog-tr.html" aria-label="Turkish">TR</a> <span aria-hidden="true">|</span> <a href="blog-en.html" class="active" aria-label="English">EN</a>
         </div>
         
        <a href="index-en.html#platforms" class="btn-primary">TamgamCAD Versions</a>
@@ -96,10 +93,10 @@
 </header>
 
 <main>
-    <section class="blog-page container">
-        <h1>Latest News and Tips</h1>
+    <section class="blog-page container section-spacing">
+        <h1 data-aos="fade-right">Latest News and Tips</h1>
 
-        <article class="featured-article">
+        <article class="featured-article" data-aos="fade-up" data-aos-delay="100">
             <div class="featured-img-container">
                 <img src="img/blog-3d-feature.webp" alt="TamgamCAD 3D" class="featured-img">
             </div>
@@ -113,27 +110,56 @@
         </article>
 
         <div class="blog-grid">
+       
 
-            <article class="blog-card">
+<article class="blog-card" data-aos="fade-up" data-aos-delay="0">
+    <div class="blog-card-content">
+        <span class="blog-date">November 6, 2026 · Architectural Drawing</span>
+        <h2>Fast Floor Plan Drawing on Tablet for Interior Designers & Architects</h2>
+        <p>
+            Learn step-by-step how to draw a room plan from scratch, adjust wall thicknesses (Offset), and furnish it with ready-to-use furniture blocks during a client meeting or on-site.
+        </p>
+        <a href="blog-detail-floor-plan.html" class="btn-secondary">Read Article &rarr;</a>
+    </div>
+</article>
+
+<article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+    <div class="blog-card-content">
+        <span class="blog-date">November 6, 2026 · Mobile CAD</span>
+        <h2>How to Do 2D Technical Drawing (Tracing) Over Reference Images (JPG/PNG)?</h2>
+        <p>
+            Discover practical examples of how to obtain precise vector (DXF) drawings by tracing over a paper sketch or a product photograph directly within the workspace.
+        </p>
+        <a href="blog-detail-image-tracing.html" class="btn-secondary">Read Article &rarr;</a>
+    </div>
+</article>
+
+<article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+   <div class="blog-card-content">
+        <span class="blog-date">November 6, 2026 · CAD and Technical Drawing</span>
+        <h2>Design Complex Parts Easily: What are Boolean Operations?</h2>
+        <p>
+            Examine in detail the logic of merging (Union), subtracting (Difference), and intersecting geometries when preparing machine parts or CNC cutting templates.
+        </p>
+        <a href="blog-detail-boolean.html" class="btn-secondary">Read Article &rarr;</a>
+    </div>
+</article>
+
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="0">
                <img src="img/2d-teknik-cizim.webp" alt="TamgamCAD 2D Technical Drawing" class="blog-card-img" loading="lazy">
       
                 <div class="blog-card-content">
                     <span class="blog-date">August 13, 2026 · CAD and Technical Drawing</span>
-
                     <h2>Why is 2D Technical Drawing Still Important?</h2>
-
                     <p>
                         Although 3D design technologies have advanced, 2D technical drawings maintain their importance in many fields such as architecture, engineering, manufacturing, and CNC. Discover why 2D CAD drawings are still used and what needs they address.
                     </p>
-
-                    <a href="blog-detail-2d.html" class="btn-secondary">
-                        Read Article &rarr;
-                    </a>
+                    <a href="blog-detail-2d.html" class="btn-secondary">Read Article &rarr;</a>
                 </div>
             </article>
 
-            <article class="blog-card">
-                 <img src="img/blog-tablet-keyboard.webp" alt="TMobile CAD and technical drawing using a keyboard on a tablet with TamgamCAD" class="blog-card-img" loading="lazy">
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                 <img src="img/blog-tablet-keyboard.webp" alt="Mobile CAD and technical drawing using a keyboard on a tablet with TamgamCAD" class="blog-card-img" loading="lazy">
     
                 <div class="blog-card-content">
                     <span class="blog-date">August 13, 2026 · Mobile CAD</span>
@@ -143,79 +169,53 @@
                 </div>
             </article>
 
-            <article class="blog-card">
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
                 <img src="img/blog-mobil-cad.webp" alt="Mobile CAD technical drawing on a tablet" class="blog-card-img" loading="lazy">
                 
-
                 <div class="blog-card-content">
                     <span class="blog-date">August 13, 2026 · Mobile CAD</span>
-
                     <h2>What is Mobile CAD? Moving Technical Drawing from Computer to Tablet</h2>
-
                     <p>
                         What is Mobile CAD, in which fields is it used, and how does it differ from desktop CAD programs? Discover the advantages and use cases of doing technical drawing on phones and tablets.
                     </p>
-
-                    <a href="blog-detail-mobil-cad.html" class="btn-secondary">
-                        Read Article &rarr;
-                    </a>
+                    <a href="blog-detail-mobil-cad.html" class="btn-secondary">Read Article &rarr;</a>
                 </div>
             </article>
 
-            <article class="blog-card">
-               
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="0">
                 <div class="blog-card-content">
                     <span class="blog-date">August 13, 2026 · DXF</span>
-
                     <h2>What is a DXF File? What is it Used For and Where is it Used?</h2>
-
                     <p>
                         What is a DXF file, why is it used in technical drawings, and which programs can open it? Clearly examine the use of the DXF format in CAD, architecture, engineering, and CNC processes.
                     </p>
-
-                    <a href="blog-detail-dxf.html" class="btn-secondary">
-                        Read Article &rarr;
-                    </a>
+                    <a href="blog-detail-dxf.html" class="btn-secondary">Read Article &rarr;</a>
                 </div>
             </article>
 
-            <article class="blog-card">
-               
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="blog-card-content">
                     <span class="blog-date">August 13, 2026 · DXF</span>
-
                     <h2>How to Open a DXF File on a Phone and Tablet?</h2>
-
                     <p>
                         How can you view DXF files when your computer is not with you? Discover step-by-step options for opening, examining, and working with mobile CAD on phones and tablets.
                     </p>
-
-                    <a href="blog-detail-dxf-mobil.html" class="btn-secondary" style="margin-top: auto;">
-                        Read Article &rarr;
-                    </a>
+                    <a href="blog-detail-dxf-mobil.html" class="btn-secondary" style="margin-top: auto;">Read Article &rarr;</a>
                 </div>
             </article>
 
-            <article class="blog-card">
-               
-
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="blog-card-content">
                     <span class="blog-date">August 13, 2026 · Mobile CAD</span>
-
                     <h2>Mobile CAD Usage on the Construction Site: Managing Technical Drawings in the Field</h2>
-
                     <p>
                         Is it possible to access technical drawings on the construction site without relying on laptops and paper plans? Discover the processes of viewing, examining, and editing project drawings in the field with mobile CAD.
                     </p>
-
-                    <a href="blog-detail-santiye.html" class="btn-secondary">
-                        Read Article &rarr;
-                    </a>
+                    <a href="blog-detail-santiye.html" class="btn-secondary">Read Article &rarr;</a>
                 </div>
             </article>
 
         </div>
-
     </section>
 </main>
 
@@ -252,7 +252,7 @@
             <p class="developer-info"><a href="mailto:tamgamcad@hotmail.com">tamgamcad@hotmail.com</a></p>
             
             <div class="footer-socials">
-                <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube">
+                <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube" aria-label="TamgamCAD YouTube Channel">
                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                 </a>
             </div>
@@ -263,39 +263,34 @@
     </div>
 </footer>
 
-<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
+<button id="scrollToTopBtn" aria-label="Scroll to top" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    (function() {
-        emailjs.init("Z3CwmpJrBwI4l4wvo");
-    })();
+    // Initialize AOS
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 600,
+        easing: 'ease-in-out'
+    });
 
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); 
-
-            const btn = this.querySelector('button');
-            const originalBtnText = btn.innerText;
-            btn.innerText = 'Sending...'; 
-
-            emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
-                .then(function() {
-                    btn.innerText = 'Successfully Sent! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; 
-                    contactForm.reset(); 
-                    
-                    setTimeout(() => {
-                        btn.innerText = originalBtnText;
-                        btn.style.backgroundColor = '';
-                    }, 3000);
-                }, function(error) {
-                    btn.innerText = 'An Error Occurred!';
-                    btn.style.backgroundColor = '#dc2626'; 
-                    console.log('Sending Error:', error);
-                });
-        });
-    }
+    // Scroll to Top Logic
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 </script>
 
 <div id="cookie-banner">

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('consent', 'default', { 'analytics_storage': 'denied' });
+    gtag('config', 'G-7H6342FC7T', { anonymize_ip: true });
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmaşık Parçaları Kolayca Tasarlayın: Boolean İşlemleri Nedir? | TamgamCAD Blog</title>
+    <meta name="description" content="Makine parçaları ve CNC şablonları tasarlarken geometrileri birleştirme, çıkarma ve kesişimlerini alma mantığını (Boolean) örneklerle inceleyin.">
+    <meta name="author" content="Esra ÖZDEL">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://tamgamcad.com/blog-detay-boolean.html">
+    <link rel="alternate" hreflang="tr" href="https://tamgamcad.com/blog-detay-boolean.html">
+    <link rel="alternate" hreflang="en" href="https://tamgamcad.com/blog-detail-boolean.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tamgamcad.com/blog-detay-boolean.html">
+    <meta property="og:title" content="Karmaşık Parçaları Kolayca Tasarlayın: Boolean İşlemleri Nedir?">
+    <meta property="og:description" content="2D CAD programlarında Boolean işlemleri kullanarak karmaşık şekilleri pratik yoldan nasıl oluşturabileceğinizi keşfedin.">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Karmaşık Parçaları Kolayca Tasarlayın: Boolean İşlemleri Nedir?">
+    <meta name="twitter:description" content="2D CAD programlarında Boolean işlemleri kullanarak karmaşık şekilleri pratik yoldan nasıl oluşturabileceğinizi keşfedin.">
+    <meta name="twitter:image" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+</head>
+
+<body class="bg-light">
+<header class="glass-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="ozellikler.html">Özellikler</a></li>
+                <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
+                <li><a href="blog-tr.html" class="active">Blog</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switch">
+            <a href="blog-detay-boolean.html" class="active" aria-label="Türkçe">TR</a> <span aria-hidden="true">|</span> <a href="blog-detail-boolean.html" aria-label="İngilizce">EN</a>
+        </div>
+        <a href="index.html#platformlar" class="btn-primary">TamgamCAD Sürümler</a>
+    </div>
+</header>
+
+<main>
+    <article class="blog-detail-page section-spacing container" data-aos="fade-up">
+
+        <a href="blog-tr.html" class="blog-back-link">&larr; Blog'a Dön</a>
+
+        <div class="article-header">
+            <h1>Karmaşık Parçaları Kolayca Tasarlayın: Boolean İşlemleri Nedir?</h1>
+            <div class="blog-meta">
+                <span><strong>Yazar:</strong> Esra ÖZDEL</span>
+                <span>|</span>
+                <span><strong>Tarih:</strong> 6 Kasım 2026</span>
+                <span>|</span>
+                <span><strong>Kategori:</strong> CAD ve Teknik Çizim</span>
+            </div>
+        </div>
+
+        <div class="blog-content">
+
+           
+            <p>
+                CAD programlarında çizim yaparken, özellikle mekanik parçalar, makine dişlileri veya CNC lazer kesim şablonları hazırlıyorsanız, bazen istenilen şekil düz çizgiler ve yaylar kullanarak tek seferde çizilemeyecek kadar karmaşıktır. Bu gibi durumlarda, temel geometrik şekilleri (daireler, kareler, çokgenler) adeta bir hamur gibi birbirine ekleyip çıkararak istediğiniz formu elde edebilirsiniz.
+            </p>
+
+            <p>
+                İşte matematiksel mantık ilkelerine dayanan bu şekil birleştirme ve çıkarma yöntemlerine <strong>Boolean İşlemleri</strong> denir. TamgamCAD, genellikle ağır masaüstü yazılımlarında bulunan bu güçlü özelliği tablet ve telefonlara taşıyarak profesyonel üretimi mobil ortama uyarlıyor.
+            </p>
+
+            <h2>Boolean İşlemleri Nasıl Çalışır?</h2>
+            <p>
+                Boolean işlemlerinin çalışabilmesi için şekillerin birbirleriyle kesişiyor veya temas ediyor olması, ayrıca uçları açık çizgiler değil, "kapalı geometriler" (örneğin tam bir daire veya kapalı bir polyline) olması gerekir. TamgamCAD'de bulunan 3 temel Boolean aracına yakından bakalım:
+            </p>
+
+            <h3>1. Birleştirme (Union)</h3>
+            <p>
+                Bu işlem, üst üste binen iki veya daha fazla kapalı şekli birbirine kaynaştırarak tek, eksiz ve sürekli bir form oluşturur. 
+            </p>
+            <div class="article-highlight">
+                <strong>Pratik Örnek:</strong> Uç uca eklenmiş dikdörtgenler çizerek bir "T" veya "L" profili oluşturduğunuzu düşünün. Union komutunu kullanarak aradaki iç kesişim çizgilerini yok edebilir ve bu profili tek parça, içi dolu bir yüzeye (solid) dönüştürebilirsiniz.
+            </div>
+
+            <h3>2. Çıkarma (Difference / Subtract)</h3>
+            <p>
+                Belki de en sık kullanılan Boolean aracıdır. Ana (hedef) bir geometriden, onun üzerine binen ikinci bir geometrinin alanını kesip atmak için kullanılır.
+            </p>
+            <div class="article-highlight">
+                <strong>Pratik Örnek:</strong> Çelik bir levha üzerinde vida delikleri açacaksınız. Büyük bir dikdörtgen çizin, içine vida deliklerini temsil eden çemberler yerleştirin. <strong>Difference</strong> aracını seçip ana levhadan çemberleri çıkardığınızda, delikleri açılmış üretime hazır CNC şablonunuz saniyeler içinde tamamlanmış olur.
+            </div>
+
+            <h3>3. Kesişim (Intersection)</h3>
+            <p>
+                Bu özellik, üst üste binen iki şeklin <strong>yalnızca ortak olan (kesişen)</strong> alanını tutar ve geri kalan tüm fazlalıkları siler. Özellikle organik veya kavisli geometriler elde etmek için mühendislikte sıkça başvurulan bir yöntemdir.
+            </p>
+
+            <h2>Üretimde Hata Payını Sıfırlayın</h2>
+            <p>
+                Geleneksel "Trim" (Budama) aracıyla da karmaşık şekiller oluşturulabilir; ancak Trim işleminden sonra çizgiler birbiriyle bütünleşik (kapalı) olmaz. Ucu açık kalan çizgiler, CNC makinelerinde veya Hatch (Tarama) atılırken hatalara (Open Loop) neden olur.
+            </p>
+            <p>
+                Boolean işlemleri ile elde edilen sonuçlar her zaman "kapalı" (Closed Polyline) olduğu için doğrudan lazer kesime, 3D yazıcıya veya CAM yazılımlarına sıfır hata ile gönderilebilir.
+            </p>
+
+            <div class="article-cta interactive-card" data-aos="zoom-in">
+                <h2>Karmaşık Geometrileri Mobil Ortamda Çözün</h2>
+                <p>
+                    Boolean işlemleriyle kusursuz mekanik parçalar, mimari profiller ve CNC kesim dosyaları tasarlamak için <strong><a href="index.html#platformlar" class="internal-link">TamgamCAD'i indirin</a></strong>.
+                </p>
+            </div>
+            
+            <section class="related-articles">
+                <h2>İlgili Makaleler</h2>
+                <div class="related-articles-grid">
+                    <a href="blog-detay-kat-plani.html" class="related-article-card">
+                        <h3>İç Mimarlar ve Mimarlar İçin Tablette Hızlı Kat Planı Çizimi</h3>
+                    </a>
+                    <a href="blog-detay-resim-cizim.html" class="related-article-card">
+                        <h3>Referans Görseller (JPG/PNG) Üzerinden 2D Teknik Çizim Nasıl Yapılır?</h3>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <div class="container footer-container">
+        <div class="footer-col">
+            <a href="index.html" class="logo">
+                <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img" width="422" height="122" loading="lazy">
+            </a>
+            <p>Profesyoneller için optimize edilmiş, hızlı ve güvenli 2D CAD çözümü.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+                <li><a href="ozellikler.html">Özellikler</a></li>
+                <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
+                <li><a href="blog-tr.html">Blog</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Yasal</h4>
+            <ul>
+                <li><a href="lisans.html">Kullanım Koşulları (EULA)</a></li>
+                <li><a href="lisans.html">Gizlilik Sözleşmesi</a></li>
+                <li><a href="lisans.html#kvkk">Web Sitesi Koşulları & KVKK</a></li>
+                <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Geliştirici & İletişim</h4>
+            <p class="developer-name"><strong>Esra ÖZDEL</strong></p>
+            <p class="developer-info">Türkiye</p>
+            <p class="developer-info"><a href="mailto:tamgamcad@hotmail.com">tamgamcad@hotmail.com</a></p>
+            <div class="footer-socials">
+                <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 TamgamCAD. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+<button id="scrollToTopBtn" aria-label="Yukarı Çık" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, offset: 50, duration: 600, easing: 'ease-in-out' });
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) { scrollToTopBtn.classList.add("show"); } 
+        else { scrollToTopBtn.classList.remove("show"); }
+    });
+    scrollToTopBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); });
+</script>
+</body>
+</html>

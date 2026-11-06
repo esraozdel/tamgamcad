@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
 
 <script>
@@ -43,6 +42,7 @@ gtag('config', 'G-7H6342FC7T', {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -80,8 +80,8 @@ gtag('config', 'G-7H6342FC7T', {
 </script>
 </head>
 
-<body>
-<header>
+<body class="bg-light">
+<header class="glass-header">
     <div class="container header-container">
         <a href="index-en.html" class="logo">
             <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
@@ -97,16 +97,16 @@ gtag('config', 'G-7H6342FC7T', {
                     <li><a href="index-en.html#iletisim">Contact</a></li>
                 </ul>
             </nav>
-            <div class="lang-switch">
-                <a href="lisans.html">TR</a> <span>|</span> <a href="licence.html" class="active">EN</a>
-            </div>
+  <div class="lang-switch">
+    <a href="lisans.html" aria-label="Turkish">TR</a> <span aria-hidden="true">|</span> <a href="licence.html" class="active" aria-label="English">EN</a>
+</div>
             
         <a href="index-en.html#platforms" class="btn-primary">TamgamCAD Versions</a>
         </div>
     </header>
     <main>
 
-<section class="legal-page">
+<section class="legal-page section-spacing container">
     <div class="container">
         <h1>Legal Information & Policies</h1>
         
@@ -191,11 +191,7 @@ architectural application or engineering processes.
                     <li><strong>Termination:</strong> TAMGAMCAD reserves the right to cancel the license or permanently delete the account if it determines that the user has violated this agreement.</li>
                 </ul>
 
-               <h3>9. COMMUNICATION, NOTIFICATIONS, AND FEEDBACK</h3>
-                <p>TAMGAMCAD may send mandatory service messages (e.g., account security, critical updates) to your registered email. Additionally, you consent to receive informational emails regarding new features (e.g., Version updates, bug fixes) and user satisfaction surveys. You can opt-out of these promotional and informational emails at any time by sending an email to <strong>tamgamcad@hotmail.com</strong> or by replying to the received email with the word 'Unsubscribe'.</p>
-                
-                <h3>10. DISPUTE RESOLUTION AND PREVAILING LANGUAGE</h3>
-                <p>The laws of the Republic of TÜRKİYE shall apply to the resolution of any legal disputes arising from this agreement, and the Courts and Execution Offices of İzmir are authorized. In the event of any difference in meaning or interpretation between the translations of this agreement in different languages, the Turkish text shall prevail.</p>
+                <h3>9. DISPUTE RESOLUTION AND PREVAILING LANGUAGE</h3>
                 <p>The laws of the Republic of TÜRKİYE shall apply to the resolution of any legal disputes arising from this agreement, and the Courts and Execution Offices of İzmir are authorized. In the event of any difference in meaning or interpretation between the translations of this agreement in different languages, the Turkish text shall prevail.</p>
             </div>
         </div>
@@ -217,11 +213,9 @@ architectural application or engineering processes.
                 <h3>3. PAYMENTS AND THIRD-PARTY SERVICES</h3>
                 <p>All purchasing transactions take place through the secure payment infrastructures of the relevant Platform (App Store). Your credit card or billing information is never seen or stored by us.</p>
 
-               <h3>4. PURPOSE OF DATA USE AND AGE RESTRICTION</h3>
-                <p>Your limited data is used to provide the application, verify subscriptions, and inform you about major application updates (e.g., new versions, bug fixes) or feedback surveys. You can unsubscribe from informational emails at any time by sending an email to <strong>tamgamcad@hotmail.com</strong> or replying to our emails. Your data is under no circumstances sold to third parties for advertising purposes.</p>
+                <h3>4. PURPOSE OF DATA USE AND AGE RESTRICTION</h3>
+                <p>Your limited data is used only to provide the application to you and verify your subscription status. Your data is under no circumstances sold to third parties for advertising purposes.</p>
                 <ul>
-                    <li><strong>Age Restriction:</strong> TAMGAMCAD does not knowingly collect data from children under the age of 13. If you are under 13 (or the applicable age of majority in your country), you may only use the application under parental supervision.</li>
-                </ul>
                     <li><strong>Age Restriction:</strong> TAMGAMCAD does not knowingly collect data from children under the age of 13. If you are under 13 (or the applicable age of majority in your country), you may only use the application under parental supervision.</li>
                 </ul>
 
@@ -401,39 +395,37 @@ architectural application or engineering processes.
     </footer>
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <script>
-        (function() {
-            
-            emailjs.init("Z3CwmpJrBwI4l4wvo");
-        })();
+<!-- Yukarı Çık Butonu -->
+<button id="scrollToTopBtn" aria-label="Yukarı Çık" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
 
-        document.querySelector('.contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); 
+<!-- AOS Animation Library Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 600,
+        easing: 'ease-in-out'
+    });
 
-            const btn = this.querySelector('button');
-            const originalBtnText = btn.innerText;
-            btn.innerText = 'Sending...'; 
-
-            // EmailJS ile arka planda gönderim
-            emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
-                .then(function() {
-                    btn.innerText = 'Successfully Sent! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; 
-                    document.querySelector('.contact-form').reset(); 
-                    
-                    setTimeout(() => {
-                        btn.innerText = originalBtnText;
-                        btn.style.backgroundColor = '';
-                    }, 3000);
-                }, function(error) {
-                    btn.innerText = 'An Error Occurred!';
-                    btn.style.backgroundColor = '#dc2626'; 
-                    console.log('Sending Error:', error);
-                });
-        });
-    </script>
+    // Yukarı Çık Butonu İşlevi
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
     <div id="cookie-banner">
         <div class="cookie-flex-container">
 

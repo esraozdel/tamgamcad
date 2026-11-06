@@ -2,7 +2,6 @@
 <html lang="tr">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
 
 <script>
@@ -45,6 +44,8 @@ gtag('config', 'G-7H6342FC7T', {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -83,24 +84,23 @@ gtag('config', 'G-7H6342FC7T', {
 </head>
 
 <body>
-<header>
+<header class="glass-header">
     <div class="container header-container">
         <a href="index.html" class="logo">
             <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img" width="423" height="112" fetchpriority="high">
-           
         </a>
         
         <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
                     <li><a href="ozellikler.html">Özellikler</a></li>
                     <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
-                    <li><a href="blog-tr.html" class="active">Blog</a></li>
+                    <li><a href="blog-tr.html">Blog</a></li>
                     <li><a href="index.html#iletisim">İletişim</a></li>
                 </ul>
             </nav>
             <div class="lang-switch">
-                <a href="#" class="active">TR</a> <span>|</span> <a href="index-en.html">EN</a>
+                <a href="#" class="active" aria-label="Türkçe">TR</a> <span aria-hidden="true">|</span> <a href="index-en.html" aria-label="İngilizce">EN</a>
             </div>
             
            <a href="#platformlar" class="btn-primary">TamgamCAD Sürümler</a>
@@ -109,8 +109,9 @@ gtag('config', 'G-7H6342FC7T', {
     <main>
 
 <section class="hero hero-dark-fullscreen">
+    <div class="hero-gradient-overlay"></div>
     <div class="container hero-container">
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
             <h1>2D CAD Yazılımı ve Teknik Çizim Programı</h1>
             <p>TamgamCAD deneyimini ister masaüstünde, ister mobilde hareket halindeyken özgürce kullanın.</p>
             <div class="hero-buttons">
@@ -119,7 +120,7 @@ gtag('config', 'G-7H6342FC7T', {
             </div>
         </div>
         
-        <div class="hero-image-wrapper">
+        <div class="hero-image-wrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
             <picture>
                 <source srcset="img/hero_img.webp" type="image/webp">
                 <img src="img/hero_img.webp" alt="TamgamCAD Çizim Ekranı" class="hero-img-cover" fetchpriority="high">
@@ -127,17 +128,18 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </div>
 </section>
-<section class="interactive-showcase">
+
+<section class="interactive-showcase section-spacing">
     <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
             <h2>Tasarımlarınızı Anında Görselleştirin</h2>
             <p>Yeni 3D görüntüleme motorumuz ile planlarınızı tek tıkla inceleyin.</p>
         </div>
         
-        <div class="toggle-container">
+        <div class="toggle-container" data-aos="fade-up" data-aos-delay="100">
             <div class="toggle-switch">
-                <input type="checkbox" id="view-toggle" class="toggle-checkbox">
-                <label for="view-toggle" class="toggle-label">
+                <input type="checkbox" id="view-toggle" class="toggle-checkbox" aria-label="2D ve 3D görünüm değiştirici">
+                <label for="view-toggle" class="toggle-label glass-panel">
                     <span class="toggle-text-2d">2D Çizim</span>
                     <span class="toggle-text-3d">3D Model</span>
                     <span class="toggle-slider"></span>
@@ -145,48 +147,67 @@ gtag('config', 'G-7H6342FC7T', {
             </div>
         </div>
         
-        <div class="showcase-card">
+        <div class="showcase-card glass-panel" data-aos="zoom-in" data-aos-delay="200">
             <img id="showcase-img-2d" src="img/home_2d.webp" alt="2D Teknik Plan Çizimi" class="showcase-img active">
             <img id="showcase-img-3d" src="img/home_3d.webp" alt="3D Model Görüntüleme" class="showcase-img">
         </div>
     </div>
 </section>
 
-  <section id="ozellikler" class="features">
+  <section id="ozellikler" class="features section-spacing bg-light">
     <div class="container">
         <div class="features-grid">
-            <div class="feature-card">
-                <div class="icon">📐</div>
+            
+            <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="icon-wrapper">
+     
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                </div>
                 <h2>Hassas Çizim & Düzenleme</h2>
                 <p>TamgamCAD, akıllı hizalama ve ızgara altyapısıyla hassas çizimler oluşturmanıza yardımcı olur. Sektör standardı düzenleme komutlarını kullanarak kusursuz tasarımlar yapın.</p>
             </div>
 
-            <div class="feature-card">
-                <div class="icon">🛋️</div>
+            <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-wrapper">
+                   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
                 <h2>Hazır Tefrişat Kütüphanesi</h2>
                 <p>Zengin hazır tefrişat blokları ve kütüphane içerikleri ile mekanları hızla donatın. Mimari planlarınıza saniyeler içinde detay katın ve kullanıcı deneyimini iyileştirin.</p>
             </div>
 
-            <div class="feature-card">
-                <div class="icon">🧊</div>
+            <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-wrapper">
+               
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                </div>
                 <h2>3D CAD Görüntüleme</h2>
                 <p>Çizdiğiniz 2D planları tek tıkla 3D model olarak görüntüleyin. Mekansal derinliği anında analiz edin ve projelerinizi daha etkili bir şekilde sunun.</p>
             </div>
 
-            <div class="feature-card">
-                <div class="icon">🔒</div>
+            <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="icon-wrapper">
+         
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
                 <h2>Yerel Kaydetme Güvencesi</h2>
                 <p>Verilerinizin gizliliğini önemsiyoruz. Uygulamamız cihazınızda yetkisiz dosya okuma işlemi yapmaz. Çizimleriniz sadece sizin kontrolünüzde, doğrudan cihazınıza yerel olarak kaydedilir.</p>
             </div>
             
-            <div class="feature-card">
-                <div class="icon">🖨️</div>
+            <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-wrapper">
+             
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                </div>
                 <h2>Evrensel Formatlarda Dışa Aktarım</h2>
                 <p>Ölçülendirme ve özel semboller içeren teknik çizimlerinizi yüksek çözünürlüklü DXF, PDF, SVG ve PNG formatlarında dışa aktararak kolayca paylaşın.</p>
             </div>
 
-            <div class="feature-card">
-                <div class="icon">👆</div>
+            <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-wrapper">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
                 <h2>Mobil Odaklı Deneyim</h2>
                 <p>Dokunmatik ekranlar ve tabletler için optimize edilen kullanıcı arayüzü sayesinde, kaleminizle veya parmağınızla milimetre hassasiyetinde çizimler yapın.</p>
             </div>
@@ -194,16 +215,19 @@ gtag('config', 'G-7H6342FC7T', {
     </div>
 </section>
 
-    <section id="platformlar" class="platforms-section">
+    <section id="platformlar" class="platforms-section section-spacing">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>İş Modelinize Uygun TamgamCAD'i Deneyin</h2>
                 <div class="divider"></div>
             </div>
             
             <div class="platforms-wrapper">
-                <div class="platform-card">
-                    <div class="icon">💻</div>
+                <div class="platform-card interactive-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="icon-wrapper" style="margin-bottom:20px;">
+             
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
                     <h3>Masaüstü Sürümü</h3>
                     <p>Windows 10 ve 11 cihazlarınızda geniş ekran, klavye kısayolları ve yüksek performans ile karmaşık CAD projelerine hakim olun. </p>
                     
@@ -212,8 +236,11 @@ gtag('config', 'G-7H6342FC7T', {
                     </a>
                 </div>
 
-               <div class="platform-card">
-                    <div class="icon">📱</div>
+               <div class="platform-card interactive-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon-wrapper" style="margin-bottom:20px;">
+                 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
                     <h3>Mobil Sürüm</h3>
                     <p>Dokunmatik ekranlar için özel olarak tasarlanan kullanıcı dostu arayüzü ile profesyonel 2D CAD  gücünü her yere taşıyın.</p>
                     <p class="note">
@@ -228,12 +255,12 @@ gtag('config', 'G-7H6342FC7T', {
         </div> 
     </section>
   
-  <section class="seo-content">
+  <section class="seo-content section-spacing">
     <div class="container">
         
        
         <div class="content-row">
-           <div class="text-content content-box-style">
+           <div class="text-content content-box-style interactive-card" data-aos="fade-right">
                 <div class="section-title text-left">
                     <h2>TamgamCAD 2D CAD Yazılımı ile Tasarımın Gücünü Hisset</h2>     
                 </div>
@@ -243,7 +270,7 @@ gtag('config', 'G-7H6342FC7T', {
                     </p>
                 </div>
             </div>
-            <div class="image-content">
+            <div class="image-content" data-aos="fade-left">
             
                 <img src="img/gucunu-hisset.webp" alt="TamgamCAD Tasarımın Gücü">
             </div>
@@ -251,7 +278,7 @@ gtag('config', 'G-7H6342FC7T', {
         
       
         <div class="content-row reverse">
-            <div class="text-content content-box-style">
+            <div class="text-content content-box-style interactive-card" data-aos="fade-left">
                 <div class="section-title text-left">
                     <h2>Kapsamlı ve Hızlı 2D CAD Teknik Çizim İmkanları</h2>   
                 </div>
@@ -263,14 +290,14 @@ gtag('config', 'G-7H6342FC7T', {
                     <p> * Bazı özellikler kullanılan platforma göre farklılık gösterebilir. </p>
                 </div>
             </div>
-            <div class="image-content">
+            <div class="image-content" data-aos="fade-right">
               
                 <img src="img/kapsamli-cizim.webp" alt="Kapsamlı 2D CAD Teknik Çizim">
             </div>
         </div>
         
        
-        <div class="cta-highlight-box">
+        <div class="cta-highlight-box interactive-card" data-aos="zoom-in">
             <div class="section-title mb-20">
                 <h2>Neden TamgamCAD 2D Çizim Programını Seçmelisiniz?</h2>  
             </div>
@@ -296,32 +323,32 @@ gtag('config', 'G-7H6342FC7T', {
 
     
 
-<section id="sss" class="faq">
+<section id="sss" class="faq section-spacing bg-light">
     <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
             <h2>Sıkça Sorulan Sorular (SSS)</h2>
         </div>
         
-        <div class="faq-accordion">
-            <!-- Soru 1 -->
+        <div class="faq-accordion" data-aos="fade-up" data-aos-delay="100">
+ 
             <details class="faq-item" open>
                 <summary>TamgamCAD'i kullanmak için internet bağlantısı şart mı?</summary>
                 <p>Hayır, internet bağlantısı zorunlu değildir. TamgamCAD, yerel çalışma alanı özelliği sayesinde tüm proje ve çizimlerinizi cihazınızda saklar ve tamamen çevrimdışı çalışmanıza olanak tanır.</p>
             </details>
 
-            <!-- Soru 2 -->
+        
             <details class="faq-item">
                 <summary>Google Play'de satın aldığım pro özellikleri Microsoft Store'da kullanabilir miyim?</summary>
                 <p>Hayır, yazılımın özellikleri yayınladığı platforma göre değişkenlik gösterir. Satın aldığınız abonelik ile gelen özellikler diğer platformda sunulmuyorsa o özelliği kullanamazsınız. Ancak aynı e-posta adresi ile giriş yapabilirsiniz.</p>
             </details>
 
-            <!-- Soru 3 -->
+   
             <details class="faq-item">
                 <summary>Tablet ve dokunmatik ekranlarda kullanımı kolay mı?</summary>
                 <p>Kesinlikle! Arayüzümüz dokunmatik ekranlar için özel olarak optimize edilmiştir. İki parmağınızla yakınlaştırma/kaydırma yapabilir ve dokunmatik kaleminizle milimetre hassasiyetinde çizimler oluşturabilirsiniz.</p>
             </details>
 
-            <!-- Soru 4 -->
+
             <details class="faq-item">
                 <summary>Eğitim veya deneme sürümü mevcut mu?</summary>
                 <p>Evet, programı test edebilmeniz için tüm özelliklerin açık olduğu seçilen aboneliğe göre 7 veya 14 günlük ücretsiz bir deneme sürümü sunuyoruz. Google Play üzerinden indirip hemen deneyebilirsiniz. Karmaşık eğitim süreçlerine ihtiyaç duymadan uygulama içi yönlendirmeler ile yazılımı kolayca kullanabilirsiniz.</p>
@@ -334,15 +361,15 @@ gtag('config', 'G-7H6342FC7T', {
 
   
 
-    <section id="iletisim" class="contact">
+    <section id="iletisim" class="contact section-spacing">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>Bizimle İletişime Geçin</h2>
                 <div class="divider"></div>
                 <p>Öneri ve teknik destek talebi için bize yazın.</p>
             </div>
             
-            <div class="contact-wrapper">
+            <div class="contact-wrapper interactive-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="contact-info">
                     <h3>İletişim Bilgileri</h3>
                     <p><strong>E-Posta:</strong> tamgamcad@hotmail.com</p>
@@ -419,6 +446,17 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </footer>
 
+<!-- AOS Animation Library Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true, // Animasyonlar sadece bir kez çalışsın (aşağı kaydırırken)
+        offset: 50, // Animasyonun başlaması için piksel cinsinden kaydırma mesafesi
+        duration: 600, // Varsayılan animasyon süresi
+        easing: 'ease-in-out' // Animasyon yumuşatması
+    });
+</script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
@@ -477,6 +515,12 @@ gtag('config', 'G-7H6342FC7T', {
     </div>
   </div>
 </div>
+<!-- Yukarı Çık Butonu -->
+<button id="scrollToTopBtn" aria-label="Yukarı Çık" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
 
 <script>
 const banner = document.getElementById('cookie-banner');
@@ -524,8 +568,29 @@ document.getElementById('reject-cookies').addEventListener('click', () => {
     });
 </script>
 
+<script>
+    // Yukarı Çık Butonu İşlevi
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+        // Sayfa 300px'den fazla aşağı kaydırıldığında butonu göster
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+
+
 </body>
-
-
 
 </html>

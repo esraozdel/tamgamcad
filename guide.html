@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
 
 <script>
@@ -41,95 +40,73 @@ gtag('config', 'G-7H6342FC7T', {
     <link rel="canonical" href="https://tamgamcad.com/guide.html">
     <link rel="alternate" hreflang="tr" href="https://tamgamcad.com/kilavuz.html">
     <link rel="alternate" hreflang="en" href="https://tamgamcad.com/guide.html">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
      <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "TamgamCAD",
-  "url": "https://tamgamcad.com",
+  "@type": "HowTo",
+  "name": "TamgamCAD User Guide",
+  "url": "https://tamgamcad.com/guide.html",
   "image": "https://tamgamcad.com/img/logotransparan.png",
-  "description": "Profesyoneller için optimize edilmiş mobil odaklı, gelişmiş 2D CAD çözümü.",
-  "applicationCategory": "DesignApplication",
-  "operatingSystem": "Android, Windows 10, Windows 11",
-  "author": {
-    "@type": "Person",
-    "name": "Esra ÖZDEL",
-    "url": "https://tamgamcad.com"
-  },
-"offers": [
-  {
-    "@type": "Offer",
-    "price": "299.99",
-    "priceCurrency": "TRY",
-    "eligibleRegion": "TR",
-    "description": "Türkiye için aylık abonelik fiyatı"
-  },
-  {
-    "@type": "Offer",
-    "price": "1.99",
-    "priceCurrency": "USD",
-    "description": "Monthly subscription price for the United States."
-  }
-]
+  "description": "Detailed user guide for TamgamCAD 2D software. Learn about the interface, drawing tools, boolean operations, and layer management."
 }
 </script>
 </head>
 
 <body>
-<header>
+<header class="glass-header">
     <div class="container header-container">
         <a href="index-en.html" class="logo">
             <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
-           
         </a>
         
         <nav class="main-nav">
                 <ul>
                     <li><a href="index-en.html">Home</a></li>
                     <li><a href="features.html">Features</a></li>
-                    <li><a href="guide.html">User Guide</a></li>
-                    <li><a href="blog-en.html" class="active">Blog</a></li>
+                    <li><a href="guide.html" class="active">User Guide</a></li>
+                    <li><a href="blog-en.html">Blog</a></li>
                     <li><a href="index-en.html#iletisim">Contact</a></li>
                 </ul>
             </nav>
             <div class="lang-switch">
-                 <a href="kilavuz.html">TR</a> <span>|</span> <a href="guide.html" class="active">EN</a>
+                 <a href="kilavuz.html" aria-label="Turkish">TR</a> <span aria-hidden="true">|</span> <a href="guide.html" class="active" aria-label="English">EN</a>
             </div>
             
            <a href="index-en.html#platforms" class="btn-primary">TamgamCAD Versions</a>
         </div>
     </header>
 <main>
-<section class="docs-page">
+<section class="docs-page bg-light">
     <div class="container docs-container">
         <aside class="docs-sidebar">
             <h3>Learning Center</h3>
             <ul class="docs-nav">
-                <li><a href="#baslangic" class="active">🚀 Quick Start Guide</a></li>
-                <li><a href="#dosya">📁 DXF & File Management</a></li>
-                <li><a href="#cizim">✏️ How to Draw 2D?</a></li>
-                <li><a href="#duzenleme">⚙️ Trim, Offset & Modification</a></li>
-                <li><a href="#boolean">🧩 Shape Merging (Boolean)</a></li>
-                <li><a href="#olculendirme">📐 Dimension, Fill & Hatch</a></li>
-                <li><a href="#katmanlar">🎯 Layers & Block System</a></li>
-                <li><a href="#problem-cozme">🛠️ CAD Troubleshooting</a></li>
-                <li><a href="#faq">❓ Frequently Asked Questions</a></li>
+                <li><a href="#baslangic" class="active" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg> Quick Start Guide</a></li>
+                <li><a href="#dosya" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg> DXF & File Management</a></li>
+                <li><a href="#cizim" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path></svg> How to Draw 2D?</a></li>
+                <li><a href="#duzenleme" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Trim, Offset & Modification</a></li>
+                <li><a href="#boolean" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 5.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 5.5v0A4.5 4.5 0 0 1 9.5 1h5A4.5 4.5 0 0 1 19 5.5v0Z"></path><path d="M19 18.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 18.5v0A4.5 4.5 0 0 1 9.5 14h5a4.5 4.5 0 0 1 4.5 4.5v0Z"></path></svg> Shape Merging (Boolean)</a></li>
+                <li><a href="#olculendirme" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Dimension, Fill & Hatch</a></li>
+                <li><a href="#katmanlar" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg> Layers & Block System</a></li>
+                <li><a href="#problem-cozme" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg> CAD Troubleshooting</a></li>
+                <li><a href="#faq" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Frequently Asked Questions</a></li>
             </ul>
         </aside>
 
         <div class="docs-content">
             
-           <div class="docs-section" id="giris">
+           <div class="docs-section" id="giris" data-aos="fade-up">
 
-    <h1>
-        TamgamCAD 2D CAD Tools Learning Center
-    </h1>
+    <h1>TamgamCAD 2D CAD Tools Learning Center</h1>
 
     <p>
         TamgamCAD is a modern <strong>2D CAD software</strong> and technical drawing application developed for mobile devices, tablets, and desktop systems. 
@@ -152,14 +129,17 @@ gtag('config', 'G-7H6342FC7T', {
         Beginners can learn basic technical drawing tools, while professional users can utilize advanced CAD features more efficiently.
     </p>
 
-   <img src="img/snap_en.webp" alt="TamgamCAD Mobile and Desktop Interface" class="docs-img" onerror="this.style.display='none'">
+   <img src="img/snap_en.webp" alt="TamgamCAD Mobile and Desktop Interface" class="docs-img" data-aos="zoom-in" data-aos-delay="100" onerror="this.style.display='none'">
 </div>
 
-            <div class="docs-section" id="baslangic">
-                <h2">🛠️ CAD Interface and Customization Tips</h2>
+            <div class="docs-section" id="baslangic" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+                    CAD Interface and Customization Tips
+                </h2>
                 <p>Increase your drafting speed by optimizing the TamgamCAD interface according to your workflow habits through customizable settings that accelerate technical drawing processes. 
                     You can access these features from the settings menu. On mobile, the settings section is located in the left slide-out menu.</p>
-                    <div class="content-box-style">
+                    <div class="content-box-style interactive-card">
                     <ul>
                     <li>
                         <strong>Theme Settings:</strong> Dark and light theme options provide a more comfortable experience during long drafting sessions.
@@ -183,7 +163,7 @@ gtag('config', 'G-7H6342FC7T', {
 
                     <li>
                         <strong>Dimension Input:</strong> Enter precise values directly during drafting using the dimension input system optimized for mobile devices and tablets. 
-                        <div class="info-box">Tip: The dimension input tool appears at the bottom of the screen when drawing tools are active. If the tool panel is open, the dimension input area may not be visible; therefore, close the tool panel first.</div>
+                        <div class="info-box" style="margin-top: 10px;">Tip: The dimension input tool appears at the bottom of the screen when drawing tools are active. If the tool panel is open, the dimension input area may not be visible; therefore, close the tool panel first.</div>
                     </li>
 
                     <li>
@@ -197,10 +177,13 @@ gtag('config', 'G-7H6342FC7T', {
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="dosya">
-                <h2">📁 Opening DXF on Mobile and Project Management</h2>
+            <div class="docs-section" id="dosya" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg>
+                    Opening DXF on Mobile and Project Management
+                </h2>
                 <p>The tools located in the file operations section allow you to manage your projects and export them in various formats.</p>
-                <div class="content-box-style">
+                <div class="content-box-style interactive-card">
                     <ul>
                         <li><strong>DXF Import/Export:</strong> Open DXF files compatible with other CAD software on your phone, or save your projects as DXF.</li>
                         <li><strong>Exporting:</strong> Export your drawings in .SVG and .PDF formats for vector presentations and high-resolution prints, and in .PNG format for quick sharing.</li>
@@ -211,16 +194,19 @@ gtag('config', 'G-7H6342FC7T', {
                 </div>
             </div>
 
-            <div class="docs-section" id="cizim">
-                <h2>✏️ How to Create 2D Technical Drawings?</h2>
+            <div class="docs-section" id="cizim" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path></svg>
+                    How to Create 2D Technical Drawings?
+                </h2>
                 <p>TamgamCAD offers a professional drawing experience across different devices thanks to touch screen, stylus, mouse, and keyboard support. 
                      Explore all drawing tools, from basic geometry to complex forms.</p>
                 
                   <div class="info-box">You can access the drawing tools from the tool panel, the command line, and by typing a single letter key on the keyboard. Keyboard shortcuts can be found in the help menu within the application.
                    You can use the drawing tools via drag-and-drop or start-end points without specific measurements, or you can use them by entering precise dimensions.</div>
-                  <br> <div class="content-box-style">
+                  <br> <div class="content-box-style interactive-card">
                   <ul>
-                    <img src="img/linecircle.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+                    <img src="img/linecircle.webp" alt="2D Technical Drawing Tools" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
                
                     <li><strong>Line and Polyline:</strong> Specify the start point, then specify the end point to complete the drawing. For dimensioned drawing, specify the first point, move the cursor in the desired direction to set the path, then enter the dimension; the drawing is generated at that length the moment you confirm.
                          Double-click at the last point for continuous lines.</li>
@@ -236,7 +222,8 @@ gtag('config', 'G-7H6342FC7T', {
                     <li><strong>Polygon:</strong> First specify the number of sides, then set the center on the screen and finish the drawing when it reaches the desired size.</li>
 
                     <li><strong>Donut:</strong> First specify the center point, then sequentially enter the radii of the inner circle and the outer circle to create a thick-walled ring.</li>
-                    <img src="img/ttr.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+                    
+                    <img src="img/ttr.webp" alt="2D Technical Drawing Tools" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
                
                     <li><strong>Tan-Tan-Radius (TTR):</strong> Use this to draw a circle that is tangent to two different objects and has a specified radius value. For TTR, click on the first object, then the second object, and enter a radius value in the prompt window. The radius value you enter must be geometrically appropriate for the distance between the two objects. You can trim the circles generated by TTR later using the Trim command to achieve smooth corner transitions.</li>
                     
@@ -247,15 +234,18 @@ gtag('config', 'G-7H6342FC7T', {
 
             </div>
 
-            <div class="docs-section" id="duzenleme">
-                <h2>⚙️ Trim, Offset, and Project Modification Guide</h2>
+            <div class="docs-section" id="duzenleme" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    Trim, Offset, and Project Modification Guide
+                </h2>
                 <p>Modify your existing drawings to add professional details.</p>
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Trim & Extend:</strong><br><br>
-        <img src="img/trimextend.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+        <img src="img/trimextend.webp" alt="2D Technical Drawing Tools" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
                
         <strong>How to Use Trim?</strong><br>
         1. Select the <strong>Trim</strong> tool from the tool menu.<br>
@@ -273,10 +263,10 @@ gtag('config', 'G-7H6342FC7T', {
         <strong>Tip:</strong> For Trim and Extend operations to work, objects must intersect or be aligned in the same path.
         </div>
         
-    </li><br>
+    </li>
 
-    <li>
-        <strong>Offset:</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Offset:</strong><br><br>
 
         1. Select the object you want to create a parallel copy of.<br>
         2. Select the <strong>Offset</strong> tool from the tool panel.<br>
@@ -284,10 +274,10 @@ gtag('config', 'G-7H6342FC7T', {
         4. Use +/- values to determine the inward or outward direction.<br><br>
 
         <em>Example:</em> Used to create wall thickness in architectural plans or produce parallel technical lines.
-    </li><br>
+    </li>
 
-    <li>
-        <strong>Rotate:</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Rotate:</strong><br><br>
 
         1. Select the object you want to rotate.<br>
         2. Select the <strong>Rotate</strong> tool from the tool panel.<br>
@@ -295,10 +285,10 @@ gtag('config', 'G-7H6342FC7T', {
         4. The operation will be applied automatically.<br><br>
 
         <em>Example:</em> Used to align technical parts at specific angles or rotate layout plans.
-    </li><br>
+    </li>
 
-    <li>
-        <strong>Mirror:</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Mirror:</strong><br><br>
 
         1. Select the objects you want to mirror.<br>
         2. Select the <strong>Mirror</strong> tool from the tool panel.<br>
@@ -307,13 +297,13 @@ gtag('config', 'G-7H6342FC7T', {
         5. The system will create a symmetrical copy of the selected object.<br><br>
         <em>Example:</em> Provides fast duplication for symmetrical furniture, mechanical parts, or plan drawings.
         
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>Tip:</strong> Activate Ortho mode for precise symmetry.
         </div>
 
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Array:</strong><br><br>
 
         <strong>Rectangular Array:</strong><br>
@@ -333,15 +323,15 @@ gtag('config', 'G-7H6342FC7T', {
         6. Set the angle of rotation.<br>
         7. Objects will be placed in a circular pattern.<br><br>
          <em>Example:</em> Used for column layouts, screw holes, or repeating technical details.
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>Tip:</strong> Make sure the "Rotate Items" option is unchecked if you want the items to maintain their original orientation during full rotation.
         </div>
           
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Chamfer & Fillet:</strong><br><br>
-        <img src="img/chamfer.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
+        <img src="img/chamfer.webp" alt="2D Technical Drawing Tools" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
           
         <strong>Chamfer:</strong><br>
         1. First select the two straight lines to be chamfered.<br>
@@ -353,43 +343,46 @@ gtag('config', 'G-7H6342FC7T', {
         1. First select the two straight lines to be rounded.<br>
         2. Select the <strong>Fillet</strong> tool from the tool panel.<br>
         3. Enter the fillet radius.<br>
-        4. The system will automatically create an arc.<br>
+        4. The system will automatically create an arc.<br><br>
 
         <em>Example:</em> Used to soften sharp corners or create technical transitions.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Scale:</strong><br><br>
 
         1. Select the object to be scaled.<br>
         2. Select the <strong>Scale</strong> tool from the tool panel.<br>
         3. Enter the scale factor in the prompt screen.<br>
-        4. The object will be proportionally enlarged or reduced.<br>
+        4. The object will be proportionally enlarged or reduced.<br><br>
 
         <em>Example:</em> Ideal for reusing technical details at a different scale.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Lengthen:</strong><br><br>
         1. Select the line you want to extend or shorten.<br>
         2. Select the <strong>Lengthen</strong> tool from the tool panel.<br>
         3. Enter the new length value.<br>
-        4. The system will update the line automatically.<br>
+        4. The system will update the line automatically.<br><br>
 
         <em>Example:</em> Provides quick modification when a dimension change is needed in a technical drawing.
-    </li><br>
+    </li>
 
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="boolean">
-                <h2>🧩 Grouping, Exploding, and Boolean Operations</h2>
+            <div class="docs-section" id="boolean" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 5.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 5.5v0A4.5 4.5 0 0 1 9.5 1h5A4.5 4.5 0 0 1 19 5.5v0Z"></path><path d="M19 18.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 18.5v0A4.5 4.5 0 0 1 9.5 14h5a4.5 4.5 0 0 1 4.5 4.5v0Z"></path></svg>
+                    Grouping, Exploding, and Boolean Operations
+                </h2>
                 <p>Design complex parts by merging closed areas or subtracting them from each other.</p>
               
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Group & Ungroup:</strong><br><br>
 
         <strong>How to Use Group?</strong><br>
@@ -407,9 +400,9 @@ gtag('config', 'G-7H6342FC7T', {
         <div class="info-box">
             <strong>Tip:</strong> The group operation does not physically merge the objects. It only makes them easier to select and move together.
         </div>
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Explode & Join:</strong><br><br>
 
         <strong>How to Use Explode?</strong><br>
@@ -426,9 +419,9 @@ gtag('config', 'G-7H6342FC7T', {
         4. The system will convert the lines into a single continuous object.<br><br>
 
         <em>Example:</em> You can turn open lines into a closed polyline to make them suitable for hatch or boolean operations.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Wrap (Boundary):</strong><br><br>
 
         1. Select overlapping or intricately nested objects.<br>
@@ -441,17 +434,17 @@ gtag('config', 'G-7H6342FC7T', {
         <div class="info-box">
             <strong>Tip:</strong> Wrap operations are particularly useful for creating clean geometry for hatching, area calculation, and DXF exporting.
         </div>
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Boolean Operations:</strong><br><br>
-        <img src="img/boolean.webp" alt="2D Technical Drawing Tools" class="docs-img" onerror="this.style.display='none'">
-         
+        <img src="img/boolean.webp" alt="2D Technical Drawing Tools" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
+         <br>
         Boolean tools only work on <strong>closed geometries</strong>. 
         You can perform mathematical geometry operations between circles, closed polylines, and unified shapes.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Union:</strong><br><br>
 
         1. Select the closed shapes to be merged.<br>
@@ -459,9 +452,9 @@ gtag('config', 'G-7H6342FC7T', {
         3. Overlapping areas are fused into a single unified shape.<br><br>
 
         <em>Example:</em> Can be used to turn architectural areas consisting of multiple rooms into a single closed plan.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Difference:</strong><br><br>
 
         1. Select the main shape.<br>
@@ -470,9 +463,9 @@ gtag('config', 'G-7H6342FC7T', {
         4. The area covered by the second shape is cut and subtracted from the main geometry.<br><br>
 
         <em>Example:</em> Can be used to drill a hole in a plate or create a window opening.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Intersection:</strong><br><br>
 
         1. Select intersecting closed objects.<br>
@@ -480,9 +473,9 @@ gtag('config', 'G-7H6342FC7T', {
         3. The system will retain only the common intersecting area.<br><br>
 
         <em>Example:</em> Can be used to calculate or analyze the common usage area of two different spaces.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Exclusion (XOR):</strong><br><br>
 
         1. Select shapes that touch or overlap each other.<br>
@@ -499,13 +492,16 @@ gtag('config', 'G-7H6342FC7T', {
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="olculendirme">
-                <h2>📐 Technical Drawing Dimensioning and Hatching</h2>
+            <div class="docs-section" id="olculendirme" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    Technical Drawing Dimensioning and Hatching
+                </h2>
                 <p>Add technical depth and material information to your projects.</p>
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Dimensioning:</strong><br><br>
 
         You can use linear, angular, diameter, and radius tools to annotate your technical drawings according to standards.<br><br>
@@ -529,12 +525,12 @@ gtag('config', 'G-7H6342FC7T', {
         <div class="info-box">
             <strong>Tip:</strong> You can later manually edit the contents via the Text Edit tool, and change architectural tick and arrowhead styles.
         </div>
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>Tip:</strong> To add coordinates, you can use the <strong>Coordinate</strong> option from the dimensioning tool. The coordinate dimension is ideal for displaying the X and Y coordinates of a designated point on the technical drawing.
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Automatic Area Calculation:</strong><br><br>
 
         1. Select a closed geometry.<br>
@@ -548,7 +544,7 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Hatch Library:</strong><br><br>
 
         Hatch tools allow you to fill the interiors of closed areas with patterns suitable for technical drawing standards.<br><br>
@@ -562,7 +558,7 @@ gtag('config', 'G-7H6342FC7T', {
             <strong>Tip:</strong> You can make your technical drawings more readable and professional by adjusting the fill color and hatch line colors separately.
         </div>
         
-
+        <br>
         <strong>Supported Hatch Patterns:</strong><br>
         • Solid Fill<br>
         • Vertical Lines<br>
@@ -576,12 +572,12 @@ gtag('config', 'G-7H6342FC7T', {
 
         <em>Example:</em> Can be used for reinforced concrete areas, wall cross-sections, material representations, or technical section drawings.
 
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>Tip:</strong> When you remove the fill color, the line color becomes transparent; make sure to pick a new line color from the color palette before continuing to draw.
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Text and Leader:</strong><br><br>
 
         You can use text and leader (arrow-text) tools to add annotations, point out details, and label objects in technical drawings.<br><br>
@@ -604,13 +600,13 @@ gtag('config', 'G-7H6342FC7T', {
         5. The system will create the arrowed annotation line.<br><br>
 
         <em>Example:</em> Can be used to add technical detail notes, part names, or production remarks.
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>Tip:</strong> You can double-click on the leader text later to open the text editor and modify its content.
         </div><br>
     </li>
 
-    <li>
-        <strong>Table and Settings:</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Table and Settings:</strong><br><br>
 
         You can add technical tables, bill of materials, or properties tables to the workspace.<br><br>
 
@@ -628,13 +624,16 @@ gtag('config', 'G-7H6342FC7T', {
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="katmanlar">
-                <h2>🎯 Professional Layer and Block Management</h2>
+            <div class="docs-section" id="katmanlar" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+                    Professional Layer and Block Management
+                </h2>
                 <p>Manage complex projects by splitting them into layers and gain speed with blocks.</p>
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Layers Panel:</strong><br><br>
 
         The layer system allows you to organize and manage objects neatly in large technical drawings. 
@@ -662,7 +661,7 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Object Properties:</strong><br><br>
 
         You can quickly modify the visual attributes of selected objects from the properties panel.<br><br>
@@ -681,7 +680,7 @@ gtag('config', 'G-7H6342FC7T', {
         <em>Example:</em> Can be used in technical drawing to convert solid lines into dashed lines or highlight important details with different colors.
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Match Properties:</strong><br><br>
 
         The Match Properties tool allows you to rapidly transfer the visual attributes of one object to others.<br><br>
@@ -699,7 +698,7 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Block Creation:</strong><br><br>
 
         By converting frequently used drawings into blocks, you can reuse the same object without having to redraw it constantly.<br><br>
@@ -721,9 +720,9 @@ gtag('config', 'G-7H6342FC7T', {
         
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
        
-        <strong>Using from Library:</strong><br>
+        <strong>Using from Library:</strong><br><br>
         1. Open the Library panel.<br>
         2. Select the block to be used.<br>
         3. The block will be placed in the workspace.<br><br>
@@ -740,22 +739,28 @@ gtag('config', 'G-7H6342FC7T', {
 
            
 
-            <div class="docs-section" id="problem-cozme">
-                <h2>🛠️ CAD Troubleshooting and Tips</h2>
-                <div class="troubleshoot-grid">
+            <div class="docs-section" id="problem-cozme" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    CAD Troubleshooting and Tips
+                </h2>
+                <div class="troubleshoot-grid interactive-card" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;">
                     <div class="t-item">
-                        <h3>Why Isn't Trim Working?</h3>
-                        <p>Ensure that the lines physically intersect with each other. For non-intersecting objects, use the <strong>Extend</strong> tool.</p>
+                        <h3 style="color: var(--dark-bg); margin-bottom: 10px; font-size: 18px;">Why Isn't Trim Working?</h3>
+                        <p style="font-size: 15px; color: var(--text-light);">Ensure that the lines physically intersect with each other. For non-intersecting objects, use the <strong>Extend</strong> tool.</p>
                     </div>
                     <div class="t-item">
-                        <h3>Why Isn't Hatch Applying?</h3>
-                        <p>The area must be completely closed to apply a hatch. If there is even a tiny gap, the system will throw an "Open Loop" error.</p>
+                        <h3 style="color: var(--dark-bg); margin-bottom: 10px; font-size: 18px;">Why Isn't Hatch Applying?</h3>
+                        <p style="font-size: 15px; color: var(--text-light);">The area must be completely closed to apply a hatch. If there is even a tiny gap, the system will throw an "Open Loop" error.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="docs-section" id="faq">
-                <h2>❓ Frequently Asked Questions</h2>
+            <div class="docs-section" id="faq" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Frequently Asked Questions
+                </h2>
                 <div class="faq-accordion">
                     <details class="faq-item">
                         <summary>Can I open other DXF files with TamgamCAD?</summary>
@@ -772,8 +777,8 @@ gtag('config', 'G-7H6342FC7T', {
                 </div>
             </div>
 
-            <div class="cta-highlight-box">
-                <h3>Start 2D Technical Drawing Now</h3>
+            <div class="cta-highlight-box interactive-card" data-aos="zoom-in" style="margin-top: 40px;">
+                <h3 style="font-size: 24px; margin-bottom: 15px;">Start 2D Technical Drawing Now</h3>
                 <p>Download TamgamCAD for a professional CAD experience on mobile and tablet.</p>
                 <div class="cta-btn-container">
                     <a href="index.html#platformlar" class="btn-primary">Download Now</a>
@@ -842,7 +847,7 @@ gtag('config', 'G-7H6342FC7T', {
     
     <div class="footer-socials">
       
-        <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube">
+        <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube" aria-label="TamgamCAD YouTube Channel">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
         </a>
     </div>
@@ -853,39 +858,38 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </footer>
 
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" aria-label="Scroll to top" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
 
-<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <script>
-        (function() {
-            
-            emailjs.init("Z3CwmpJrBwI4l4wvo");
-        })();
+<!-- AOS Animation Library Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 600,
+        easing: 'ease-in-out'
+    });
 
-        document.querySelector('.contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Sayfanın yenilenmesini engeller
+    // Scroll to Top Logic
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
 
-            const btn = this.querySelector('button');
-            const originalBtnText = btn.innerText;
-            btn.innerText = 'Sending...'; 
-
-            emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
-                .then(function() {
-                    btn.innerText = 'Successfully Sent! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; 
-                    document.querySelector('.contact-form').reset(); 
-                    
-                    setTimeout(() => {
-                        btn.innerText = originalBtnText;
-                        btn.style.backgroundColor = '';
-                    }, 3000);
-                }, function(error) {
-                    btn.innerText = 'An Error Occurred!';
-                    btn.style.backgroundColor = '#dc2626'; 
-                    console.log('Sending Error:', error);
-                });
-        });
-    </script>
     <div id="cookie-banner">
         <div class="cookie-flex-container">
 

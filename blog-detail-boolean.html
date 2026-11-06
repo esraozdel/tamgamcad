@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('consent', 'default', { 'analytics_storage': 'denied' });
+    gtag('config', 'G-7H6342FC7T', { anonymize_ip: true });
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Complex Parts Easily: What are Boolean Operations? | TamgamCAD Blog</title>
+    <meta name="description" content="Examine the logic of merging, subtracting, and intersecting geometries (Boolean) with examples when designing machine parts and CNC templates.">
+    <meta name="author" content="Esra ÖZDEL">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://tamgamcad.com/blog-detail-boolean.html">
+    <link rel="alternate" hreflang="tr" href="https://tamgamcad.com/blog-detay-boolean.html">
+    <link rel="alternate" hreflang="en" href="https://tamgamcad.com/blog-detail-boolean.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tamgamcad.com/blog-detail-boolean.html">
+    <meta property="og:title" content="Design Complex Parts Easily: What are Boolean Operations?">
+    <meta property="og:description" content="Discover how to practically create complex shapes using Boolean operations in 2D CAD programs.">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Design Complex Parts Easily: What are Boolean Operations?">
+    <meta name="twitter:description" content="Discover how to practically create complex shapes using Boolean operations in 2D CAD programs.">
+    <meta name="twitter:image" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+</head>
+
+<body class="bg-light">
+<header class="glass-header">
+    <div class="container header-container">
+        <a href="index-en.html" class="logo">
+            <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="guide.html">User Guide</a></li>
+                <li><a href="blog-en.html" class="active">Blog</a></li>
+                <li><a href="index-en.html#iletisim">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switch">
+            <a href="blog-detay-boolean.html" aria-label="Turkish">TR</a> <span aria-hidden="true">|</span> <a href="blog-detail-boolean.html" class="active" aria-label="English">EN</a>
+        </div>
+        <a href="index-en.html#platforms" class="btn-primary">TamgamCAD Versions</a>
+    </div>
+</header>
+
+<main>
+    <article class="blog-detail-page section-spacing container" data-aos="fade-up">
+
+        <a href="blog-en.html" class="blog-back-link">&larr; Back to Blog</a>
+
+        <div class="article-header">
+            <h1>Design Complex Parts Easily: What are Boolean Operations?</h1>
+            <div class="blog-meta">
+                <span><strong>Author:</strong> Esra ÖZDEL</span>
+                <span>|</span>
+                <span><strong>Date:</strong> November 6, 2026</span>
+                <span>|</span>
+                <span><strong>Category:</strong> CAD and Technical Drawing</span>
+            </div>
+        </div>
+
+        <div class="blog-content">
+
+            
+            <p>
+                When drawing in CAD programs, especially if you are preparing mechanical parts, machine gears, or CNC laser cutting templates, sometimes the desired shape is too complex to be drawn in one go using straight lines and arcs. In such cases, you can achieve the desired form by adding and subtracting basic geometric shapes (circles, squares, polygons) to each other almost like dough.
+            </p>
+
+            <p>
+                These shape merging and subtracting methods based on mathematical logic principles are called <strong>Boolean Operations</strong>. TamgamCAD adapts professional production to the mobile environment by bringing this powerful feature, which is usually found in heavy desktop software, to tablets and phones.
+            </p>
+
+            <h2>How Do Boolean Operations Work?</h2>
+            <p>
+                For Boolean operations to work, the shapes must intersect or touch each other, and they must be "closed geometries" (for example, a full circle or a closed polyline), not lines with open ends. Let's take a closer look at the 3 basic Boolean tools available in TamgamCAD:
+            </p>
+
+            <h3>1. Union</h3>
+            <p>
+                This operation fuses two or more overlapping closed shapes together to create a single, seamless, and continuous form.
+            </p>
+            <div class="article-highlight">
+                <strong>Practical Example:</strong> Imagine creating a "T" or "L" profile by drawing end-to-end rectangles. Using the Union command, you can eliminate the inner intersecting lines between them and turn this profile into a single piece, solid surface.
+            </div>
+
+            <h3>2. Difference (Subtract)</h3>
+            <p>
+                It is perhaps the most frequently used Boolean tool. It is used to cut out and discard the area of a second geometry that overlaps onto a main (target) geometry.
+            </p>
+            <div class="article-highlight">
+                <strong>Practical Example:</strong> You are going to drill screw holes on a steel plate. Draw a large rectangle, place circles representing the screw holes inside it. When you select the <strong>Difference</strong> tool and subtract the circles from the main plate, your production-ready CNC template with drilled holes is completed in seconds.
+            </div>
+
+            <h3>3. Intersection</h3>
+            <p>
+                This feature keeps <strong>only the common (intersecting)</strong> area of two overlapping shapes and deletes all remaining excesses. It is a method frequently used in engineering, especially to obtain organic or curved geometries.
+            </p>
+
+            <h2>Eliminate the Margin of Error in Production</h2>
+            <p>
+                Complex shapes can also be created with the traditional "Trim" tool; however, after the Trim operation, the lines are not integrated (closed) with each other. Lines left open-ended cause errors (Open Loop) in CNC machines or when Hatching is applied.
+            </p>
+            <p>
+                Because the results obtained with Boolean operations are always "closed" (Closed Polyline), they can be sent directly to laser cutting, 3D printers, or CAM software with zero errors.
+            </p>
+
+            <div class="article-cta interactive-card" data-aos="zoom-in">
+                <h2>Solve Complex Geometries in a Mobile Environment</h2>
+                <p>
+                    <strong><a href="index-en.html#platforms" class="internal-link">Download TamgamCAD</a></strong> to design flawless mechanical parts, architectural profiles, and CNC cutting files with Boolean operations.
+                </p>
+            </div>
+            
+            <section class="related-articles">
+                <h2>Related Articles</h2>
+                <div class="related-articles-grid">
+                    <a href="blog-detail-floor-plan.html" class="related-article-card">
+                        <h3>Fast Floor Plan Drawing on Tablet for Interior Designers</h3>
+                    </a>
+                    <a href="blog-detail-image-tracing.html" class="related-article-card">
+                        <h3>How to Do 2D Technical Drawing (Tracing) Over Reference Images?</h3>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <div class="container footer-container">
+        <div class="footer-col">
+            <a href="index-en.html" class="logo">
+                 <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img" width="421" height="122" loading="lazy">
+            </a>
+            <p>An optimized, fast, and secure 2D CAD solution for professionals.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="guide.html">User Guide</a></li>
+                <li><a href="blog-en.html">Blog</a></li>
+                <li><a href="index-en.html#iletisim">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="licence.html">Terms of Use (EULA)</a></li>
+                <li><a href="licence.html">Privacy Policy</a></li>
+                <li><a href="licence.html#pdpl">Website Terms & PDPL</a></li>
+                <li><a href="cookies-policy.html">Cookie Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Developer & Contact</h4>
+            <p class="developer-name"><strong>Esra ÖZDEL</strong></p>
+            <p class="developer-info">Türkiye</p>
+            <p class="developer-info"><a href="mailto:tamgamcad@hotmail.com">tamgamcad@hotmail.com</a></p>
+            
+            <div class="footer-socials">
+                <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube" aria-label="TamgamCAD YouTube Channel">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 TamgamCAD. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<button id="scrollToTopBtn" aria-label="Scroll to top" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 600,
+        easing: 'ease-in-out'
+    });
+
+    // Scroll to Top Logic
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+
+<div id="cookie-banner">
+    <div class="cookie-flex-container">
+        <div class="cookie-text">
+          This website uses cookies to improve user experience and collect anonymous analytics data.
+          <a href="cookies-policy.html" class="cookie-link">Cookie Policy</a>
+        </div>
+        <div class="cookie-btn-group">
+          <button id="reject-cookies">Reject</button>
+          <button id="accept-cookies">Accept</button>
+        </div>
+    </div>
+</div>
+
+<script>
+const banner = document.getElementById('cookie-banner');
+
+if (!localStorage.getItem('cookieChoice')) {
+  banner.style.display = 'block';
+}
+
+document.getElementById('accept-cookies').addEventListener('click', () => {
+  gtag('consent', 'update', {
+    'analytics_storage': 'granted'
+  });
+  localStorage.setItem('cookieChoice', 'accepted');
+  banner.style.display = 'none';
+});
+
+document.getElementById('reject-cookies').addEventListener('click', () => {
+  gtag('consent', 'update', {
+    'analytics_storage': 'denied'
+  });
+  localStorage.setItem('cookieChoice', 'rejected');
+  banner.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

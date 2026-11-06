@@ -2,7 +2,6 @@
 <html lang="tr">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
 
 <script>
@@ -43,6 +42,7 @@ gtag('config', 'G-7H6342FC7T', {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -80,8 +80,8 @@ gtag('config', 'G-7H6342FC7T', {
 </script>
 </head>
 
-<body>
-<header>
+<body class="bg-light">
+<header class="glass-header">
     <div class="container header-container">
         <a href="index.html" class="logo">
             <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
@@ -97,15 +97,15 @@ gtag('config', 'G-7H6342FC7T', {
                     <li><a href="index.html#iletisim">İletişim</a></li>
                 </ul>
             </nav>
-            <div class="lang-switch">
-                <a href="lisans.html" class="active">TR</a> <span>|</span> <a href="licence.html">EN</a>
-            </div>
+           <div class="lang-switch">
+    <a href="lisans.html" class="active" aria-label="Türkçe">TR</a> <span aria-hidden="true">|</span> <a href="licence.html" aria-label="İngilizce">EN</a>
+</div>
             
              <a href="index.html#platformlar" class="btn-primary">TamgamCAD Sürümler</a>
         </div>
     </header>
 <main>
-<section class="legal-page">
+<section class="legal-page section-spacing container">
     <div class="container">
        <h1>Yasal Bilgilendirme ve Politikalar</h1>
         <div id="eula" class="legal-section">
@@ -190,10 +190,8 @@ yetkili uzmanlar tarafından ayrıca doğrulanması kullanıcı sorumluluğundad
                     <li><strong>Satın Almaları Geri Yükle (Restore Purchases):</strong> Kullanıcı cihaz değiştirdiğinde veya uygulamayı yeniden yüklediğinde, aynı uygulama mağazası hesabı ile daha önce yapılmış olan aktif aboneliklerini veya Pro sürüm haklarını uygulama içerisindeki "Satın Almaları Geri Yükle" işlevi ile ücretsiz olarak tekrar aktif edebilir.</li>
                     <li><strong>Fesih:</strong> TAMGAMCAD, kullanıcının bu sözleşmeyi ihlal ettiğini tespit etmesi durumunda lisansı iptal etme veya hesabı kalıcı olarak silme hakkını saklı tutar.</li>
                 </ul>
-                <h3>9. İLETİŞİM, BİLDİRİMLER VE GERİ BİLDİRİM</h3>
-                <p>TAMGAMCAD; hesap güvenliği ve teknik güncellemeler gibi konularda zorunlu e-postalar gönderebilir. Ayrıca kullanıcı deneyimini artırmak amacıyla yeni özellikler (örn. Yeni versiyon duyuruları, hata düzeltmeleri) ve anketler hakkında bilgilendirme e-postaları almayı kabul edersiniz. İstediğiniz zaman <strong>tamgamcad@hotmail.com</strong> adresine talebinizi ileterek veya size gelen bilgilendirme e-postasını "Abonelikten Çıkmak İstiyorum" şeklinde yanıtlayarak iletişim listesinden ücretsiz olarak çıkabilirsiniz.</p>
-                
-                <h3>10. UYUŞMAZLIKLARIN ÇÖZÜMÜ VE GEÇERLİ DİL</h3>
+
+                <h3>9. UYUŞMAZLIKLARIN ÇÖZÜMÜ VE GEÇERLİ DİL</h3>
                 <p>Bu sözleşmeden doğabilecek her türlü hukuki uyuşmazlığın çözümünde Türkiye Cumhuriyeti kanunları geçerli olup, İzmir Mahkemeleri ve İcra Daireleri yetkilidir. Bu sözleşmenin farklı dillerdeki çevirileri arasında anlam veya yorum farklılığı olması durumunda, Türkçe metin esas alınacaktır.</p>
             </div>
         </div>
@@ -215,11 +213,11 @@ yetkili uzmanlar tarafından ayrıca doğrulanması kullanıcı sorumluluğundad
                 <h3>3. ÖDEMELER VE ÜÇÜNCÜ PARTİ HİZMETLER</h3>
                 <p>Tüm satın alma işlemleri ilgili Platform'un (Uygulama Mağazası) güvenli ödeme altyapıları üzerinden gerçekleşir. Kredi kartı veya fatura bilgileriniz tarafımızca kesinlikle görülmez ve saklanmaz.</p>
 
-              <h3>4. VERİLERİN KULLANIM AMACI VE YAŞ SINIRI</h3>
-            <p>Sınırlı verileriniz yalnızca size uygulamayı sunmak, aboneliğinizi doğrulamak ve size uygulamadaki önemli yenilikler (yeni versiyon duyuruları, hata düzeltmeleri) veya geri bildirim anketleri hakkında e-posta göndermek için kullanılır. Bilgilendirme e-postalarından dilediğiniz zaman <strong>tamgamcad@hotmail.com</strong> adresine e-posta göndererek veya gelen bilgilendirme mesajını yanıtlayarak ayrılabilirsiniz. Verileriniz hiçbir koşulda reklam amacıyla üçüncü şahıslara satılmaz.</p>
-            <ul>
-                <li><strong>Yaş Sınırı:</strong> TAMGAMCAD bilerek 13 yaşın altındaki çocuklardan veri toplamaz. Eğer 13 yaşın (veya bulunduğunuz ülkedeki geçerli reşit olma yaşının) altındaysanız, uygulamayı yalnızca ebeveyn gözetiminde kullanabilirsiniz.</li>
-            </ul>
+                <h3>4. VERİLERİN KULLANIM AMACI VE YAŞ SINIRI</h3>
+                <p>Sınırlı verileriniz yalnızca size uygulamayı sunmak ve abonelik durumunuzu doğrulamak için kullanılır. Verileriniz hiçbir koşulda reklam amacıyla üçüncü şahıslara satılmaz.</p>
+                <ul>
+                    <li><strong>Yaş Sınırı:</strong> TAMGAMCAD bilerek 13 yaşın altındaki çocuklardan veri toplamaz. Eğer 13 yaşın (veya bulunduğunuz ülkedeki geçerli reşit olma yaşının) altındaysanız, uygulamayı yalnızca ebeveyn gözetiminde kullanabilirsiniz.</li>
+                </ul>
 
                 <h3>5. KULLANICI HAKLARI VE VERİ İMHASI (SİLME)</h3>
                 <p>Kullanıcılarımız verileri üzerinde tam kontrole sahiptir. İstediğiniz zaman uygulamanın menüsünden 'Hesabı Sil' seçeneğini kullanarak veya doğrudan <a href="mailto:tamgamcad@hotmail.com">tamgamcad@hotmail.com</a> adresine e-posta göndererek bilgilerinizin silinmesini talep edebilirsiniz.</p>
@@ -410,39 +408,37 @@ yetkili uzmanlar tarafından ayrıca doğrulanması kullanıcı sorumluluğundad
     </footer>
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <script>
-        (function() {
-            
-            emailjs.init("Z3CwmpJrBwI4l4wvo");
-        })();
+<!-- Yukarı Çık Butonu -->
+<button id="scrollToTopBtn" aria-label="Yukarı Çık" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
 
-       
-        document.querySelector('.contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); 
+<!-- AOS Animation Library Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 600,
+        easing: 'ease-in-out'
+    });
 
-            const btn = this.querySelector('button');
-            const originalBtnText = btn.innerText;
-            btn.innerText = 'Gönderiliyor...'; 
-
-            emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
-                .then(function() {
-                    btn.innerText = 'Başarıyla Gönderildi! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; 
-                    document.querySelector('.contact-form').reset(); 
-                    
-                    setTimeout(() => {
-                        btn.innerText = originalBtnText;
-                        btn.style.backgroundColor = '';
-                    }, 3000);
-                }, function(error) {
-                    btn.innerText = 'Hata Oluştu!';
-                    btn.style.backgroundColor = '#dc2626'; 
-                    console.log('Gönderim Hatası:', error);
-                });
-        });
-    </script>
+    // Yukarı Çık Butonu İşlevi
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
     <div id="cookie-banner">
 
     <div class="cookie-flex-container">

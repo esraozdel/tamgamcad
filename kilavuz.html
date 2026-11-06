@@ -2,7 +2,6 @@
 <html lang="tr">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
 
 <script>
@@ -43,62 +42,42 @@ gtag('config', 'G-7H6342FC7T', {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
        <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "TamgamCAD",
-  "url": "https://tamgamcad.com",
+  "@type": "HowTo",
+  "name": "TamgamCAD Kullanım Kılavuzu",
+  "url": "https://tamgamcad.com/kilavuz.html",
   "image": "https://tamgamcad.com/img/logotransparan.png",
-  "description": "Profesyoneller için optimize edilmiş mobil odaklı, gelişmiş 2D CAD çözümü.",
-  "applicationCategory": "DesignApplication",
-  "operatingSystem": "Android, Windows 10, Windows 11",
-  "author": {
-    "@type": "Person",
-    "name": "Esra ÖZDEL",
-    "url": "https://tamgamcad.com"
-  },
-"offers": [
-  {
-    "@type": "Offer",
-    "price": "299.99",
-    "priceCurrency": "TRY",
-    "eligibleRegion": "TR",
-    "description": "Türkiye için aylık abonelik fiyatı"
-  },
-  {
-    "@type": "Offer",
-    "price": "1.99",
-    "priceCurrency": "USD",
-    "description": "Monthly subscription price for the United States."
-  }
-]
+  "description": "Profesyoneller için optimize edilmiş mobil odaklı, gelişmiş 2D CAD çözümü kullanım rehberi."
 }
 </script>
 </head>
 
 <body>
-<header>
+<header class="glass-header">
     <div class="container header-container">
         <a href="index.html" class="logo">
             <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
-           
         </a>
         
         <nav class="main-nav">
                 <ul>
-                       <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="ozellikler.html">Özellikler</a></li>
-                    <li><a href="kilavuz.html">Kullanım Kılavuzu</a></li>
-                    <li><a href="blog-tr.html" class="active">Blog</a></li>
+                    <li><a href="kilavuz.html" class="active">Kullanım Kılavuzu</a></li>
+                    <li><a href="blog-tr.html">Blog</a></li>
                     <li><a href="index.html#iletisim">İletişim</a></li>
                 </ul>
             </nav>
             <div class="lang-switch">
-                <a href="kilavuz.html" class="active">TR</a> <span>|</span> <a href="guide.html" >EN</a>
+                <a href="kilavuz.html" class="active" aria-label="Türkçe">TR</a> <span aria-hidden="true">|</span> <a href="guide.html" aria-label="İngilizce">EN</a>
             </div>
             
               <a href="index.html#platformlar" class="btn-primary">TamgamCAD Sürümler</a>
@@ -106,27 +85,26 @@ gtag('config', 'G-7H6342FC7T', {
     </header>
     <main>
         
-
-<section class="docs-page">
+<section class="docs-page bg-light">
     <div class="container docs-container">
         <aside class="docs-sidebar">
             <h3>Öğrenme Merkezi</h3>
             <ul class="docs-nav">
-                <li><a href="#baslangic" class="active">🚀 Hızlı Başlangıç Rehberi</a></li>
-                <li><a href="#dosya">📁 DXF & Dosya Yönetimi</a></li>
-                <li><a href="#cizim">✏️ 2D Çizim Nasıl Yapılır?</a></li>
-                <li><a href="#duzenleme">⚙️ Trim, Offset & Düzenleme</a></li>
-                <li><a href="#boolean">🧩 Şekil Birleştirme (Boolean)</a></li>
-                <li><a href="#olculendirme">📐 Ölçü, Tarama & Hatch</a></li>
-                <li><a href="#katmanlar">🎯 Katmanlar & Blok Sistemi</a></li>
-                <li><a href="#problem-cozme">🛠️ CAD Sorun Giderme</a></li>
-                <li><a href="#faq">❓ Sıkça Sorulan Sorular</a></li>
+                <li><a href="#baslangic" class="active" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg> Hızlı Başlangıç</a></li>
+                <li><a href="#dosya" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg> DXF & Dosya Yönetimi</a></li>
+                <li><a href="#cizim" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path></svg> 2D Çizim Nasıl Yapılır?</a></li>
+                <li><a href="#duzenleme" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Trim, Offset & Düzenleme</a></li>
+                <li><a href="#boolean" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 5.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 5.5v0A4.5 4.5 0 0 1 9.5 1h5A4.5 4.5 0 0 1 19 5.5v0Z"></path><path d="M19 18.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 18.5v0A4.5 4.5 0 0 1 9.5 14h5a4.5 4.5 0 0 1 4.5 4.5v0Z"></path></svg> Şekil Birleştirme (Boolean)</a></li>
+                <li><a href="#olculendirme" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Ölçü, Tarama & Hatch</a></li>
+                <li><a href="#katmanlar" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg> Katmanlar & Blok Sistemi</a></li>
+                <li><a href="#problem-cozme" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg> CAD Sorun Giderme</a></li>
+                <li><a href="#faq" style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Sıkça Sorulan Sorular</a></li>
             </ul>
         </aside>
 
         <div class="docs-content">
             
-           <div class="docs-section" id="giris">
+           <div class="docs-section" id="giris" data-aos="fade-up">
 
    <h1>TamgamCAD 2D CAD Araçları Öğrenme Merkezi</h1>
 
@@ -162,14 +140,17 @@ gtag('config', 'G-7H6342FC7T', {
         gelişmiş CAD özelliklerini daha verimli şekilde kullanabilir.
     </p>
 
-   <img src="img/snap_en.webp" alt="TamgamCAD Mobil ve Masaüstü Arayüzü" class="docs-img" onerror="this.style.display='none'">
+   <img src="img/snap_en.webp" alt="TamgamCAD Mobil ve Masaüstü Arayüzü" class="docs-img" data-aos="zoom-in" data-aos-delay="100" onerror="this.style.display='none'">
 </div>
 
-            <div class="docs-section" id="baslangic">
-                <h2>🛠️ CAD Arayüzü ve Kişiselleştirme İpuçları</h2>
+            <div class="docs-section" id="baslangic" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+                    CAD Arayüzü ve Kişiselleştirme İpuçları
+                </h2>
                 <p>Teknik çizim süreçlerini hızlandıran kişiselleştirilebilir ayarlar sayesinde TamgamCAD arayüzünü kendi çalışma alışkanlıklarınıza göre optimize ederek çizim hızınızı artırın. 
                     Bu özelliklere ayarlar menüsünden ulaşabilirsiniz. Mobilde ayarlar bölümü sol açılır menü içerisinde yer alır.</p>
-                    <div class="content-box-style">
+                    <div class="content-box-style interactive-card">
                     <ul>
                     <li>
                         <strong>Tema Ayarları:</strong> Açık ve koyu tema seçenekleri sayesinde uzun süreli 
@@ -198,7 +179,7 @@ gtag('config', 'G-7H6342FC7T', {
                     <li>
                         <strong>Ölçü Girişi:</strong> Mobil cihazlar ve tabletler için optimize edilen ölçü giriş sistemi ile 
                         çizim sırasında doğrudan hassas değer girebilirsiniz. 
-                        <div class="info-box">İpucu: Ölçü girişi aracı çizim araçları aktif olduğunda ekranın alt kısmında görünür. Araç paneli açık ise ölçü giriş alanı görünmeyebilir bunun için önce araç panelini kapatın.</div>
+                        <div class="info-box" style="margin-top: 10px;">İpucu: Ölçü girişi aracı çizim araçları aktif olduğunda ekranın alt kısmında görünür. Araç paneli açık ise ölçü giriş alanı görünmeyebilir bunun için önce araç panelini kapatın.</div>
                     </li>
 
                     <li>
@@ -210,15 +191,16 @@ gtag('config', 'G-7H6342FC7T', {
                         <strong>Büyüteç Aracı:</strong> Küçük detaylarla çalışırken yakınlaştırılmış teknik çizim deneyimi sağlar. Büyüteç aktif olduğunda parmağınız ile ekran üzerinde hareket ettirerek detaylı bakış imkanı elde edebilirsiniz.
                     </li>
 
-                    
-
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="dosya">
-                <h2>📁 Mobilde DXF Açma ve Proje Yönetimi</h2>
+            <div class="docs-section" id="dosya" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg>
+                    Mobilde DXF Açma ve Proje Yönetimi
+                </h2>
                 <p>Dosya işlemleri bölümde yer alan araçlar, projelerinizi yönetmenize ve farklı formatlarda dışa aktarmanıza olanak tanır.</p>
-                <div class="content-box-style">
+                <div class="content-box-style interactive-card">
                     <ul>
                         <li><strong>DXF İçe/Dışa Aktar:</strong> Diğer CAD yazılımlarıyla uyumlu DXF dosyalarınızı telefonda açın veya projelerinizi DXF olarak kaydedin.</li>
                         <li><strong>Çıktı Alma:</strong> Çizimlerinizi vektörel sunumlar ve yüksek çözünürlüklü baskılar için .SVG ve .PDF, hızlı paylaşımlar için ise .PNG formatında dışa aktarın.</li>
@@ -229,16 +211,19 @@ gtag('config', 'G-7H6342FC7T', {
                 </div>
             </div>
 
-            <div class="docs-section" id="cizim">
-                <h2>✏️ 2D Teknik Çizim Nasıl Yapılır?</h2>
+            <div class="docs-section" id="cizim" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path></svg>
+                    2D Teknik Çizim Nasıl Yapılır?
+                </h2>
                 <p>TamgamCAD, dokunmatik ekran, stylus kalem, fare ve klavye desteği sayesinde farklı cihazlarda profesyonel çizim deneyimi sunar. 
                      Temel geometriden karmaşık formlara kadar tüm çizim araçlarını keşfedin.</p>
                 
                   <div class="info-box">Çizim araçlarına araçlar panelinden, komut satırından ve klavyeden tek harf tuşlayarak  ulaşabilirsiniz. Klavye kısayollarına uygulamadaki yardım menüsünden ulaşabilirsiniz.
                    Çizim araçlarını hem ölçüsüz sürükle-bırak veya başlangıç-bitiş şeklinde kullanabilir hem de hassas ölçü girerek kullanabilirsiniz.  </div>
-                  <br> <div class="content-box-style">
+                  <br> <div class="content-box-style interactive-card">
                   <ul>
-                    <img src="img/linecircle.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+                    <img src="img/linecircle.webp" alt="2D Teknik Çizim Araçları" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
                
                     <li><strong>Düz Çizgi (Line) ve Çoklu Çizgi (Polyline):</strong> Başlangıç noktasını belirleyin ardından bitiş noktasını belirleyerek çizimi tamamlayın. Ölçü girişli çizim için ilk noktayı belirleyin ve çizginin yönünü belirlemek için o yönde hareket ettirin ardından ölçüyü girin onayladığınız an çizim o boyutta oluşur.
                          Devamlı çizgi için son noktada çift tıklama yapın.</li>
@@ -254,7 +239,8 @@ gtag('config', 'G-7H6342FC7T', {
                     <li><strong>Çokgen (Polygon):</strong> Önce kenar sayısını belirleyin ve ekran üzerinde merkez belirleyin istenilen boyuta geldiğinde çizimi bitirin.</li>
 
                     <li><strong>Halka (Donut):</strong> Önce merkez noktasını belirleyin, ardından sırasıyla iç çemberin ve dış çemberin yarıçaplarını girerek kalın cidarlı bir halka oluşturun.</li>
-                    <img src="img/ttr.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+                    
+                    <img src="img/ttr.webp" alt="2D Teknik Çizim Araçları" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
                
                     <li><strong>Tan-Tan-Radius (TTR):</strong> İki farklı nesneye teğet olan ve belirlediğiniz yarıçap değerine sahip bir çember çizmek için kullanın. TTR için önce ilk nesneye ardından ikinci nesneye tıklayın ve açılan pencereden bir yarıçap değeri girin. Girdiğiniz yarıçap değeri, iki nesne arasındaki mesafeye geometrik olarak uygun olmalıdır. TTR ile oluşan çemberleri sonradan Trim komutuyla budayarak yumuşak köşe dönüşleri elde edebilirsiniz.</li>
                     
@@ -265,15 +251,18 @@ gtag('config', 'G-7H6342FC7T', {
 
             </div>
 
-            <div class="docs-section" id="duzenleme">
-                <h2>⚙️ Trim, Offset ve Proje Düzenleme Rehberi</h2>
+            <div class="docs-section" id="duzenleme" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    Trim, Offset ve Proje Düzenleme Rehberi
+                </h2>
                 <p>Mevcut çizimlerinizi modifiye ederek profesyonel detaylar ekleyin.</p>
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Kırp & Uzat (Trim & Extend):</strong><br><br>
-        <img src="img/trimextend.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+        <img src="img/trimextend.webp" alt="2D Teknik Çizim Araçları" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
                
         <strong>Trim (Kırp) Nasıl Kullanılır?</strong><br>
         1. Araç menüsünden <strong>Trim</strong> aracını seçin.<br>
@@ -291,10 +280,10 @@ gtag('config', 'G-7H6342FC7T', {
         <strong>İpucu:</strong> Trim ve Extend işlemlerinin çalışabilmesi için nesnelerin kesişmesi veya aynı doğrultuda olması gerekir.
         </div>
         
-    </li><br>
+    </li>
 
-    <li>
-        <strong>Ötele (Offset):</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Ötele (Offset):</strong><br><br>
 
         1. Paralel kopyasını oluşturmak istediğiniz nesneyi seçin.<br>
         2. Araç panelinden <strong>Offset</strong> aracını seçin.<br>
@@ -302,10 +291,10 @@ gtag('config', 'G-7H6342FC7T', {
         4. İç veya dış yönü belirlemek için +/- değerlerini kullanın.<br><br>
 
         <em>Örnek:</em> Mimari planlarda duvar kalınlığı oluşturmak veya paralel teknik çizgiler üretmek için kullanılır.
-    </li><br>
+    </li>
 
-    <li>
-        <strong>Döndür (Rotate):</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Döndür (Rotate):</strong><br><br>
 
         1. Döndürmek istediğiniz nesneyi seçin.<br>
         2. Araç panelinden <strong>Rotate</strong> aracını seçin.<br>
@@ -313,10 +302,10 @@ gtag('config', 'G-7H6342FC7T', {
         4. İşlem otomatik uygulanacaktır.<br><br>
 
         <em>Örnek:</em> Teknik parçaları belirli açılarda hizalamak veya yerleşim planlarını çevirmek için kullanılır.
-    </li><br>
+    </li>
 
-    <li>
-        <strong>Aynala (Mirror):</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Aynala (Mirror):</strong><br><br>
 
         1. Aynalamak istediğiniz nesneleri seçin.<br>
         2. Araç panelinden <strong>Mirror</strong> aracını seçin.<br>
@@ -325,13 +314,13 @@ gtag('config', 'G-7H6342FC7T', {
         5. Sistem seçilen nesnenin simetrik kopyasını oluşturacaktır.<br><br>
         <em>Örnek:</em> Simetrik mobilyalar, mekanik parçalar veya plan çizimlerinde hızlı çoğaltma sağlar.
         
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>İpucu:</strong> Hassas simetri için dik (orto) modunu aktif edin.
         </div>
 
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Çoğalt (Array):</strong><br><br>
 
         <strong>Dikdörtgensel Çoğaltma:</strong><br>
@@ -351,15 +340,15 @@ gtag('config', 'G-7H6342FC7T', {
         6. Dönüş açısını ayarlayın.<br>
         7. Nesneler dairesel düzende yerleştirilir.<br><br>
          <em>Örnek:</em> Kolon dizilimi, vida delikleri veya tekrar eden teknik detaylarda kullanılır.
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>İpucu:</strong> Tam dönüş için "Nesneleri Döndür" seçeneğinin seçili olmadığına dikkat edin.
         </div>
           
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Pah Kır & Köşe Yuvarla (Chamfer ve Fillet):</strong><br><br>
-        <img src="img/chamfer.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+        <img src="img/chamfer.webp" alt="2D Teknik Çizim Araçları" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
           
         <strong>Chamfer (Pah Kırma):</strong><br>
         1. Önce pah kırılacak iki düz çizgiyi seçin.<br>
@@ -371,43 +360,46 @@ gtag('config', 'G-7H6342FC7T', {
         1. Önce köşe yuvarlanacak iki düz çizgiyi seçin.<br>
         2. Araç panelinden <strong>Fillet</strong> aracını seçin.<br>
         3. Yuvarlama yarıçapını girin.<br>
-        4. Sistem otomatik yay oluşturacaktır.<br>
+        4. Sistem otomatik yay oluşturacaktır.<br><br>
 
         <em>Örnek:</em> Keskin köşeleri yumuşatmak veya teknik geçişler oluşturmak için kullanılır.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Ölçekle (Scale):</strong><br><br>
 
         1. Ölçeklenecek nesneyi seçin.<br>
         2. Araç panelinden <strong>Scale</strong> aracını seçin.<br>
         3. Açılan ekranda Ölçek oranını girin.<br>
-        4. Nesne orantılı şekilde büyütülür veya küçültülür.<br>
+        4. Nesne orantılı şekilde büyütülür veya küçültülür.<br><br>
 
         <em>Örnek:</em> Teknik detayları farklı ölçekte yeniden kullanmak için idealdir.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Yeniden Boyutlandır (Lengthen):</strong><br><br>
         1. Uzatmak veya kısaltmak istediğiniz çizgiyi seçin.<br>
         2. Araç panelinden <strong>Lengthen</strong> aracını seçin.<br>
         3. Yeni uzunluk değerini girin.<br>
-        4. Sistem çizgiyi otomatik olarak güncelleyecektir.<br>
+        4. Sistem çizgiyi otomatik olarak güncelleyecektir.<br><br>
 
         <em>Örnek:</em> Teknik çizimde ölçü değişikliği gerektiğinde hızlı düzenleme sağlar.
-    </li><br>
+    </li>
 
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="boolean">
-                <h2>🧩 Gruplama, Parçalama ve Boolean İşlemleri</h2>
+            <div class="docs-section" id="boolean" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 5.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 5.5v0A4.5 4.5 0 0 1 9.5 1h5A4.5 4.5 0 0 1 19 5.5v0Z"></path><path d="M19 18.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 18.5v0A4.5 4.5 0 0 1 9.5 14h5a4.5 4.5 0 0 1 4.5 4.5v0Z"></path></svg>
+                    Gruplama, Parçalama ve Boolean İşlemleri
+                </h2>
                 <p>Kapalı alanları birleştirerek veya birbirinden çıkararak karmaşık parçalar tasarlayın.</p>
               
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Grupla (Group) & Grubu Çöz (Ungroup):</strong><br><br>
 
         <strong>Group Nasıl Kullanılır?</strong><br>
@@ -425,9 +417,9 @@ gtag('config', 'G-7H6342FC7T', {
         <div class="info-box">
             <strong>İpucu:</strong> Grup işlemi nesneleri fiziksel olarak birleştirmez. Sadece birlikte seçilmesini ve taşınmasını kolaylaştırır.
         </div>
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Parçala (Explode) & Uç Uca Ekle (Join):</strong><br><br>
 
         <strong>Explode (Parçala) Nasıl Kullanılır?</strong><br>
@@ -444,9 +436,9 @@ gtag('config', 'G-7H6342FC7T', {
         4. Sistem çizgileri tek bir sürekli nesneye dönüştürecektir.<br><br>
 
         <em>Örnek:</em> Açık çizgileri kapalı polyline haline getirerek hatch veya boolean işlemlerine uygun hale getirebilirsiniz.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Dış Zarf Birleştir (Wrap):</strong><br><br>
 
         1. Üst üste binen veya karmaşık şekilde iç içe geçmiş nesneleri seçin.<br>
@@ -459,17 +451,17 @@ gtag('config', 'G-7H6342FC7T', {
         <div class="info-box">
             <strong>İpucu:</strong> Wrap işlemleri özellikle hatch, alan hesabı ve DXF dışa aktarma işlemlerinde temiz geometri oluşturmak için faydalıdır.
         </div>
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Boolean İşlemleri:</strong><br><br>
-        <img src="img/boolean.webp" alt="2D Teknik Çizim Araçları" class="docs-img" onerror="this.style.display='none'">
+        <img src="img/boolean.webp" alt="2D Teknik Çizim Araçları" class="docs-img" data-aos="zoom-in" onerror="this.style.display='none'">
          
         Boolean araçları yalnızca <strong>kapalı geometriler</strong> üzerinde çalışır. 
         Daireler, kapalı polyline nesneleri ve birleşik şekiller arasında matematiksel geometri işlemleri yapabilirsiniz.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Birleştir (Union):</strong><br><br>
 
         1. Birleştirilecek kapalı şekilleri seçin.<br>
@@ -477,9 +469,9 @@ gtag('config', 'G-7H6342FC7T', {
         3. Üst üste gelen alanlar tek bir bütün haline dönüştürülür.<br><br>
 
         <em>Örnek:</em> Birden fazla odadan oluşan mimari alanları tek bir kapalı plan haline getirmek için kullanılabilir.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Çıkar (Difference):</strong><br><br>
 
         1. Ana şekli seçin.<br>
@@ -488,9 +480,9 @@ gtag('config', 'G-7H6342FC7T', {
         4. İkinci şeklin kapladığı alan ana geometriden kesilerek çıkarılır.<br><br>
 
         <em>Örnek:</em> Bir levha üzerinde delik açmak veya pencere boşluğu oluşturmak için kullanılabilir.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Kesişim (Intersection):</strong><br><br>
 
         1. Kesişen kapalı nesneleri seçin.<br>
@@ -498,9 +490,9 @@ gtag('config', 'G-7H6342FC7T', {
         3. Sistem yalnızca ortak kesişim alanını bırakacaktır.<br><br>
 
         <em>Örnek:</em> İki farklı alanın ortak kullanım bölgesini hesaplamak veya analiz etmek için kullanılabilir.
-    </li><br>
+    </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Sadece Farklar (Exclusion / XOR):</strong><br><br>
 
         1. Birbirine temas eden veya üst üste gelen şekilleri seçin.<br>
@@ -517,13 +509,16 @@ gtag('config', 'G-7H6342FC7T', {
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="olculendirme">
-                <h2>📐 Teknik Çizim Ölçülendirme ve Tarama (Hatch)</h2>
+            <div class="docs-section" id="olculendirme" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    Teknik Çizim Ölçülendirme ve Tarama (Hatch)
+                </h2>
                 <p>Projelerinize teknik derinlik ve materyal bilgisi ekleyin.</p>
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Ölçülendirme (Dimension):</strong><br><br>
 
         Teknik çizimlerinizi standartlara uygun şekilde ölçülendirmek için doğrusal, açısal, çap ve yarıçap araçlarını kullanabilirsiniz.<br><br>
@@ -547,12 +542,12 @@ gtag('config', 'G-7H6342FC7T', {
         <div class="info-box">
             <strong>İpucu:</strong> Ölçüleri daha sonra manuel olarak Metin Düzenleme aracıyla içeriğini düzenleyebilir, mimari çentik ve ok ucu stillerini değiştirebilirsiniz.
         </div>
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>İpucu:</strong> Koordinat eklemek için ölçü aracından <strong>Koordinat</strong> seçeneğini kullanabilirsiniz. Koordinat ölçüsü, belirlediğiniz noktanın X ve Y koordinatlarını teknik çizim üzerinde göstermek için idealdir.
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Otomatik Alan Hesabı:</strong><br><br>
 
         1. Kapalı bir geometri seçin.<br>
@@ -566,7 +561,7 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Tarama (Hatch) Kütüphanesi:</strong><br><br>
 
         Hatch araçları, kapalı alanların içini teknik çizim standartlarına uygun desenlerle doldurmanızı sağlar.<br><br>
@@ -580,7 +575,7 @@ gtag('config', 'G-7H6342FC7T', {
             <strong>İpucu:</strong> Dolgu rengi ve tarama çizgilerinin rengini ayrı ayrı ayarlayarak teknik çizimlerinizi daha okunabilir ve profesyonel hale getirebilirsiniz.
         </div>
         
-
+        <br>
         <strong>Desteklenen Hatch Desenleri:</strong><br>
         • Solid Dolgu<br>
         • Dikey Çizgili<br>
@@ -594,12 +589,12 @@ gtag('config', 'G-7H6342FC7T', {
 
         <em>Örnek:</em> Betonarme alanlar, duvar taramaları, malzeme gösterimleri veya teknik kesit çizimleri için kullanılabilir.
 
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>İpucu:</strong> Dolgu rengini kaldırdığınızda çizgi rengi transparan hale gelir, çizime devam etmeden önce renk paletinden yeni çizgi rengi seçtiğinizden emin olun.
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Metin ve Kılavuz (Text / Leader):</strong><br><br>
 
         Teknik çizimlerde açıklama eklemek, detay göstermek ve nesneleri işaretlemek için metin ve oklu metin araçlarını kullanabilirsiniz.<br><br>
@@ -622,13 +617,13 @@ gtag('config', 'G-7H6342FC7T', {
         5. Sistem oklu açıklama çizgisini oluşturacaktır.<br><br>
 
         <em>Örnek:</em> Teknik detay açıklamaları, parça isimleri veya üretim notları eklemek için kullanılabilir.
-        <div class="info-box">
+        <div class="info-box" style="margin-top: 10px;">
             <strong>İpucu:</strong> Oklu metnin içeriğini daha sonra düzenlemek için metnin üzerine çift tıklayarak metin düzenleme ekranını açabilirsiniz.
         </div><br>
     </li>
 
-    <li>
-        <strong>Tablo ve Ayarları:</strong><br>
+    <li style="margin-bottom: 25px;">
+        <strong>Tablo ve Ayarları:</strong><br><br>
 
         Çalışma alanına teknik tablolar, malzeme listeleri veya özellik tabloları ekleyebilirsiniz.<br><br>
 
@@ -646,13 +641,16 @@ gtag('config', 'G-7H6342FC7T', {
                 </ul></div>
             </div>
 
-            <div class="docs-section" id="katmanlar">
-                <h2>🎯 Profesyonel Katman (Layer) ve Blok Yönetimi</h2>
+            <div class="docs-section" id="katmanlar" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+                    Profesyonel Katman (Layer) ve Blok Yönetimi
+                </h2>
                 <p>Karmaşık projeleri katmanlara ayırarak yönetin ve bloklarla hız kazanın.</p>
-                <div class="content-box-style">
-                <ul>
+                <div class="content-box-style interactive-card">
+                <ul style="list-style: none; margin-left: 0;">
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Katman Paneli (Layers):</strong><br><br>
 
         Katman sistemi; büyük teknik çizimlerde nesneleri düzenli şekilde yönetmenizi sağlar. 
@@ -680,7 +678,7 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Nesne Özellikleri (Properties):</strong><br><br>
 
         Seçili nesnelerin görsel özelliklerini özellikler alanından hızlıca değiştirebilirsiniz.<br><br>
@@ -699,7 +697,7 @@ gtag('config', 'G-7H6342FC7T', {
         <em>Örnek:</em> Teknik resimde düz çizgileri kesik çizgiye dönüştürmek veya önemli detayları farklı renklerle göstermek için kullanılabilir.
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Özellik Eşleştir (Match Properties):</strong><br><br>
 
         Match Properties aracı; bir nesnenin görsel özelliklerini diğer nesnelere hızlıca aktarmanızı sağlar.<br><br>
@@ -717,7 +715,7 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
         <strong>Blok Oluşturma:</strong><br><br>
 
         Tekrar kullanılan çizimleri blok haline getirerek aynı nesneyi sürekli yeniden çizmek zorunda kalmadan kullanabilirsiniz.<br><br>
@@ -735,13 +733,13 @@ gtag('config', 'G-7H6342FC7T', {
 <br><br>
         <strong>Blok Düzenleme:</strong><br>
         • Bir bloğu düzenlemek için çift tıklayabilir ya da kütüphane panelinden ilgili alanı seçebilirsiniz<br>
-         -  Anlık ve özel düzenleme için Varsayılan Özellikleri, tüm projedeki blokları tek seferde düzenlemek için İçeriği Düzenleyi kullanabilirsiniz.<br>
+         - Anlık ve özel düzenleme için Varsayılan Özellikleri, tüm projedeki blokları tek seferde düzenlemek için İçeriği Düzenleyi kullanabilirsiniz.<br>
         
     </li>
 
-    <li>
+    <li style="margin-bottom: 25px;">
        
-        <strong>Kütüphaneden Kullanma:</strong><br>
+        <strong>Kütüphaneden Kullanma:</strong><br><br>
         1. Kütüphane panelini açın.<br>
         2. Kullanılacak bloğu seçin.<br>
         3. Blok çalışma alanına yerleşecektir.<br><br>
@@ -758,22 +756,28 @@ gtag('config', 'G-7H6342FC7T', {
 
            
 
-            <div class="docs-section" id="problem-cozme">
-                <h2>🛠️ CAD Sorun Giderme ve İpuçları</h2>
-                <div class="troubleshoot-grid">
+            <div class="docs-section" id="problem-cozme" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    CAD Sorun Giderme ve İpuçları
+                </h2>
+                <div class="troubleshoot-grid interactive-card" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;">
                     <div class="t-item">
-                        <h3>Trim (Kırpma) Neden Çalışmıyor?</h3>
-                        <p>Çizgilerin fiziksel olarak birbiriyle kesiştiğinden emin olun. Kesişmeyen objeler için <strong>Extend</strong> aracını kullanın.</p>
+                        <h3 style="color: var(--dark-bg); margin-bottom: 10px; font-size: 18px;">Trim (Kırpma) Neden Çalışmıyor?</h3>
+                        <p style="font-size: 15px; color: var(--text-light);">Çizgilerin fiziksel olarak birbiriyle kesiştiğinden emin olun. Kesişmeyen objeler için <strong>Extend</strong> aracını kullanın.</p>
                     </div>
                     <div class="t-item">
-                        <h3>Hatch (Tarama) Neden Uygulanmıyor?</h3>
-                        <p>Tarama yapabilmek için alanın tamamen kapalı olması gerekir. Eğer küçük bir boşluk bile varsa sistem "Açık Loop" hatası verir.</p>
+                        <h3 style="color: var(--dark-bg); margin-bottom: 10px; font-size: 18px;">Hatch (Tarama) Neden Uygulanmıyor?</h3>
+                        <p style="font-size: 15px; color: var(--text-light);">Tarama yapabilmek için alanın tamamen kapalı olması gerekir. Eğer küçük bir boşluk bile varsa sistem "Açık Loop" hatası verir.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="docs-section" id="faq">
-                <h2>❓ Sıkça Sorulan Sorular</h2>
+            <div class="docs-section" id="faq" data-aos="fade-up">
+                <h2 style="display: flex; align-items: center; gap: 10px; color: var(--primary-color);">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Sıkça Sorulan Sorular
+                </h2>
                 <div class="faq-accordion">
                     <details class="faq-item">
                         <summary>TamgamCAD ile diğer DXF dosyalarını açabilir miyim?</summary>
@@ -790,8 +794,8 @@ gtag('config', 'G-7H6342FC7T', {
                 </div>
             </div>
 
-            <div class="cta-highlight-box">
-                <h3>2D Teknik Çizime Hemen Başlayın</h3>
+            <div class="cta-highlight-box interactive-card" data-aos="zoom-in" style="margin-top: 40px;">
+                <h3 style="font-size: 24px; margin-bottom: 15px;">2D Teknik Çizime Hemen Başlayın</h3>
                 <p>Mobilde ve tablette profesyonel CAD deneyimi için TamgamCAD'i indirin.</p>
                 <div class="cta-btn-container">
                     <a href="index.html#platformlar" class="btn-primary">Hemen İndir</a>
@@ -862,7 +866,7 @@ gtag('config', 'G-7H6342FC7T', {
     
     <div class="footer-socials">
       
-        <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube">
+        <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube" aria-label="TamgamCAD YouTube Kanalı">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
         </a>
     </div>
@@ -873,40 +877,38 @@ gtag('config', 'G-7H6342FC7T', {
         </div>
     </footer>
 
+<!-- Yukarı Çık Butonu -->
+<button id="scrollToTopBtn" aria-label="Yukarı Çık" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
 
-<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <script>
-        (function() {
-            
-            emailjs.init("Z3CwmpJrBwI4l4wvo");
-        })();
+<!-- AOS Animation Library Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 600,
+        easing: 'ease-in-out'
+    });
 
-       
-        document.querySelector('.contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); 
+    // Yukarı Çık Butonu İşlevi
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
 
-            const btn = this.querySelector('button');
-            const originalBtnText = btn.innerText;
-            btn.innerText = 'Gönderiliyor...'; 
-
-            emailjs.sendForm('service_ww9dcgx', 'template_405qyyr', this)
-                .then(function() {
-                    btn.innerText = 'Başarıyla Gönderildi! ✔️';
-                    btn.style.backgroundColor = '#16a34a'; 
-                    document.querySelector('.contact-form').reset(); 
-                    
-                    setTimeout(() => {
-                        btn.innerText = originalBtnText;
-                        btn.style.backgroundColor = '';
-                    }, 3000);
-                }, function(error) {
-                    btn.innerText = 'Hata Oluştu!';
-                    btn.style.backgroundColor = '#dc2626'; 
-                    console.log('Gönderim Hatası:', error);
-                });
-        });
-    </script>
     <div id="cookie-banner">
 
     <div class="cookie-flex-container">
@@ -963,7 +965,5 @@ document.getElementById('reject-cookies').addEventListener('click', () => {
 </script>
 
 </body>
-
-
 
 </html>

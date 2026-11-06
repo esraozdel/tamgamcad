@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6342FC7T"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,6 +38,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -73,8 +75,8 @@
     </script>
 </head>
 
-<body>
-<header>
+<body class="bg-light">
+<header class="glass-header">
     <div class="container header-container">
         <a href="index-en.html" class="logo">
             <img src="img/logotransparan.png" alt="TamgamCAD Logo" class="logo-img">
@@ -90,14 +92,14 @@
             </ul>
         </nav>
         <div class="lang-switch">
-            <a href="blog-detay-3d.html">TR</a> <span>|</span> <a href="blog-detail-3d.html" class="active">EN</a>
+            <a href="blog-detay-3d.html" aria-label="Turkish">TR</a> <span aria-hidden="true">|</span> <a href="blog-detail-3d.html" class="active" aria-label="English">EN</a>
         </div>
         <a href="index-en.html#platforms" class="btn-primary">TamgamCAD Versions</a>
     </div>
 </header>
 
 <main>
-    <article class="blog-detail-page container">
+    <article class="blog-detail-page section-spacing container" data-aos="fade-up">
 
         <a href="blog-en.html" class="blog-back-link">&larr; Back to Blog</a>
 
@@ -114,11 +116,7 @@
 
         <div class="blog-content">
 
-            <img
-                src="img/blog-3d-feature.webp"
-                alt="3D visualization of 2D technical drawings with TamgamCAD"
-                class="article-main-img"
-            >
+            <img src="img/blog-3d-feature.webp" alt="3D visualization of 2D technical drawings with TamgamCAD" class="article-main-img" data-aos="zoom-in">
 
             <p>
                 Although 3D modeling is increasingly used in the technical drawing world,
@@ -256,35 +254,12 @@
             </p>
 
             <ul>
-                <li>
-                    <strong>Design Review:</strong>
-                    Evaluating drawing geometry from a different perspective.
-                </li>
-
-                <li>
-                    <strong>Project Presentation:</strong>
-                    Communicating spatial structure to non-technical stakeholders more easily.
-                </li>
-
-                <li>
-                    <strong>Mobile Work:</strong>
-                    Reviewing drawings and working on projects outside the office.
-                </li>
-
-                <li>
-                    <strong>Education:</strong>
-                    Helping students easily grasp the relation between 2D geometries and 3D structures.
-                </li>
-
-                <li>
-                    <strong>Pre-production Verification:</strong>
-                    Evaluating geometry from an alternative viewpoint before fabrication.
-                </li>
-
-                <li>
-                    <strong>Project Communication:</strong>
-                    Facilitating clearer understanding among cross-functional technical teams.
-                </li>
+                <li><strong>Design Review:</strong> Evaluating drawing geometry from a different perspective.</li>
+                <li><strong>Project Presentation:</strong> Communicating spatial structure to non-technical stakeholders more easily.</li>
+                <li><strong>Mobile Work:</strong> Reviewing drawings and working on projects outside the office.</li>
+                <li><strong>Education:</strong> Helping students easily grasp the relation between 2D geometries and 3D structures.</li>
+                <li><strong>Pre-production Verification:</strong> Evaluating geometry from an alternative viewpoint before fabrication.</li>
+                <li><strong>Project Communication:</strong> Facilitating clearer understanding among cross-functional technical teams.</li>
             </ul>
 
             <h2>2D CAD and 3D Modeling Are Not the Same Thing</h2>
@@ -383,7 +358,7 @@
                 perspective—expanding your CAD workflow beyond simple drafting.
             </p>
 
-            <div class="blog-cta-section">
+            <div class="blog-cta-section interactive-card" data-aos="zoom-in">
                 <h3>Inspect Your 2D Technical Drawings from a New Perspective</h3>
 
                 <p>
@@ -391,38 +366,23 @@
                     and discover the new 3D visualization experience.
                 </p>
 
-                <a href="features.html" class="btn-primary">
-                    Explore TamgamCAD Features
-                </a>
+                <a href="features.html" class="btn-primary">Explore TamgamCAD Features</a>
             </div>
 
             <!-- Related Articles -->
             <section class="related-articles">
-
                 <h2>Related Articles</h2>
-
                 <div class="related-articles-grid">
-
                     <a href="blog-detail-2d.html" class="related-article-card">
-                        <h3>
-                            Why is 2D Technical Drawing Still Important?
-                        </h3>
+                        <h3>Why is 2D Technical Drawing Still Important?</h3>
                     </a>
-
                     <a href="blog-detail-tablet.html" class="related-article-card">
-                        <h3>
-                            Using CAD on a Tablet: Faster and More Efficient Technical Drawing with a Keyboard
-                        </h3>
+                        <h3>Using CAD on a Tablet: Faster and More Efficient Technical Drawing with a Keyboard</h3>
                     </a>
-
                     <a href="blog-detail-mobil-cad.html" class="related-article-card">
-                        <h3>
-                            What is Mobile CAD? Moving Technical Drawing from Computer to Tablet
-                        </h3>
+                        <h3>What is Mobile CAD? Moving Technical Drawing from Computer to Tablet</h3>
                     </a>
-
                 </div>
-
             </section>
 
         </div>
@@ -462,7 +422,7 @@
             <p class="developer-info"><a href="mailto:tamgamcad@hotmail.com">tamgamcad@hotmail.com</a></p>
             
             <div class="footer-socials">
-                <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube">
+                <a href="https://youtube.com/@TAMGAMCAD" target="_blank" title="YouTube" aria-label="TamgamCAD YouTube Channel">
                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                 </a>
             </div>
@@ -472,5 +432,22 @@
         <p>&copy; 2026 TamgamCAD. All Rights Reserved.</p>
     </div>
 </footer>
+
+<button id="scrollToTopBtn" aria-label="Scroll to top" class="scroll-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, offset: 50, duration: 600, easing: 'ease-in-out' });
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) { scrollToTopBtn.classList.add("show"); } 
+        else { scrollToTopBtn.classList.remove("show"); }
+    });
+    scrollToTopBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); });
+</script>
 </body>
 </html>
