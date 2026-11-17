@@ -201,11 +201,11 @@ yetkili uzmanlar tarafından ayrıca doğrulanması kullanıcı sorumluluğundad
             <div class="legal-content">
                 <p>TAMGAMCAD, kişisel verilerinizin gizliliğine "Tasarım Aşamasında Gizlilik" (Privacy by Design) ilkesiyle yaklaşır. Veri işleme süreçlerimiz, Türkiye Cumhuriyeti KVKK (6698 sayılı kanun) ve Avrupa Birliği GDPR standartları gözetilerek yürütülmektedir.</p>
                 
-                <h3>1. TOPLANAN VERİLER VE LOKAL DEPOLAMA</h3>
+                <h3>1. TOPLANAN VERİLER, YEREL DEPOLAMA VE BULUT SENKRONİZASYONU</h3>
                 <ul>
-                    <li><strong>Hesap Bilgileri:</strong> Uygulama, yalnızca hesap doğrulama ve lisans yönetimi için e-posta adresinizi saklar. Hesap doğrulama ve altyapı hizmetleri için güvenilir üçüncü taraf bulut sağlayıcıları (Firebase) kullanılmaktadır.</li>
-                    <li><strong>Çizim Verileri:</strong> TAMGAMCAD içerisindeki tüm projeleriniz tamamen kendi cihazınızda (LOKAL OLARAK) kaydedilir. Projeleriniz sunucularımıza yüklenmez, bizim tarafımızdan okunmaz ve saklanmaz.</li>
-                    <li><strong>Bulut Senkronizasyonu ve Veri Saklama:</strong> TamgamCAD projeleri varsayılan olarak kullanıcının kendi cihazında yerel olarak depolanır. Kullanıcının kendi isteğiyle "Buluta Kaydet (Cloud Sync)" özelliğini kullanması halinde, proje verileri cihazlar arası (Mobil/Tablet ve Windows Masaüstü) senkronizasyon sağlamak amacıyla sıkıştırılmış formatta Google Firebase (Cloud Firestore) altyapısında, yalnızca kullanıcının kendi kimlik doğrulaması (UID) ile erişebileceği özel alanda saklanır ve üçüncü taraflarla paylaşılmaz.</li>
+                    <li><strong>Hesap Bilgileri:</strong> Uygulama, yalnızca hesap doğrulama, lisans yönetimi ve isteğe bağlı bulut senkronizasyonu için e-posta adresinizi saklar. Hesap doğrulama ve altyapı hizmetleri için güvenilir üçüncü taraf bulut sağlayıcıları (Google Firebase) kullanılmaktadır.</li>
+                    <li><strong>Çizim Verileri (Yerel Depolama):</strong> TAMGAMCAD içerisindeki tüm projeleriniz ve önizleme görselleriniz varsayılan olarak tamamen kendi cihazınızda (LOKAL OLARAK) kaydedilir. Kullanıcı kendi isteğiyle "Buluta Kaydet" özelliğini kullanmadığı sürece projeleriniz sunucularımıza yüklenmez, bizim tarafımızdan okunmaz ve saklanmaz.</li>
+                    <li><strong>Bulut Senkronizasyonu ve Veri Saklama:</strong> Kullanıcının kendi isteğiyle "Buluta Kaydet (Cloud Sync)" özelliğini kullanması halinde; proje verileri cihazlar arası (Android Mobil/Tablet ve Windows Masaüstü) senkronizasyon sağlamak amacıyla GZIP ve Base64 algoritmalarıyla sıkıştırılmış formatta, şifreli (HTTPS) bağlantı üzerinden Google Firebase (Cloud Firestore) altyapısında, yalnızca kullanıcının kendi kimlik doğrulaması (UID) ile erişebileceği özel alanda saklanır ve üçüncü taraflarla paylaşılmaz. Kullanıcı dilediği zaman buluttaki projelerini veya hesabını uygulama içerisinden kalıcı olarak silebilir.</li>
                 </ul>
 
                 <h3>2. ÇÖKME RAPORLARI VE ANALİTİK</h3>
