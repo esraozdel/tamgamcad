@@ -201,12 +201,11 @@ architectural application or engineering processes.
             <div class="legal-content">
                 <p>TAMGAMCAD approaches the privacy of your personal data with the principle of "Privacy by Design". Our data processing procedures are carried out in consideration of the Republic of TÜRKİYE KVKK (Law No. 6698) and European Union GDPR standards.</p>
                 
-                <h3>1. COLLECTED DATA AND LOCAL STORAGE</h3>
+                <h3>1. COLLECTED DATA, LOCAL STORAGE, AND CLOUD SYNCHRONIZATION</h3>
                 <ul>
-                    <li><strong>Account Information:</strong> The application only stores your email address for account verification and license management. Reliable third-party cloud providers (Firebase) are used for account verification and infrastructure services.</li>
-                    <li><strong>Drawing Data:</strong> All your projects within TAMGAMCAD are saved entirely on your own device (LOCALLY). Your projects are not uploaded to, read, or stored by our servers.</li>
-                    <li><strong>Cloud Synchronization and Data Storage:</strong> TamgamCAD projects are stored locally on the user's own device by default. If the user voluntarily uses the "Cloud Sync" feature, project data is stored in compressed format on the Google Firebase (Cloud Firestore) infrastructure for cross-device (Mobile/Tablet and Windows Desktop) synchronization, only in a private area accessible by the user's own authentication (UID), and is not shared with third parties.</li>
-                </ul>
+                    <li><strong>Account Information:</strong> The application stores your email address solely for account verification, license management, and optional cloud synchronization. Reliable third-party cloud providers (Google Firebase) are used for account verification and infrastructure services.</li>
+                    <li><strong>Drawing Data (Local Storage):</strong> By default, all your projects and preview thumbnails within TAMGAMCAD are saved entirely on your own device (LOCALLY). Unless the user voluntarily uses the "Save to Cloud" feature, your projects are not uploaded to, read, or stored by our servers.</li>
+                    <li><strong>Cloud Synchronization and Data Storage:</strong> If the user voluntarily uses the "Save to Cloud (Cloud Sync)" feature, project data is stored in a compressed format (using GZIP and Base64 algorithms) over an encrypted (HTTPS) connection on the Google Firebase (Cloud Firestore) infrastructure for cross-device (Android Mobile/Tablet and Windows Desktop) synchronization, strictly in a private area accessible only by the user's own authentication (UID), and is never shared with third parties. Users can permanently delete their cloud projects or account at any time from within the application.</li>
                 </ul>
 
                 <h3>2. CRASH REPORTS AND ANALYTICS</h3>
